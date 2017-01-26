@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Re!magine Giving</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="index.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="header.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="slider.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="common.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="signUp.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="signUp2.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="explore.css" media="screen"/>
+	
+	<script src="SignUp.js"></script>
+	<script src="explore.js"></script>
+	<script src="slider.js"></script>
+</head>
+  
+<body>
+	<header>
+		<div class="col-2 mainNavBarButton">
+			<div class="col-4">
+				<span onclick="openNav()"><img class="navBarLowerArrow" src="lowerArrow.png"></span>
+			</div>
+			<div class="col-8 navBarExploreButton">
+				<span onclick="openNav()"><h2 class="exploreButton">Explore</h2></span>
+			</div>
+		</div>
+		
+		<div id="myNav" class="explore">
+			<div id="exploreContent" class="exploreContent">
+				<div class="row"><a class="exploreCloseButton" onclick="closeNav()">&times;</a></div>
+				<form>
+					<div class="location">
+						<span  onclick="myfunction1()">
+							<div class="exploreHeading row">
+								<div class="col-9"><h2>Location</h2></div>
+								<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
+							</div>
+						</span>
+						<div class="inputField" id="locationInput">
+							<input type="text" name="search" placeholder="Location..">
+						</div>
+					</div>
+					
+					<div class="funding">
+						<span onclick="myfunction2()">
+							<div class="exploreHeading row">
+								<div class="col-9"><h2>Funding</h2></div>
+								<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
+							</div>
+						</span>
+						<div class="fundingLevels row" id="fundingInput">
+							<div class="row">
+								<div class="col-1 exploreRadioButton"><input type="radio" name="fundingLevels" value="almost" checked></div>
+								<div class="col-11"><p>Nearly Completed</p></div>
+							</div>
+							<div class="row">
+								<div class="col-1 exploreRadioButton"><input  type="radio" name="fundingLevels" value="new"></div>
+								<div class="col-11"><p>Just Started</p></div>
+							</div>
+							<div class="row">
+								<div class="col-1 exploreRadioButton"><input type="radio" name="fundingLevels" value="ongoing"></div>
+								<div class="col-11"><p>Ongoing</p></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="causes" >
+						<span  onclick="myfunction3()">
+							<div class="exploreHeading row">
+								<div class="col-9"><h2>Causes</h2></div>
+								<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
+							</div>
+						</span>
+						<div class="causesList" id="causeInput">
+							<div class="causesList1">
+								<a>Education</a>
+							</div>
+							<div class="causesList2">
+								<a>Health</a>
+							</div>
+							<div class="causesList3">
+								<a>Children</a>
+							</div>
+							<div class="causesList4">
+								<a>Women Empowerment</a>
+							</div>
+							<div class="causesList5">
+								<a>Food and Hunger</a>
+							</div>
+							<div class="causesList1">
+								<a>Sports</a>
+							</div>
+							<div class="causesList1">
+								<a>Animal Welfare</a>
+							</div>
+							<div class="causesList1">
+								<a>Enviroment</a>
+							</div>
+							<div class="causesList6">
+								<a>Others</a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="col-8 logo">
+			<a href="index.html">
+				<img src="logo/logo-final.png"></img>
+			</a>
+		</div>
+		<div class="col-2 mainNavBarButton">
+			<div class="col-6 navBarSignUpButton">
+				<h2 id="registration"><span class="SignUpSpan" onclick="openSignUpOverlay()">Sign Up</span></h2>
+			</div>
+			<div id="SignUp" class="overlay">
+				<div class="transparentContainer">
+					<div class="translucentContainer"></div>
+						<!-- overlay content -->
+					<div class="overlayContent">
+						<div class="overlayContent1">
+							<div id="SignUpForms">
+								<div class="row registrationOptions">
+									<div class="col-3 optionDonorHeading"><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'Donor')">Donor</a></div>
+									<div class="col-2"><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'NGO')">NGO</a></div>
+									<div class="col-7"><a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a></div>
+								</div>
+								<form>
+									<div id="Donor" class="tabcontent">
+										<div class="inputFieldHeadings">
+											<h2>First Name</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="FirstName">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Last Name</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="LastName">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Email ID</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="xyz@mail.com">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Mobile Number</h2>
+											<div class="inputField">
+												<input type="digits" name="search" placeholder="+91-9999999999">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Password</h2>
+											<div class="inputField">
+												<input type="password" name="search" placeholder="********">
+											</div>
+										</div>
+										<div class="inputFieldHeadings row">
+											<span onclick="SignMeUp()"><h2 id="SignUpButton">Sign Up!</h2></span>
+										</div>
+									</div>
+								</form>
+								<form>
+									<div id="NGO" class="tabcontent">
+										<div class="inputFieldHeadings">
+											<h2>Oraganization Name</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="Oraganization Name">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Contact Person</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="FirstName LastName">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Email ID</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="xyz@mail.com">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Mobile Number</h2>
+											<div class="inputField">
+												<input type="digits" name="search" placeholder="+91-9999999999">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Password</h2>
+											<div class="inputField">
+												<input type="password" name="search" placeholder="********">
+											</div>
+										</div>
+										<div class="inputFieldHeadings row">
+											<span onclick="SignMeUp()"><h2 id="SignUpButton">Sign Up!</h2></span>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-6 navBarLogInButton">
+				<h2 id="registration"><span class="LogInSpan" onclick="openLogInOverlay()">Log In</span></h2>
+			</div>
+			<div id="LogIn" class="overlay">
+				<div class="transparentContainer">
+					<div class="translucentContainer"></div>
+						<!-- overlay content -->
+					<div class="overlayContent">
+						<div id="LogInOverlay">
+							<div class="registrationOptions row">
+								<div class="col-2 LoginOption"><h2>Log In</h2></div>
+								<div class="col-10"><a href="javascript:void(0)" class="Loginclosebtn tablinks" onclick="closeLogInOverlay()">&times;</a></div>
+							</div>
+							<form>
+								<div id="LogInDetails">
+									<div class="inputFieldHeadings">
+										<h2>Email ID</h2>
+										<div class="inputField">
+											<input type="text" name="search" placeholder="xyz@mail.com">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2>Password</h2>
+										<div class="inputField">
+											<input type="password" name="search" placeholder="********">
+										</div>
+									</div>
+									<div class="inputFieldHeadings row">
+											<span onclick="SignMeUp()"><h2 id="SignUpButton" class="col-6">LogIn</h2></span>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="row slideshow">
+		<div class="row sliderContent">
+			<div class="image"><img class="mySlides" src="images/web1.jpg" ></div>	  
+			<div class="image"><img class="mySlides" src="images/web2.jpg" ></div>
+			<div class="image"><img class="mySlides" src="images/web4.jpg"></div>
+			<div class="sliderNavBarCenterMiddle" style="width:100%">
+				<div class="floatLeft sliderNavLeft" onclick="plusDivs(-1)">&#10094;</div>
+				<div class="floatRight sliderNavRight" onclick="plusDivs(1)">&#10095;</div>
+			</div>
+		</div>
+	</div>
+	<script src="slider.js"></script>
+	
+	<div class="row statsBar">
+		<p><span class="statsBarText">In 2012 </span><span class="statsBarNumber">37%</span><span class="statsBarText"> of India's </span><span class="statsBarNumber">1.21</span><span class="statsBarText"> billion people fell below international poverty line, which is $1.25/Day.</span></p>
+	</div>
+	
+	<div class="row projects">
+		<div  class="recommendedProjectsHeading">
+			<h2>Recommended Projects</h2>
+		</div>
+		<div class="row projectsContent">
+			<div class="projectSection1">
+				<div class="row projectContent">
+					<div class="projectThumbnail">
+						<img class="img-thumbnail" src="images/web1.jpg" >
+						<div class="row locationCause">
+							<div class="location"><p>Cause</p></div>
+							<div class="cause"><p>Location</p></div>
+						</div>
+					</div>
+					
+					<div class="projectDetails">
+						<h1>Child Education Project</h1>
+						<h2>Nirmaan Society</h2>
+						<p>This is sample text to give us an idea of what the major project element will look like after we put in text 	into the entire thing. The font is Myraid Pro, but should we consider some other font instead?
+							<br>This project will help kids get education, master the ways of the force and become Jedi.
+						</p>
+					</div>
+					
+					<div class="row projectBottom">
+						<div class="row projectStats">
+							<div class="row" style="margin-bottom: 12px;">
+								<h2 class="floatRight">50%</h2>
+							</div>
+							
+							<div class="row progress">
+								<div class="progress-bar"></div>
+							</div>
+							
+							<div class="row">
+								<div class="stats1 col-4">
+									<div class="statsNumber">
+										<p>Rs 250000</p>
+									</div>
+									<div class="statsText">
+										<p>Raised</p>
+									</div>
+								</div>
+								<div class="stats2 col-4">
+									<div class="statsNumber">
+										<p style="margin-right: 15%;">105</p>
+									</div>
+									<div class="statsText">
+										<p>Donors</p>
+									</div>
+								</div>
+								<div class="stats3 col-4">
+									<div class="statsNumber">
+										<p style="margin-left: 60%;">14</p>
+									</div>
+									<div class="floatRight statsText">
+										<p>Days left</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row projectSectionDonateButton">
+							<h2>Donate</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="projectSection2">
+				<div class="row projectContent">
+					<div class="projectThumbnail">
+						<img class="img-thumbnail" src="images/web2.jpg" >
+						<div class="row locationCause">
+							<div class="location"><p>Cause</p></div>
+							<div class="cause"><p>Location</p></div>
+						</div>
+					</div>
+					
+					
+						<div class="projectDetails">
+							<h1>Child Education Project</h1>
+							<h2>Nirmaan Society</h2>
+							<p>This is sample text to give us an idea of what the major project element will look like after we put in text 	into the entire thing. The font is Myraid Pro, but should we consider some other font instead?
+								<br>This project will help kids get education, master the ways of the force and become Jedi.
+							</p>
+						</div>
+						
+						<div class="row projectBottom">
+						<div class="row projectStats">
+							<div class="row" style="margin-bottom: 12px;">
+								<h2 class="floatRight">50%</h2>
+							</div>
+							
+							<div class="row progress">
+								<div class="progress-bar"></div>
+							</div>
+							
+							<div class="row">
+								<div class="stats1 col-4">
+									<div class="statsNumber">
+										<p>Rs 250000</p>
+									</div>
+									<div class="statsText">
+										<p>Raised</p>
+									</div>
+								</div>
+								<div class="stats2 col-4">
+									<div class="statsNumber">
+										<p style="margin-right: 15%;">105</p>
+									</div>
+									<div class="statsText">
+										<p>Donors</p>
+									</div>
+								</div>
+								<div class="stats3 col-4">
+									<div class="statsNumber">
+										<p style="margin-left: 60%;">14</p>
+									</div>
+									<div class="floatRight statsText">
+										<p>Days left</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row projectSectionDonateButton">
+							<h2>Donate</h2>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="projectSection3">
+				<div class="row projectContent">
+					<div class="projectThumbnail">
+						<img class="img-thumbnail" src="images/web3.jpg" >
+						<div class="row locationCause">
+							<div class="location"><p>Cause</p></div>
+							<div class="cause"><p>Location</p></div>
+						</div>
+					</div>
+					
+					<div class="projectDetails">
+						<h1>Child Education Project</h1>
+						<h2>Nirmaan Society</h2>
+						<p>This is sample text to give us an idea of what the major project element will look like after we put in text 	into the entire thing. The font is Myraid Pro, but should we consider some other font instead?
+							<br>This project will help kids get education, master the ways of the force and become Jedi.
+						</p>
+					</div>
+					
+					<div class="row projectBottom">
+						<div class="row projectStats">
+							<div class="row" style="margin-bottom: 12px;">
+								<h2 class="floatRight">50%</h2>
+							</div>
+							
+							<div class="row progress">
+								<div class="progress-bar"></div>
+							</div>
+							
+							<div class="row">
+								<div class="stats1 col-4">
+									<div class="statsNumber">
+										<p>Rs 250000</p>
+									</div>
+									<div class="statsText">
+										<p>Raised</p>
+									</div>
+								</div>
+								<div class="stats2 col-4">
+									<div class="statsNumber">
+										<p style="margin-right: 15%;">105</p>
+									</div>
+									<div class="statsText">
+										<p>Donors</p>
+									</div>
+								</div>
+								<div class="stats3 col-4">
+									<div class="statsNumber">
+										<p style="margin-left: 60%;">14</p>
+									</div>
+									<div class="floatRight statsText">
+										<p>Days left</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row projectSectionDonateButton">
+							<h2>Donate</h2>
+						</div>
+					</div>
+					
+			</div>
+			
+		</div>
+		<div  class="recommendedProjectsFooter">
+			<h2>See More</h2>
+		</div>
+	</div>
+	
+	<div class="row projects">
+		<div  class="recommendedProjectsHeading">
+			<h2>Almost Funded</h2>
+		</div>
+		<div class="row projectsContent">
+			<div class="projectSection1">
+				<div class="row projectContent">
+					<div class="projectThumbnail">
+						<img class="img-thumbnail" src="images/16_9_4.jpg" >
+						<div class="row locationCause">
+							<div class="location"><p>Cause</p></div>
+							<div class="cause"><p>Location</p></div>
+						</div>
+					</div>
+					
+					<div class="projectDetails">
+						<h1>Child Education Project</h1>
+						<h2>Nirmaan Society</h2>
+						<p>This is sample text to give us an idea of what the major project element will look like after we put in text 	into the entire thing. The font is Myraid Pro, but should we consider some other font instead?
+							<br>This project will help kids get education, master the ways of the force and become Jedi.
+						</p>
+					</div>
+					
+					<div class="row projectBottom">
+						<div class="row projectStats">
+							<div class="row" style="margin-bottom: 12px;">
+								<h2 class="floatRight">50%</h2>
+							</div>
+							
+							<div class="row progress">
+								<div class="progress-bar"></div>
+							</div>
+							
+							<div class="row">
+								<div class="stats1 col-4">
+									<div class="statsNumber">
+										<p>Rs 250000</p>
+									</div>
+									<div class="statsText">
+										<p>Raised</p>
+									</div>
+								</div>
+								<div class="stats2 col-4">
+									<div class="statsNumber">
+										<p style="margin-right: 15%;">105</p>
+									</div>
+									<div class="statsText">
+										<p>Donors</p>
+									</div>
+								</div>
+								<div class="stats3 col-4">
+									<div class="statsNumber">
+										<p style="margin-left: 60%;">14</p>
+									</div>
+									<div class="floatRight statsText">
+										<p>Days left</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row projectSectionDonateButton">
+							<h2>Donate</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="projectSection2">
+				<div class="row projectContent">
+					<div class="projectThumbnail">
+						<img class="img-thumbnail" src="images/16_9_6.jpg" >
+						<div class="row locationCause">
+							<div class="location"><p>Cause</p></div>
+							<div class="cause"><p>Location</p></div>
+						</div>
+					</div>
+					
+					
+						<div class="projectDetails">
+							<h1>Child Education Project</h1>
+							<h2>Nirmaan Society</h2>
+							<p>This is sample text to give us an idea of what the major project element will look like after we put in text 	into the entire thing. The font is Myraid Pro, but should we consider some other font instead?
+								<br>This project will help kids get education, master the ways of the force and become Jedi.
+							</p>
+						</div>
+						
+						<div class="row projectBottom">
+						<div class="row projectStats">
+							<div class="row" style="margin-bottom: 12px;">
+								<h2 class="floatRight">50%</h2>
+							</div>
+							
+							<div class="row progress">
+								<div class="progress-bar"></div>
+							</div>
+							
+							<div class="row">
+								<div class="stats1 col-4">
+									<div class="statsNumber">
+										<p>Rs 250000</p>
+									</div>
+									<div class="statsText">
+										<p>Raised</p>
+									</div>
+								</div>
+								<div class="stats2 col-4">
+									<div class="statsNumber">
+										<p style="margin-right: 15%;">105</p>
+									</div>
+									<div class="statsText">
+										<p>Donors</p>
+									</div>
+								</div>
+								<div class="stats3 col-4">
+									<div class="statsNumber">
+										<p style="margin-left: 60%;">14</p>
+									</div>
+									<div class="floatRight statsText">
+										<p>Days left</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row projectSectionDonateButton">
+							<h2>Donate</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="projectSection3">
+				<div class="row projectContent">
+					<div class="projectThumbnail">
+						<img class="img-thumbnail" src="images/web4.jpg" >
+						<div class="row locationCause">
+							<div class="location"><p>Cause</p></div>
+							<div class="cause"><p>Location</p></div>
+						</div>
+					</div>
+					
+					<div class="projectDetails">
+						<h1>Child Education Project</h1>
+						<h2>Nirmaan Society</h2>
+						<p>This is sample text to give us an idea of what the major project element will look like after we put in text 	into the entire thing. The font is Myraid Pro, but should we consider some other font instead?
+							<br>This project will help kids get education, master the ways of the force and become Jedi.
+						</p>
+					</div>
+					
+					<div class="row projectBottom">
+						<div class="row projectStats">
+							
+							<div class="row" style="margin-bottom: 12px;">
+								<h2 class="floatRight">50%</h2>
+							</div>
+							
+							<div class="row progress">
+								<div class="progress-bar"></div>
+							</div>
+							
+							<div class="row">
+								<div class="stats1 col-4">
+									<div class="statsNumber">
+										<p>Rs 250000</p>
+									</div>
+									<div class="statsText">
+										<p>Raised</p>
+									</div>
+								</div>
+								<div class="stats2 col-4">
+									<div class="statsNumber">
+										<p style="margin-right: 15%;">105</p>
+									</div>
+									<div class="statsText">
+										<p>Donors</p>
+									</div>
+								</div>
+								<div class="stats3 col-4">
+									<div class="statsNumber">
+										<p style="margin-left: 60%;">14</p>
+									</div>
+									<div class="floatRight statsText">
+										<p>Days left</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row projectSectionDonateButton">
+							<h2>Donate</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div  class="recommendedProjectsFooter">
+			<h2>See More</h2>
+		</div>
+	</div>
+	
+	<footer>
+		<div  class="Footer">
+			<h2>cc Reimagine Giving</h2>
+		</div>
+	</footer>
+<body>

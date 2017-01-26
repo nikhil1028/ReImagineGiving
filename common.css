@@ -1,0 +1,142 @@
+
+@font-face {
+    font-family: Rajdhani-Bold;
+    src: url(fonts/Rajdhani-Bold.ttf);
+}
+@font-face {
+    font-family: Rajdhani-Light;
+    src: url(fonts/Rajdhani-Light.ttf);
+}
+@font-face {
+    font-family: Rajdhani-Regular;
+    src: url(fonts/Rajdhani-Regular.ttf);
+}
+@font-face {
+    font-family: Rajdhani-Medium;
+    src: url(fonts/Rajdhani-Medium.ttf);
+}
+@font-face {
+    font-family: Rajdhani-SemiBold;
+    src: url(fonts/Rajdhani-SemiBold.ttf);
+}
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(fonts/Raleway/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: Raleway-ExtraBold;
+    src: url(fonts/Raleway/Raleway-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Raleway-ExtraLight;
+    src: url(fonts/Raleway/Raleway-ExtraLight.ttf);
+}
+@font-face {
+    font-family: Raleway-Light;
+    src: url(fonts/Raleway/Raleway-Light.ttf);
+}
+@font-face {
+    font-family: Raleway-Medium;
+    src: url(fonts/Raleway/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: Raleway-Regular;
+    src: url(fonts/Raleway/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: Raleway-Thin;
+    src: url(fonts/Raleway/Raleway-Thin.ttf);
+}
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url(fonts/Raleway/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: MyriadPro-SemiBold;
+    src: url(fonts/MyriadPro/MyriadPro-SemiBold.otf);
+}
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url(fonts/MyriadPro/MyriadPro-Regular.otf);
+}
+@font-face {
+    font-family: MyriadPro-Cond;
+    src: url(fonts/MyriadPro/MyriadPro-Cond.otf);
+}
+@font-face {
+    font-family: MyriadPro-Bold;
+    src: url(fonts/MyriadPro/MyriadPro-Bold.otf);
+}
+@font-face {
+    font-family: MyriadPro-BoldCond;
+    src: url(fonts/MyriadPro/MyriadPro-BoldCond.otf);
+}
+@font-face {
+    font-family: BebasNeue_Bold;
+    src: url(fonts/Bebas_Neue/BebasNeue_Bold.otf);
+}
+@font-face {
+    font-family: BebasNeue_Book;
+    src: url(fonts/Bebas_Neue/BebasNeue_Book.otf);
+}
+@font-face {
+    font-family: BebasNeue_Light;
+    src: url(fonts/Bebas_Neue/BebasNeue_Light.otf);
+}
+@font-face {
+    font-family: BebasNeue_Thin;
+    src: url(fonts/Bebas_Neue/BebasNeue_Thin.otf);
+}
+@font-face {
+    font-family: BebasNeue_Regular;
+    src: url(fonts/Bebas_Neue/BebasNeue_Regular.otf);
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row{
+	width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0; 
+}
+
+.floatRight{
+	float: right !Important;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+header, body{
+	font-family: MyriadPro-Regular;
+	background-color: white;
+}
+
+.Footer h2{
+	font-size: 20pt;
+	font-family: Rajdhani-Light;
+	text-align: center;
+}

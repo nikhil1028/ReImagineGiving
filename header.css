@@ -1,0 +1,49 @@
+.header{
+	box-shadow: 0 4px 8px 0 #373737;
+}
+
+header{
+	text-align: center;
+	color: #373737;
+}
+
+header h2{
+	font-size: 12pt;
+	font-family: MyriadPro-Regular;
+}
+
+.logo  img{
+	height: 35px;
+	margin: 5px;
+	cursor:pointer;
+}
+
+.navBarLowerArrow{
+	height: 11px;
+	float: right;
+	margin-top: 4px;
+	margin-right: 3px;
+	cursor: pointer;
+}
+
+.mainNavBarButton{
+	margin-top: 15px;
+}
+
+.navBarExploreButton{
+	cursor: pointer;
+	text-align: left !Important;
+}
+
+.navBarSignUpButton{
+	text-align: right !Important;
+	padding-right: 10px;
+	border-right: 2px solid black;
+	cursor:pointer;
+}
+
+.navBarLogInButton{
+	text-align: left !Important; 
+	padding-left: 10px;
+	cursor:pointer;
+}

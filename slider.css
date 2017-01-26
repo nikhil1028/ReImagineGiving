@@ -1,0 +1,45 @@
+.sliderContent{
+	max-width:100%;
+	margin:auto;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	height: 39.5vw;
+}
+.sliderContent > div > img {
+	max-width: 100%;
+	width: auto\9;
+}
+.sliderNavBarCenterMiddle {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding-top: 16px;
+	padding-bottom: 16px;
+	background-color: transparent !important;
+}
+.sliderNavLeft, .sliderNavRight{
+	font-size: 25pt;
+	color: #00a8e3;
+	cursor:pointer;
+}
+.sliderNavLeft {
+    padding-left: 25px !important;
+	color: #00a8e3;
+	cursor:pointer;
+	background-color: transparent !important;
+}
+.sliderNavRight{
+    padding-right: 25px !important;
+	color: #69ceff;
+	cursor:pointer;
+	background-color: transparent !important;
+}
+.floatLeft {
+    float: left !important;
+}
+.floatRight {
+    float: right !important;
+}
+
