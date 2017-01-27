@@ -9,16 +9,18 @@
 	<link rel="stylesheet" type="text/css" href="slider.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="common.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="signUp.css" media="screen"/>
-	<link rel="stylesheet" type="text/css" href="signUp2.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="explore.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="slidingOverlay.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="footer.css" media="screen"/>
 	
-	<script src="SignUp.js"></script>
 	<script src="explore.js"></script>
+	<script src="SignUp.js"></script>
 	<script src="slider.js"></script>
 </head>
   
 <body>
 	<header>
+		
 		<div class="col-2 mainNavBarButton">
 			<div class="col-4">
 				<span onclick="openNav()"><img class="navBarLowerArrow" src="lowerArrow.png"></span>
@@ -27,10 +29,9 @@
 				<span onclick="openNav()"><h2 class="exploreButton">Explore</h2></span>
 			</div>
 		</div>
-		
 		<div id="myNav" class="explore">
-			<div id="exploreContent" class="exploreContent">
-				<div class="row"><a class="exploreCloseButton" onclick="closeNav()">&times;</a></div>
+			<div style="background-color:black;"class="translucentContainer"></div>
+			<div id="exploreContent" class="exploreContent">	
 				<form>
 					<div class="location">
 						<span  onclick="myfunction1()">
@@ -40,7 +41,7 @@
 							</div>
 						</span>
 						<div class="inputField" id="locationInput">
-							<input type="text" name="search" placeholder="Location..">
+							<input type="text" name="search">
 						</div>
 					</div>
 					
@@ -53,16 +54,16 @@
 						</span>
 						<div class="fundingLevels row" id="fundingInput">
 							<div class="row">
-								<div class="col-1 exploreRadioButton"><input type="radio" name="fundingLevels" value="almost" checked></div>
-								<div class="col-11"><p>Nearly Completed</p></div>
+								<div class="col-2 exploreRadioButton"><input type="radio" name="fundingLevels" value="almost" checked></div>
+								<div class="col-10"><p>Nearly Completed</p></div>
 							</div>
 							<div class="row">
-								<div class="col-1 exploreRadioButton"><input  type="radio" name="fundingLevels" value="new"></div>
-								<div class="col-11"><p>Just Started</p></div>
+								<div class="col-2 exploreRadioButton"><input  type="radio" name="fundingLevels" value="new"></div>
+								<div class="col-10"><p>Just Started</p></div>
 							</div>
 							<div class="row">
-								<div class="col-1 exploreRadioButton"><input type="radio" name="fundingLevels" value="ongoing"></div>
-								<div class="col-11"><p>Ongoing</p></div>
+								<div class="col-2 exploreRadioButton"><input type="radio" name="fundingLevels" value="ongoing"></div>
+								<div class="col-10"><p>Ongoing</p></div>
 							</div>
 						</div>
 					</div>
@@ -108,142 +109,61 @@
 			</div>
 		</div>
 		
+		
 		<div class="col-8 logo">
 			<a href="index.html">
 				<img src="logo/logo-final.png"></img>
 			</a>
 		</div>
+		
 		<div class="col-2 mainNavBarButton">
 			<div class="col-6 navBarSignUpButton">
 				<h2 id="registration"><span class="SignUpSpan" onclick="openSignUpOverlay()">Sign Up</span></h2>
 			</div>
 			<div id="SignUp" class="overlay">
-				<div class="transparentContainer">
-					<div class="translucentContainer"></div>
-						<!-- overlay content -->
-					<div class="overlayContent">
-						<div class="overlayContent1">
-							<div id="SignUpForms">
-								<div class="row registrationOptions">
-									<div class="col-3 optionDonorHeading"><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'Donor')">Donor</a></div>
-									<div class="col-2"><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'NGO')">NGO</a></div>
-									<div class="col-7"><a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a></div>
-								</div>
-								<form>
-									<div id="Donor" class="tabcontent">
-										<div class="inputFieldHeadings">
-											<h2>First Name</h2>
-											<div class="inputField">
-												<input type="text" name="search" placeholder="FirstName">
-											</div>
-										</div>
-										<div class="inputFieldHeadings">
-											<h2>Last Name</h2>
-											<div class="inputField">
-												<input type="text" name="search" placeholder="LastName">
-											</div>
-										</div>
-										<div class="inputFieldHeadings">
-											<h2>Email ID</h2>
-											<div class="inputField">
-												<input type="text" name="search" placeholder="xyz@mail.com">
-											</div>
-										</div>
-										<div class="inputFieldHeadings">
-											<h2>Mobile Number</h2>
-											<div class="inputField">
-												<input type="digits" name="search" placeholder="+91-9999999999">
-											</div>
-										</div>
-										<div class="inputFieldHeadings">
-											<h2>Password</h2>
-											<div class="inputField">
-												<input type="password" name="search" placeholder="********">
-											</div>
-										</div>
-										<div class="inputFieldHeadings row">
-											<span onclick="SignMeUp()"><h2 id="SignUpButton">Sign Up!</h2></span>
-										</div>
-									</div>
-								</form>
-								<form>
-									<div id="NGO" class="tabcontent">
-										<div class="inputFieldHeadings">
-											<h2>Oraganization Name</h2>
-											<div class="inputField">
-												<input type="text" name="search" placeholder="Oraganization Name">
-											</div>
-										</div>
-										<div class="inputFieldHeadings">
-											<h2>Contact Person</h2>
-											<div class="inputField">
-												<input type="text" name="search" placeholder="FirstName LastName">
-											</div>
-										</div>
-										<div class="inputFieldHeadings">
-											<h2>Email ID</h2>
-											<div class="inputField">
-												<input type="text" name="search" placeholder="xyz@mail.com">
-											</div>
-										</div>
-										<div class="inputFieldHeadings">
-											<h2>Mobile Number</h2>
-											<div class="inputField">
-												<input type="digits" name="search" placeholder="+91-9999999999">
-											</div>
-										</div>
-										<div class="inputFieldHeadings">
-											<h2>Password</h2>
-											<div class="inputField">
-												<input type="password" name="search" placeholder="********">
-											</div>
-										</div>
-										<div class="inputFieldHeadings row">
-											<span onclick="SignMeUp()"><h2 id="SignUpButton">Sign Up!</h2></span>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
+				<div class="translucentContainer"></div>
+					<!-- overlay content -->
+				<div id="overlayContent" class="overlayContent">
+					<div id="SignUpForms">
+						<h1 class="main-heading">Signup Now</h1>
+						<a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a>
+						<form class="signup-form" method="post" action="#" novalidate="novalidate">
+						  <label for="signup-name">Full Name</label>
+						  <input id="signup-name" type="text" name="name" autocomplete="off"/>
+						  <label for="signup-email">Email Address</label>
+						  <input id="signup-email" type="email" name="email" autocomplete="off"/>
+						  <label for="signup-pw">Password</label>
+						  <input id="signup-pw" type="password" name="pw" autocomplete="off"/>
+						  <label for="signup-cpw">Confirm Password</label>
+						  <input id="signup-cpw" type="password" name="cpw" autocomplete="off"/>
+						  <button class="btn btn-outline submit-btn"><span>signup</span></button>
+						</form>
 					</div>
 				</div>
+			
 			</div>
 			
 			<div class="col-6 navBarLogInButton">
 				<h2 id="registration"><span class="LogInSpan" onclick="openLogInOverlay()">Log In</span></h2>
 			</div>
 			<div id="LogIn" class="overlay">
-				<div class="transparentContainer">
-					<div class="translucentContainer"></div>
-						<!-- overlay content -->
-					<div class="overlayContent">
-						<div id="LogInOverlay">
-							<div class="registrationOptions row">
-								<div class="col-2 LoginOption"><h2>Log In</h2></div>
-								<div class="col-10"><a href="javascript:void(0)" class="Loginclosebtn tablinks" onclick="closeLogInOverlay()">&times;</a></div>
-							</div>
-							<form>
-								<div id="LogInDetails">
-									<div class="inputFieldHeadings">
-										<h2>Email ID</h2>
-										<div class="inputField">
-											<input type="text" name="search" placeholder="xyz@mail.com">
-										</div>
-									</div>
-									<div class="inputFieldHeadings">
-										<h2>Password</h2>
-										<div class="inputField">
-											<input type="password" name="search" placeholder="********">
-										</div>
-									</div>
-									<div class="inputFieldHeadings row">
-											<span onclick="SignMeUp()"><h2 id="SignUpButton" class="col-6">LogIn</h2></span>
-									</div>
-								</div>
-							</form>
-						</div>
+			
+				<div class="translucentContainer"></div>
+					<!-- overlay content -->
+				<div id="overlayContent" class="overlayContent">
+					<div id="LogInForms">
+						<h1 class="main-heading">LogIn</h1>
+						<a href="javascript:void(0)" class="closebtn tablinks" onclick="closeLogInOverlay()">&times;</a>
+						<form class="signup-form" method="post" action="#" novalidate="novalidate">
+						  <label for="signup-email">Email Address</label>
+						  <input id="signup-email" type="email" name="email" autocomplete="off"/>
+						  <label for="signup-pw">Password</label>
+						  <input id="signup-pw" type="password" name="pw" autocomplete="off"/>
+						  <button class="btn btn-outline submit-btn"><span>LogIn</span></button>
+						</form>
 					</div>
 				</div>
+			
 			</div>
 		</div>
 	</header>
@@ -466,6 +386,7 @@
 			<h2>See More</h2>
 		</div>
 	</div>
+	</div>
 	
 	<div class="row projects">
 		<div  class="recommendedProjectsHeading">
@@ -670,8 +591,44 @@
 	</div>
 	
 	<footer>
-		<div  class="Footer">
-			<h2>cc Reimagine Giving</h2>
+		<div class="row footerOptions">
+			<div class="col-2 footerAboutUs">
+				<h1>About Us<h1>
+				<h2>What is Reimagine?</h2>
+				<h2>Who are we</h2>
+			</div>
+			<div class="col-4 footerCauses" >
+				<div class="col-6 footerCauses1">
+					<h1>Causes<h1>
+					<h2>Education</h2>
+					<h2>Poverty</h2>
+					<h2>Sanitation</h2>
+					<h2>Child Welfare</h2>
+					<h2>Women and Girls</h2>
+					<h2>Disaster Recovery</h2>
+					<h2>LGBTQ</h2>
+				</div>
+				<div class="col-6 footerCauses2">
+					<h2>Technology</h2>
+					<h2>Arts and Culture</h2>
+					<h2>Enviorment</h2>
+				</div>
+			</div>
+			<div class="col-2 footerWorks">
+				<h1>How it Works<h1>
+				<h2>Stuff</h2>
+				<h2>Stuff Stuff</h2>
+				<h2>We really need to think</h2>
+				<h2>about this</h2>
+				<h2>well not anymore</h2>
+				<h2>VJ **</h2>
+			</div>
+		</div>
+		<div class="row footerBottom">
+			<a href="index.html">
+				<img src="logo/logo-final-web-white.png"></img>
+			</a>
+			<h2>cc 2017.</h2>
 		</div>
 	</footer>
 <body>

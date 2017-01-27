@@ -1,0 +1,38 @@
+
+.footerOptions{
+	background-color: #0d0d0d;
+	padding: 30px;
+	border-bottom: 1px solid #c2c2c2;
+}
+
+.footerAboutUs, .footerCauses, .footerWorks{
+	margin-left: 8.33%;
+	padding-top: 10px;
+}
+
+.footerCauses2{
+	margin-top: 28px;
+}
+
+.footerBottom{
+	background-color: #0a0a0a;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+footer h2{
+	font-size: 18px;
+	color: white;
+	font-family: Rajdhani-Regular;
+}
+
+footer h1{
+	font-size: 25px;
+	font-family: Rajdhani-Bold;
+	color: white;
+}
+
+footer img{
+	height: 40px;
+}

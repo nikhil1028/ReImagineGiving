@@ -1,24 +1,37 @@
 /* Position the content inside the explore */
 .explore {
     width: 0;
+	height: 100%;
     position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: transparent;
-    overflow-x: hidden;
-	margin-top: 3.5%;
-    transition: 0.6s;
-	text-align: left;
+    transition: 0.4s;
 }
 
 .exploreContent{
-	opacity: 0;
-	width:25%;
+	position: relative;
+    width: 0;
+    text-align: left;
+	 font-family: BebasNeue_Book;
+	transition: 0.4s;
 	background-color: white;
-	transition: 0.6s;
-    padding: 10px 10px 10px 10px;
-	z-index: 1;
+	overflow-x: hidden;
+}
+
+.exploreContent input{
+	transition: all 0.4s;
+	background-color: transparent;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 0 8px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.signup-form input:hover, .signup-form input:focus {
+  border-color: #38c0ff;
 }
 
 .exploreCloseButton{
@@ -27,7 +40,7 @@
 	text-align: right;
 }
 
-.exploreRadioButton{margin-top: 12px; padding-left: 8px;}
+.exploreRadioButton{margin-top: 13px; padding-left: 8px;}
 
 .exploreHeading{
 	margin-bottom: 3px;
@@ -35,38 +48,38 @@
 }
 
 /* The navigation links inside the explore */
-.explore a {
+.exploreContent a {
 	cursor: pointer;
     padding: 8px;
     text-decoration: none;
     font-size: 20px;
     color: black;
     display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    transition: 0.4s; /* Transition effects on hover (color) */
 	padding-left: 0;
 }
 
 /* When you mouse over the navigation links, change their color */
-.explore a:hover, .explore a:focus {
+.exploreContent a:hover, .exploreContent a:focus {
     color: #2871af;
 }
 
-.explore h2 {
+.exploreContent h2 {
     text-decoration: none;
     width: 100%;
     font-size: 16pt;
     color: white;
-    transition: 0.3s; /* Transition effects on hover (color) */
+    transition: 0.4s; /* Transition effects on hover (color) */
     padding-left: 0px;
     background-color: #69ceff;
 	padding-left: 5px;
     cursor: pointer;
 }
 
-.explore p{
+.exploreContent p{
     text-decoration: none;
     font-size: 20px;
-	padding: 8px;
+	padding: 7px;
     text-decoration: none;
     color: black;
     display: block;
@@ -77,19 +90,21 @@
 	margin-top: 5px;
 	margin-bottom: 8px;
 }
-.explore input[type=text]{
+.exploreContent input[type=text]{
     width: 100%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
+    height: 25px;
     padding: 12px 20px 12px 5px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
+}
+
+.exploreContent form{
+	padding: 20px;
 }
 
 .fundingLevels{
@@ -104,7 +119,7 @@
 }
 
 /* Position the close button (top right corner) */
-.explore .closebtn {
+.exploreContent .closebtn {
     position: absolute;
 	right: 30px;
     font-size: 40px;
@@ -120,8 +135,8 @@
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-    .explore a {font-size: 20px}
-    .explore .closebtn {
+    .exploreContent a {font-size: 20px}
+    .exploreContent .closebtn {
         font-size: 40px;
         right: 30px;
     }

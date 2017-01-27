@@ -8,14 +8,13 @@
     top: 0;
 	background: transparent;
     overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.2s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    transition: 0.4s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
     /*! align-content: center; */
 }
 
-.transparentContainer{
-	width: 100%;
-    height: 100%;
-	position: absolute;
+#LogInForms, #SignUpForms{
+	opacity: 0;
+	transition: 0.4s;
 }
 
 .translucentContainer{
@@ -23,7 +22,8 @@
     height: 100%;  
     width:100%;  
     background-color: white; 
-    opacity: 0.1;  
+    opacity: 0.5; 
+	transition: 0.4s;
 }
 
 /* Position the content inside the overlay */
@@ -32,10 +32,12 @@
     width: 33%; 
     text-align: left;
 	left: 50%;	
-	background-color: #69ceff ;
+	/*! background-color: #69ceff ; */
     top: 50%;
     transform: translate(-50%,-50%);
     font-family: BebasNeue_Book;
+	transition: 0.4s;
+	/*! opacity: 0; */
 }
 
 /* The navigation links inside the overlay */
@@ -51,7 +53,7 @@
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-    color: #2871af;
+    color: white;
 }
 
 .overlay h2 {
@@ -76,10 +78,12 @@
 
 .overlay .closebtn {
     position: absolute;
-	right: 16px;
-	top: 4px;
-    font-size: 32pt;
+	right: 8px;
+	top: -12px;
+    font-size: 42pt;
 	padding: 0 !Important;
+    color: black;
+    font-weight: bold;
 }
 
 .Loginclosebtn{
@@ -102,9 +106,6 @@
 #LogIn{
 	/*! cursor: pointer; */
 	font-weight: bold;
-}
-#LogInOverlay{
-	display:none;
 }
 .inputFieldHeadings h2{
 	float: left;
@@ -136,38 +137,11 @@
 .overlay input[type=text], input[type=digits], input[type=password]{
     width: 100%;
 	box-sizing: border-box;
-	border: 2px solid #ccc;
+	border: 1px solid black;
 	border-radius: 4px;
 	font-size: 14pt;
-	background-color: white;
-	background-image: url('searchicon.png');
-	background-position: 10px 10px;
-	background-repeat: no-repeat;
 	padding: 8px 20px 8px 5px;
 	-webkit-transition: width 0.4s ease-in-out;
 	transition: width 0.4s
 }
 
-#Donor{
-    padding: 0px 5px;	
-    border-top: none;
-    background-color: #42a2ba;
-}
-
-#NGO{
-	padding: 0px 5px;
-    border-top: none;
-	display: none;
-	background-color: #42a2ba;
-}
-
-#LogInDetails{
-    margin: 0px 10px 0px 10px;	
-    border-top: none;
-}
-
-.overlayContent1{
-	padding: 9px;
-	padding-bottom: 0 !important;
-	background-color: #3e95b3;
-}
