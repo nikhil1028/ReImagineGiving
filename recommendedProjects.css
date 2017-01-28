@@ -1,0 +1,189 @@
+.recommendedProjectsHeading{
+	padding-top: 4%;
+	padding-bottom: 3%;
+}
+
+.recommendedProjectsHeading h2{
+	font-size: 30px;
+	font-family: Rajdhani-Light;
+	margin-left: 12.5%;
+}
+
+.projectSection1, .projectSection2, .projectSection3{
+	display:inline-block;
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 22%;
+}
+
+.projectSection1{
+	margin-left: 12.5%;
+}
+
+.projectSection2, .projectSection3{
+	margin-left: 4.5%;
+}
+
+.projectContent{
+	height: 31.5vw;
+	position: relative;
+}
+
+.projectThumbnail{
+	height: 12.375vw;
+	position: relative;
+	content: " ";
+	overflow: hidden;
+}
+
+.projectThumbnail > img{
+	position: relative;
+	max-width: 100%;
+	margin: 0;
+}
+.locationCause{
+	position:absolute;
+	bottom:0;
+	margin-left: 4px;
+}
+.locationCause img{
+	height: 30px;
+	cursor:pointer;
+}
+.locationHeading, .causeHeading{
+	height: 30px;
+	width:0;
+	display:none;
+	transition: 0.4s;
+}
+.locationHeading h2{
+	background-color:#38c0ff;
+	margin-left: -2px;
+}
+.causeHeading h2{
+	background-color: #13aa21;
+	margin-left: 3px;
+}
+.locationHeading h2, .causeHeading h2{
+	font-size: 12px;
+	color: white;
+	margin-top: 5px;
+	padding: 3px;
+}
+.cause img{
+	margin-left: 5px;
+}
+.location:hover .locationHeading{
+	width: 16.66%;
+	display:block;
+}
+.cause:hover .causeHeading{
+	width: 31%;
+	display:block;
+}
+
+.projectDetails, .projectStats{
+	margin: 5px;
+}
+
+.projectBottom{
+	position: absolute;
+	bottom: 0;
+}
+
+.projectDetails H1, .projectStats H1 {
+	font-family: Rajdhani-SemiBold;
+	font-size: 15px;
+}
+
+.projectDetails H2, .projectStats H2{
+	font-size: 11px;
+	font-family: Roboto-Regular;
+}
+
+.projectStats{
+	padding-right: 10px;
+}
+
+.projectDetails p{
+	margin-top: 5px;
+	font-size: 12.5px;
+	font-family: Roboto-Light;
+	line-height: 115%;
+}
+
+.projectStats h2{
+	margin-top: 10px;
+	font-size: 13px;
+	font-family: MyriadPro-SemiBold;
+	line-height: 0%;
+}
+
+.progress {
+  border-radius: 6px;
+  margin-bottom: 11px;
+  background-color: #f1f1f5;
+}
+
+.progress-bar {
+	width: 50%;
+	background-color: #38c0ff;
+	height: 5px;
+	border-radius: 2px;
+	transition: 0.4s linear;
+	transition-property: width, background-color;
+}
+
+.statsNumber p{
+	font-size: 13px;
+}
+.statsText p{
+	font-size: 11px;
+	font-family: Roboto-Light;
+}
+
+.statsNumber p{
+	font-family: MyriadPro-SemiBold;
+}
+
+.projectSectionDonateButton{
+	background-color: #38c0ff;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+}
+
+.projectSectionDonateButton h2{
+	font-size: 14px;
+	padding: 7px;
+	padding-top: 6px;
+	margin-bottom: -2px;
+	font-family: BwModelica-Regular;
+}
+
+.projectSectionDonateButton h2:hover{
+	font-size: 15px;
+	padding: 6px;
+	font-weight: bold;
+}
+
+.recommendedProjectsFooter{
+	text-align: center;
+	padding-top: 3%;
+	padding-bottom: 2%;
+	border-bottom: 1px solid #dddddd;
+	cursor: pointer;
+}
+
+.recommendedProjectsFooter h2{
+	font-size: 28px;
+	font-family: Rajdhani-Light;
+}
+
+.recommendedProjectsFooter a:hover{
+	font-weight: Bold;
+	border: 1px solid #a2a2a2;
+	border-radius: 25px;
+	padding: 3px 15px 3px 15px;
+}

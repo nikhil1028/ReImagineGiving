@@ -217,11 +217,24 @@
 	text-align: center;
 	background-color: #82dafe;
 	border: 1px solid #ccfoff;
-	/*! padding-top: 0px; */
-	/*! padding-top: 16px; */
 }
 .projectPageDonationReason{
 	background-color: #ccf0ff;
 	padding-left: 10px;
 	border: 1px solid #ccfoff;
+}
+
+.projects{
+	background-color: #f1f4fb;
+}
+.projectContent{
+	background-color: white;
+	border: 0.1px solid #dedede;
+}
+.projectPageRecommendedProjectsHeading{
+	padding-top: 2% !Important;
+	padding-bottom: 2% !important;
+}
+.projectPageRecommendedProjectContent{
+	padding-bottom: 2%;
 }
