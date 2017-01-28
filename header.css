@@ -8,13 +8,19 @@ header{
 }
 
 header h2{
-	font-size: 10pt;
+	font-size: 14px;
 	font-family: BwModelica-Regular;
+	margin-top: 2px;
+	transition: 0.1s;
 }
 
 .mainNavBarButton h2:hover{
-	font-size: 10.5pt;
-	font-weight: bold;
+	font-size: 15px;
+	color: 	#38c0ff;
+	margin-top: 1px;
+}
+.mainNavBarButton h2:hover navBarLowerArrow{
+	height: 12px;
 	color: 	#38c0ff;
 }
 
@@ -25,7 +31,7 @@ header h2{
 }
 
 .navBarLowerArrow{
-	height: 11px;
+	height: 10px;
 	float: right;
 	margin-top: 4px;
 	margin-right: 3px;

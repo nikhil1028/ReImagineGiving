@@ -195,6 +195,9 @@ header, body{
 	font-family: MyriadPro-Regular;
 	background-color: white;
 }
+h, h2, h3, h4, p{
+	line-height: 100%;
+}
 
 .Footer h2{
 	font-size: 20pt;

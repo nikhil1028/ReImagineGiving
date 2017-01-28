@@ -64,6 +64,15 @@
 	padding: 10px;
 }
 
+.projectStory p {
+    line-height: 114%;
+    font-size: 16px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 0.5px;
+}
+
 .projectPageProjectMainImage img{
 	position: relative;
 	max-width: 100%;
@@ -192,22 +201,24 @@
 }
 .projectPageDonationAmount, .projectPageDonationReason{
 	font-size: 10px;
-	/*! padding: 10px; */
 	font-family: MyriadPro-Regular;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 	cursor:  pointer;
 }
 .projectPageDonationReason:hover{
 	background-color: white;
 	border: 1px solid #cbefff;
-	padding-bottom: 11px;
-	padding-top: 11px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-left:9px;
 }
 .projectPageDonationAmount{
 	text-align: center;
 	background-color: #82dafe;
 	border: 1px solid #ccfoff;
+	/*! padding-top: 0px; */
+	/*! padding-top: 16px; */
 }
 .projectPageDonationReason{
 	background-color: #ccf0ff;

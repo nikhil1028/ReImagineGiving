@@ -135,6 +135,7 @@
 	margin-top: 5px;
 	font-size: 12.5px;
 	font-family: Roboto-Light;
+	line-height: 115%;
 }
 
 .projectStats h2{
@@ -241,6 +242,12 @@
 	left: 70%;
 }
 .connectWithFacebookImage img {
-    height: 50px;
+    height: 53px;
     position: absolute;
+    cursor: pointer;
+}
+.connectWithFacebookImage img:hover {
+    height: 55px;
+    margin-top: -2px;
+    margin-left: -2px;
 }

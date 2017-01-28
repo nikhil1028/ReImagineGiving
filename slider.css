@@ -20,13 +20,13 @@
 	background-color: transparent !important;
 }
 .sliderNavLeft, .sliderNavRight{
-	font-size: 25pt;
+	font-size: 40px;
 	color: #00a8e3;
 	cursor:pointer;
 }
 .sliderNavLeft {
     padding-left: 25px !important;
-	color: #00a8e3;
+	color: #38c0ff;
 	cursor:pointer;
 	background-color: transparent !important;
 }
