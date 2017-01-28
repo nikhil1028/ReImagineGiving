@@ -12,7 +12,8 @@
 
 .exploreContent{
 	position: relative;
-    width: 0;
+    width: 25%;
+	height: 0;
     text-align: left;
 	 font-family: BebasNeue_Book;
 	transition: 0.4s;
@@ -30,7 +31,7 @@
 	border-radius: 5px;
 }
 
-.signup-form input:hover, .signup-form input:focus {
+.exploreContent input:hover, .exploreContent input:focus {
   border-color: #38c0ff;
 }
 
@@ -93,12 +94,10 @@
 .exploreContent input[type=text]{
     width: 100%;
     box-sizing: border-box;
-    border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
     height: 25px;
-    padding: 12px 20px 12px 5px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }

@@ -7,12 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="projectPage.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="header.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="common.css" media="screen"/>
-	<link rel="stylesheet" type="text/css" href="signUp1.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="signUp.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="explore.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="slidingOverlay.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="footer.css" media="screen"/>
 	
-	<script src="SignUp1.js"></script>
 	<script src="explore.js"></script>
-	<script src="slider.js"></script>
+	<script src="SignUp.js"></script>
 </head>
 
 <body>
@@ -20,12 +21,15 @@
 		<div class="row header">
 			<div class="col-2 mainNavBarButton">
 				<div class="col-4">
-					<span onclick="openNav()"><img class="navBarLowerArrow" src="lowerArrow.png"></span>
+					<span onclick="openNav()"><img class="navBarLowerArrow" src="images/lowerArrow.png"></span>
 				</div>
 				<div class="col-8 navBarExploreButton">
 					<span onclick="openNav()"><h2 class="exploreButton">Explore</h2></span>
 				</div>
-				<div id="myNav" class="explore">
+			</div>
+			<div id="myNav" class="explore">
+				<div style="background-color:black;"class="translucentContainer"></div>
+				<div id="exploreContent" class="exploreContent">	
 					<form>
 						<div class="location">
 							<span  onclick="myfunction1()">
@@ -35,7 +39,7 @@
 								</div>
 							</span>
 							<div class="inputField" id="locationInput">
-								<input type="text" name="search" placeholder="Location..">
+								<input type="text" name="location" autocomplete="off"/>
 							</div>
 						</div>
 						
@@ -47,9 +51,18 @@
 								</div>
 							</span>
 							<div class="fundingLevels row" id="fundingInput">
-								<div class="row"><input type="radio" name="fundingLevels" value="almost" checked><p>Nearly Completed</p></div>
-								<div class="row"><input type="radio" name="fundingLevels" value="new"><p>Just Started</p></div>
-								<div class="row"><input type="radio" name="fundingLevels" value="ongoing"><p>Ongoing</p></div>
+								<div class="row">
+									<div class="col-2 exploreRadioButton"><input type="radio" name="fundingLevels" value="almost" checked/></div>
+									<div class="col-10"><p>Nearly Completed</p></div>
+								</div>
+								<div class="row">
+									<div class="col-2 exploreRadioButton"><input  type="radio" name="fundingLevels" value="new"/></div>
+									<div class="col-10"><p>Just Started</p></div>
+								</div>
+								<div class="row">
+									<div class="col-2 exploreRadioButton"><input type="radio" name="fundingLevels" value="ongoing"/></div>
+									<div class="col-10"><p>Ongoing</p></div>
+								</div>
 							</div>
 						</div>
 						
@@ -93,109 +106,258 @@
 					</form>
 				</div>
 			</div>
+			
+			
 			<div class="col-8 logo">
 				<a href="index.html">
 					<img src="logo/logo-final.png"></img>
 				</a>
 			</div>
+			
 			<div class="col-2 mainNavBarButton">
 				<div class="col-6 navBarSignUpButton">
-					<main role="main">
-						<button class="popup-trigger btn" id="popup-trigger"><span>Signup Now<i class="fa fa-plus-square-o"></i></span></button>
-					</main>
-				</div>	
-				<div class="overlay" id="overlay">
-					<div class="overlay-background" id="overlay-background"></div>
-					<div class="overlay-content" id="overlay-content">
-						<div class="fa fa-times fa-lg overlay-close" id="overlay-close"></div>
-						<h1 class="main-heading">Signup Now</h1>
-						<h3 class="blurb">Creating an account is free &mdash;</h3><span class="blurb-tagline">and won't take longer than a couple of seconds.</span>
-						<form class="signup-form" method="post" action="#" novalidate="novalidate">
-							<label for="signup-name">Full Name</label>
-							<input id="signup-name" type="text" name="name" autocomplete="off"/>
-							<label for="signup-email">Email Address</label>
-							<input id="signup-email" type="email" name="email" autocomplete="off"/>
-							<label for="signup-pw">Password</label>
-							<input id="signup-pw" type="password" name="pw" autocomplete="off"/>
-							<label for="signup-cpw">Confirm Password</label>
-							<input id="signup-cpw" type="password" name="cpw" autocomplete="off"/>
-							<button class="btn btn-outline submit-btn"><span>signup</span></button>
-						</form>
+					<h2 id="registration"><span class="SignUpSpan" onclick="openSignUpOverlay()">Sign Up</span></h2>
+				</div>
+				<div id="SignUp" class="overlay">
+					<div class="translucentContainer"></div>
+						<!-- overlay content -->
+					<div id="overlayContent" class="overlayContent">
+						<div id="SignUpForms">
+							<h1 class="main-heading">Signup Now</h1>
+							<a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a>
+							<form class="signup-form" method="post" action="#" novalidate="novalidate">
+							  <label for="signup-name">Full Name</label>
+							  <input id="signup-name" type="text" name="name" autocomplete="off"/>
+							  <label for="signup-email">Email Address</label>
+							  <input id="signup-email" type="email" name="email" autocomplete="off"/>
+							  <label for="signup-pw">Password</label>
+							  <input id="signup-pw" type="password" name="pw" autocomplete="off"/>
+							  <label for="signup-cpw">Confirm Password</label>
+							  <input id="signup-cpw" type="password" name="cpw" autocomplete="off"/>
+							  <button class="btn btn-outline submit-btn"><span>signup</span></button>
+							</form>
+						</div>
 					</div>
+				
 				</div>
 				
 				<div class="col-6 navBarLogInButton">
 					<h2 id="registration"><span class="LogInSpan" onclick="openLogInOverlay()">Log In</span></h2>
 				</div>
 				<div id="LogIn" class="overlay">
-					<div class="transparentContainer">
-						<div class="translucentContainer"></div>
-							<!-- overlay content -->
-						<div class="overlayContent">
-							<div id="LogInOverlay">
-								<div class="registrationOptions row">
-									<div class="col-2 LoginOption"><h2>Log In</h2></div>
-									<div class="col-10"><a href="javascript:void(0)" class="Loginclosebtn tablinks" onclick="closeLogInOverlay()">&times;</a></div>
-								</div>
-								<form>
-									<div id="LogInDetails">
-										<div class="inputFieldHeadings">
-											<h2>Email ID</h2>
-											<div class="inputField">
-												<input type="text" name="search" placeholder="xyz@mail.com">
-											</div>
-										</div>
-										<div class="inputFieldHeadings">
-											<h2>Password</h2>
-											<div class="inputField">
-												<input type="password" name="search" placeholder="********">
-											</div>
-										</div>
-										<div class="inputFieldHeadings row">
-												<span onclick="SignMeUp()"><h2 id="SignUpButton" class="col-6">LogIn</h2></span>
-										</div>
-									</div>
-								</form>
-							</div>
+				
+					<div class="translucentContainer"></div>
+						<!-- overlay content -->
+					<div id="overlayContent" class="overlayContent">
+						<div id="LogInForms">
+							<h1 class="main-heading">LogIn</h1>
+							<a href="javascript:void(0)" class="closebtn tablinks" onclick="closeLogInOverlay()">&times;</a>
+							<form class="signup-form" method="post" action="#" novalidate="novalidate">
+							  <label for="signup-email">Email Address</label>
+							  <input id="signup-email" type="email" name="email" autocomplete="off"/>
+							  <label for="signup-pw">Password</label>
+							  <input id="signup-pw" type="password" name="pw" autocomplete="off"/>
+							  <button class="btn btn-outline submit-btn"><span>LogIn</span></button>
+							</form>
 						</div>
 					</div>
+				
 				</div>
 			</div>
 		</div>
 	</header>
-	
+
 	<div class="row">
 		<div class="col-7 projectPageLeft">
 			<div class="projectPageProjectMainImage">
-				<img src="images/16_9_4.jpg">
+				<img src="images/web3.jpg">
 			</div>
-			<div class="row" style="text-align:center; padding: 10px; border-bottom:2px solid #373737">
+			<div class="row projectPageMainTabs">
 				<div class="col-3">
-					<h2>Story</h2>
+					<h2><a>Story</a></h2>
 				</div>
 				<div class="col-3">
-					<h2>Timeline</h2>
+					<h2><a>Timeline</a></h2>
 				</div>
 				<div class="col-3">
-					<h2>Supporters</h2>
+					<h2><a>Supporters</a></h2>
 				</div>
 				<div class="col-3">
-					<h2>Report</h2>
+					<h2><a>Report</a></h2>
 				</div>
 			</div>
-			<div class="row" style="padding:10px;">
+			<div class="row projectStory">
 				<p><br>It was the 1990s, and like so many other neonatologists in the country, Dr. Armida Fernandez and her team were spending countless hours in the NICU saving lives of underweight and premature infants born to mothers from the urban slums. These mothers were typically unhealthy themselves and had no knowledge on how to be healthy, manage healthy pregnancies or to keep their children healthy. After all the efforts that went into saving these infant's lives, releasing them into these uninformed and impoverished environments was a big concern.
 					<br><br>Dr. Fernandez recognized that the only solution to breaking this vicious cycle was to empower these women with the information and tools they needed to build healthier families. With that objective in mind, a small team of neonatologists started going out into the slums of Dharavi to educate women on subjects like nutrition, ante natal care, the importance of delivering babies in hospitals, breast feeding and immunizations. The team realized that the women were starved for information; they just had no access to it in the past. They not only soaked in all the information they were given but also lost no time in putting that knowledge to practical use. And SNEHA was born.
 					<br><br>Today, SNEHA is a 350+ person strong and progressive organization that works closely with the Municipal Corporation of Greater Mumbai. We do innovative work in the urban slums to reduce maternal mortality, newborn mortality, malnutrition and domestic violence. And at our core remains the belief that the cycle of ill health can and must be broken by creating an urban society whose foundation is built on a healthy and empowered populace.
-					</p>
+				</p>
 			</div>
 			
 		</div>
 		
 		<div class="col-3 projectPageRight">
-			<h2>Digital Literacy In</h2>
-			<h2>Chamladevi Intercollege</h2>
-			<p>Education Varanasi *</p>
+			<div class="row projectPageProjectBasicInfo">
+				<div class="row projectPageTitle">
+					<h2>Digital Literacy In</h2>
+					<h2>Chamladevi Intercollege</h2>
+				</div>
+				<div class="row projectPageProjectInfo">
+					<div class="col-3"><p>Education</p></div>
+					<div class="col-3 projectPageProjectLocation"><p>Varanasi</p></div>
+					<div class="col-6"><p>*</p></div>
+				</div>
+				<div class="row projectPageProjectTagLine">
+					<p>A digital literacy project being undertaken by the students of IIT(BHU) Varanasi in Jayapur village.</p>
+				</div>
+				<div class="row projectPageProjectInfoBottom">
+					<div class="row projectPageProjectFullStats">
+						<div class="row projectPageProjectFundRequired">
+							<h2 class="floatRight">Rs 20,000 Needed</h2>
+						</div>
+						
+						<div class="row projectPageProjectProgress">
+							<div class="progress-bar"></div>
+						</div>
+						
+						<div class="row projectPageProjectStats">
+							<div class="stats1 col-5">
+								<div class="statsNumber">
+									<p>Rs 75,000</p>
+								</div>
+								<div class="statsText">
+									<p>Raised</p>
+								</div>
+							</div>
+							<div class="stats2 col-4">
+								<div class="statsNumber">
+									<p>105</p>
+								</div>
+								<div class="statsText">
+									<p>Donors</p>
+								</div>
+							</div>
+							<div class="stats3 col-3">
+								<div class="statsNumber">
+									<p>14</p>
+								</div>
+								<div class="statsText">
+									<p>Days left</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row projectPageDonateShare">
+						<div class="col-6 projectPageDonate"><h2>Donate</h2></div>
+						<div class="col-6 projectPageShare"><h2>Share</h2></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row projectPageDonation">
+				<div class="row projectPageDonationOptions">
+					<div class="col-6 projectPageDonationOptionsOnce"><p>Give Once</p></div>
+					<div class="col-6 projectPageDonationOptionsMonthly"><p>Give Monthly</p></div>
+				</div>
+				<div class="row projectPageDonationOptionsOnceOptions">
+					<div class="row projectPageDonationOption">
+						<div class="col-3 projectPageDonationAmount">
+							<h2>Rs 5,000</h2>
+							<h2>(INR)</h2>
+						</div>
+						<div class="col-9 projectPageDonationReason">
+							<h2>Buy Stuff and give Stuff places. Thank you note.</h2>
+						</div>
+					</div>
+					<div class="row projectPageDonationOption">
+						<div class="col-3 projectPageDonationAmount">
+							<h2>Rs 10,000</h2>
+							<h2>(INR)</h2>
+						</div>
+						<div class="col-9 projectPageDonationReason">
+							<h2>Buy Stuff and give Stuff places. Thank you note.</h2>
+						</div>
+					</div>
+					<div class="row projectPageDonationOption">
+						<div class="col-3 projectPageDonationAmount">
+							<h2>Rs 25,000</h2>
+							<h2>(INR)</h2>
+						</div>
+						<div class="col-9 projectPageDonationReason">
+							<h2>Buy Stuff and give Stuff places. Thank you note.</h2>
+						</div>
+					</div>
+					<div class="row projectPageDonationOption">
+						<div class="col-3 projectPageDonationAmount">
+							<h2>Rs 50,000</h2>
+							<h2>(INR)</h2>
+						</div>
+						<div class="col-9 projectPageDonationReason">
+							<h2>Buy Stuff and give Stuff places. Thank you note.</h2>
+						</div>
+					</div>
+					<div class="row projectPageDonationOption">
+						<div class="col-3 projectPageDonationAmount">
+							<h2>Rs 75,000</h2>
+							<h2>(INR)</h2>
+						</div>
+						<div class="col-9 projectPageDonationReason">
+							<h2>Buy Stuff and give Stuff places. Thank you note.</h2>
+						</div>
+					</div>
+					<div class="row projectPageDonationOption">
+						<div class="col-3 projectPageDonationAmount">
+							<h2>Rs 127,000</h2>
+							<h2>(INR)</h2>
+						</div>
+						<div class="col-9 projectPageDonationReason">
+							<h2>Buy Stuff and give Stuff places. Thank you note.</h2>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+	
+	<footer>
+		<div class="row footerOptions">
+			<div class="col-2 footerAboutUs">
+				<h1 class="footerH1"><a>About Us</a></h1>
+				<h2><a>What is Reimagine?</a></h2>
+				<h2><a>Who are we</a></h2>
+			</div>
+			<div class="col-4 footerCauses" >
+				<div class="col-6 footerCauses1">
+					<h1 class="footerH1"><a>Causes</a></a></h1>
+					<h2><a>Education</a></h2>
+					<h2><a>Poverty</a></h2>
+					<h2><a>Sanitation</a></h2>
+					<h2><a>Child Welfare</a></h2>
+					<h2><a>Women and Girls</a></h2>
+					<h2><a>Disaster Recovery</a></h2>
+					<h2><a>LGBTQ</h2>
+				</div>
+				<div class="col-6 footerCauses2">
+					<h2><a>Technology</a></h2>
+					<h2><a>Arts and Culture</a></h2>
+					<h2><a>Enviorment</a></h2>
+				</div>
+			</div>
+			<div class="col-2 footerWorks">
+				<h1 class="footerH1"><a>How it Works</a></h1>
+				<h2><a>Stuff</a></h2>
+				<h2><a>Stuff Stuff</a></h2>
+				<h2><a>We really need to think</a></h2>
+				<h2><a>about this</a></h2>
+				<h2><a>well not anymore</a></h2>
+				<h2><a>VJ **</a></h2>
+			</div>
+		</div>
+		<div class="row footerBottom">
+			<a href="index.html">
+				<img src="logo/logo-final-web-white.png"></img>
+			</a>
+			<h2>cc 2017.</h2>
+		</div>
+	</footer>
 </body>

@@ -1,14 +1,14 @@
 
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
-	document.getElementById("exploreContent").style.width = "25%";
+	document.getElementById("exploreContent").style.height = "100%";
 	document.getElementById("exploreContent").style.opacity = "1";
 	document.getElementsByTagName("body")[0].style.overflowY = "hidden";
 }
 
 function closeNav() {
     document.getElementById("myNav").style.width = "0";
-	document.getElementById("exploreContent").style.width = "0";
+	document.getElementById("exploreContent").style.height = "0";
 	document.getElementById("exploreContent").style.opacity = "0";
 	document.getElementsByTagName("body")[0].style.overflowY = "scroll";
 }

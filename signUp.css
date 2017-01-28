@@ -1,7 +1,7 @@
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */    
-    width: 0;
-	height: 100%;
+    width: 100%;
+	height: 0;
     position: fixed; 
     z-index: 1; /* Sit on top */
     left: 0;
@@ -78,8 +78,8 @@
 
 .overlay .closebtn {
     position: absolute;
-	right: 8px;
-	top: -12px;
+	right: 5px;
+	top: -21px;
     font-size: 42pt;
 	padding: 0 !Important;
     color: black;

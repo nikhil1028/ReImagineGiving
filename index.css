@@ -2,17 +2,25 @@
 	text-align: center;
 	background-color: #38c0ff!Important;
 	color: white;
+	padding-top: 10px;
+	line-height: 100%;
+	/*! padding: 10px; */
+}
+
+.statsBar p{
+	padding: 8px !important;
+	font-family: BwModelica-Regular;
 }
 
 .statsBarNumber{
 	font-size: 25pt;
-	font-family: BebasNeue_Bold;
+	/*! font-family: BwModelica; */
 	margin-right: 5px;
 }
 
 .statsBarText{
 	font-size: 15pt;
-	font-family: BebasNeue_Book;
+	/*! font-family: BebasNeue_Book; */
 	letter-spacing: 1px;
 }
 
@@ -60,6 +68,46 @@
 	max-width: 100%;
 	margin: 0;
 }
+.locationCause{
+	position:absolute;
+	bottom:0;
+	margin-left: 4px;
+}
+.locationCause img{
+	height: 30px;
+	cursor:pointer;
+}
+.locationHeading, .causeHeading{
+	height: 30px;
+	width:0;
+	display:none;
+	transition: 0.4s;
+}
+.locationHeading h2{
+	background-color:#38c0ff;
+	margin-left: -2px;
+}
+.causeHeading h2{
+	background-color: #13aa21;
+	margin-left: 3px;
+}
+.locationHeading h2, .causeHeading h2{
+	font-size: 12px;
+	color: white;
+	margin-top: 5px;
+	padding: 3px;
+}
+.cause img{
+	margin-left: 5px;
+}
+.location:hover .locationHeading{
+	width: 16.66%;
+	display:block;
+}
+.cause:hover .causeHeading{
+	width: 31%;
+	display:block;
+}
 
 .projectDetails, .projectStats{
 	margin: 5px;
@@ -71,12 +119,14 @@
 }
 
 .projectDetails H1, .projectStats H1 {
-	font-family: MyriadPro-SemiBold;
+	font-family: Rajdhani-SemiBold;
 	font-size: 11pt;
+	/*! font-weight: bold; */
 }
 
 .projectDetails H2, .projectStats H2{
 	font-size: 9pt;
+	font-family: Roboto-Regular;
 }
 
 .projectStats{
@@ -85,7 +135,8 @@
 
 .projectDetails p{
 	margin-top: 5px;
-	font-size: 10pt;
+	font-size: 9.5pt;
+	font-family: Roboto-Light;
 }
 
 .projectStats h2{
@@ -110,15 +161,12 @@
 	transition-property: width, background-color;
 }
 
-.stats2{
-	text-align: center;
-}
-
 .statsNumber p{
 	font-size: 10pt;
 }
 .statsText p{
 	font-size: 9pt;
+	font-family: Roboto-Light;
 }
 
 .statsNumber p{
@@ -129,13 +177,22 @@
 	background-color: #38c0ff;
 	color: white;
 	text-align: center;
-	padding: 1px;
 	cursor: pointer;
 }
 
 .projectSectionDonateButton h2{
 	font-size: 13pt;
-	padding: 4px;
+	padding: 6px;
+	padding-top: 5px;
+	margin-bottom: -1px;
+	font-family: BwModelica-Regular;
+}
+
+.projectSectionDonateButton h2:hover{
+	font-size: 16pt;
+	padding: 5px;
+	font-weight: bold;
+	/*! color: #0a0a0a; */
 }
 
 .recommendedProjectsFooter{
@@ -149,4 +206,11 @@
 .recommendedProjectsFooter h2{
 	font-size: 20pt;
 	font-family: Rajdhani-Light;
+}
+
+.recommendedProjectsFooter a:hover{
+	font-weight: Bold;
+	border: 1px solid #a2a2a2;
+	border-radius: 25px;
+	padding: 3px 15px 3px 15px;
 }
