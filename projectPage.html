@@ -10,11 +10,13 @@
 	<link rel="stylesheet" type="text/css" href="signUp.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="slidingOverlay.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="projectPage.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="timeline.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="recommendedProjects.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="footer.css" media="screen"/>
 	
 	<script src="explore.js"></script>
 	<script src="SignUp.js"></script>
+	<script src="projectPageMainTabs.js"></script>
 </head>
 
 <body>
@@ -174,24 +176,70 @@
 				<img src="images/web3.jpg">
 			</div>
 			<div class="row projectPageMainTabs">
-				<div class="col-3">
-					<h2><a>Story</a></h2>
-				</div>
-				<div class="col-3">
-					<h2><a>Timeline</a></h2>
-				</div>
-				<div class="col-3">
-					<h2><a>Supporters</a></h2>
-				</div>
-				<div class="col-3">
-					<h2><a>Report</a></h2>
-				</div>
+				<ul class="row projectPageMainTabsList">
+					<li class="col-3">
+						<a href="javascript:void(0)" class="mainTabLinks active" onclick="openProjectMainTabs(event,'projectStory')">Story</a>
+					</li>
+					<li class="col-3">
+						<a href="javascript:void(0)" class="mainTabLinks" onclick="openProjectMainTabs(event,'projectTimeline')">Timeline</a>
+					</li>
+					<li class="col-3">
+						<a href="javascript:void(0)" class="mainTabLinks" onclick="openProjectMainTabs(event,'projectSupporters')">Supporters</a>
+					</li>
+					<li class="col-3">
+						<a href="javascript:void(0)" class="mainTabLinks" onclick="openProjectMainTabs(event,'projectReports')">Report</a>
+					</li>
+				</ul>
 			</div>
-			<div class="row projectStory">
+			<div id="projectStory" class="row projectStory mainTabContent">
 				<p><br>It was the 1990s, and like so many other neonatologists in the country, Dr. Armida Fernandez and her team were spending countless hours in the NICU saving lives of underweight and premature infants born to mothers from the urban slums. These mothers were typically unhealthy themselves and had no knowledge on how to be healthy, manage healthy pregnancies or to keep their children healthy. After all the efforts that went into saving these infant's lives, releasing them into these uninformed and impoverished environments was a big concern.
 					<br><br>Dr. Fernandez recognized that the only solution to breaking this vicious cycle was to empower these women with the information and tools they needed to build healthier families. With that objective in mind, a small team of neonatologists started going out into the slums of Dharavi to educate women on subjects like nutrition, ante natal care, the importance of delivering babies in hospitals, breast feeding and immunizations. The team realized that the women were starved for information; they just had no access to it in the past. They not only soaked in all the information they were given but also lost no time in putting that knowledge to practical use. And SNEHA was born.
 					<br><br>Today, SNEHA is a 350+ person strong and progressive organization that works closely with the Municipal Corporation of Greater Mumbai. We do innovative work in the urban slums to reduce maternal mortality, newborn mortality, malnutrition and domestic violence. And at our core remains the belief that the cycle of ill health can and must be broken by creating an urban society whose foundation is built on a healthy and empowered populace.
 				</p>
+			</div>
+			<div id="projectTimeline" class="row projectTimeline mainTabContent">
+				<ul class="timeline">
+
+					<!-- Item 1 -->
+					<li>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="flag">Freelancer</span>
+								<span class="time-wrapper"><span class="time">2013 - present</span></span>
+							</div>
+							<div class="desc">My current employment. Way better than the position before!</div>
+						</div>
+					</li>
+				  
+					<!-- Item 2 -->
+					<li>
+						<div class="direction-l">
+							<div class="flag-wrapper">
+								<span class="flag">Apple Inc.</span>
+								<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+							</div>
+							<div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+						</div>
+					</li>
+
+					<!-- Item 3 -->
+					<li>
+						<div class="direction-r">
+							<div class="flag-wrapper">
+								<span class="flag">Harvard University</span>
+								<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+							</div>
+							<div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+						</div>
+					</li>
+				  
+				</ul>
+			</div>
+			<div id="projectSupporters" class="row projectSupporters mainTabContent">
+				<p><br>This is Supporters div</p>
+			</div>
+			<div id="projectReports" class="row projectReports mainTabContent">
+				<p><br>This is Reports div</p>
 			</div>
 			
 		</div>
@@ -256,11 +304,15 @@
 			</div>
 			
 			<div class="row projectPageDonation">
-				<div class="row projectPageDonationOptions">
-					<div class="col-6 projectPageDonationOptionsOnce"><p>Give Once</p></div>
-					<div class="col-6 projectPageDonationOptionsMonthly"><p>Give Monthly</p></div>
-				</div>
-				<div class="row projectPageDonationOptionsOnceOptions">
+				<ul class="row projectPageDonationOptions">
+					<li class="col-6 projectPageDonationOptionsOnce">
+						<a href="javascript:void(0)" class="donationOptionsTabLinks donationOptionActive" onclick="openProjectDonationOptionsTabs(event,'projectPageDonationOptionsOnceOptions')"><h3>Give Once</h3></a>
+					</li>
+					<li class="col-6 projectPageDonationOptionsMonthly">
+						<a href="javascript:void(0)" class="donationOptionsTabLinks" onclick="openProjectDonationOptionsTabs(event,'projectPageDonationOptionsMonthlyOptions')"><h3>Give Monthly</h3></a>
+					</li>
+				</ul>
+				<div id="projectPageDonationOptionsOnceOptions" class="row projectPageDonationOptionsOnceOptions donationOptionsTabContent">
 					<div class="row projectPageDonationOption">
 						<div class="col-3 projectPageDonationAmount">
 							<h2>Rs 5,000</h2>
@@ -316,6 +368,55 @@
 						</div>
 					</div>
 				</div>
+				
+				<div id="projectPageDonationOptionsMonthlyOptions" class="row projectPageDonationOptionsMonthlyOptions donationOptionsTabContent">
+					<div class="row projectPageDonationOption">
+						<div class="col-3 projectPageDonationAmount">
+							<h2>Rs 5,000</h2>
+							<h2>(INR)</h2>
+						</div>
+						<div class="col-9 projectPageDonationReason">
+							<h2>Buy Stuff and give Stuff places. Thank you note.</h2>
+						</div>
+					</div>
+					<div class="row projectPageDonationOption">
+						<div class="col-3 projectPageDonationAmount">
+							<h2>Rs 10,000</h2>
+							<h2>(INR)</h2>
+						</div>
+						<div class="col-9 projectPageDonationReason">
+							<h2>Buy Stuff and give Stuff places. Thank you note.</h2>
+						</div>
+					</div>
+					<div class="row projectPageDonationOption">
+						<div class="col-3 projectPageDonationAmount">
+							<h2>Rs 25,000</h2>
+							<h2>(INR)</h2>
+						</div>
+						<div class="col-9 projectPageDonationReason">
+							<h2>Buy Stuff and give Stuff places. Thank you note.</h2>
+						</div>
+					</div>
+					<div class="row projectPageDonationOption">
+						<div class="col-3 projectPageDonationAmount">
+							<h2>Rs 50,000</h2>
+							<h2>(INR)</h2>
+						</div>
+						<div class="col-9 projectPageDonationReason">
+							<h2>Buy Stuff and give Stuff places. Thank you note.</h2>
+						</div>
+					</div>
+					<div class="row projectPageDonationOption">
+						<div class="col-3 projectPageDonationAmount">
+							<h2>Rs 75,000</h2>
+							<h2>(INR)</h2>
+						</div>
+						<div class="col-9 projectPageDonationReason">
+							<h2>Buy Stuff and give Stuff places. Thank you note.</h2>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 	</div>

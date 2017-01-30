@@ -9,18 +9,12 @@ header{
 
 header h2{
 	font-size: 14px;
-	font-family: BwModelica-Regular;
-	margin-top: 2px;
+	font-family: Nunito-Regular;
+	margin-top: -4px;
 	transition: 0.1s;
 }
 
 .mainNavBarButton h2:hover{
-	font-size: 15px;
-	color: 	#38c0ff;
-	margin-top: 1px;
-}
-.mainNavBarButton h2:hover navBarLowerArrow{
-	height: 12px;
 	color: 	#38c0ff;
 }
 
@@ -33,13 +27,13 @@ header h2{
 .navBarLowerArrow{
 	height: 10px;
 	float: right;
-	margin-top: 4px;
 	margin-right: 3px;
 	cursor: pointer;
 }
 
 .mainNavBarButton{
 	margin-top: 15px;
+	padding-bottom: 5px;
 }
 
 .navBarExploreButton{
@@ -51,6 +45,8 @@ header h2{
 	text-align: right !Important;
 	padding-right: 10px;
 	border-right: 2px solid black;
+	padding-top: 3px;
+	padding-bottom: 4px;
 	cursor:pointer;
 }
 
@@ -58,4 +54,5 @@ header h2{
 	text-align: left !Important; 
 	padding-left: 10px;
 	cursor:pointer;
+	padding-top: 3px;
 }

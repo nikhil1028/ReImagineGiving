@@ -5,13 +5,13 @@
 
 .recommendedProjectsHeading h2{
 	font-size: 30px;
-	font-family: Rajdhani-Light;
+	font-family: Nunito-Light;
 	margin-left: 12.5%;
 }
 
 .projectSection1, .projectSection2, .projectSection3{
 	display:inline-block;
-	border: 1px solid #eeeeee;
+	border: 1px solid rgba(241,242,246,1.0);
 	border-radius: 10px;
 	overflow: hidden;
 	width: 22%;
@@ -44,7 +44,7 @@
 }
 .locationCause{
 	position:absolute;
-	bottom:0;
+	bottom:4px;
 	margin-left: 4px;
 }
 .locationCause img{
@@ -66,10 +66,11 @@
 	margin-left: 3px;
 }
 .locationHeading h2, .causeHeading h2{
-	font-size: 12px;
+	font-size: 11px;
 	color: white;
-	margin-top: 5px;
-	padding: 3px;
+	margin-top: 7px;
+	padding: 4px;
+	padding-top: 2px;
 }
 .cause img{
 	margin-left: 5px;
@@ -93,13 +94,14 @@
 }
 
 .projectDetails H1, .projectStats H1 {
-	font-family: Rajdhani-SemiBold;
-	font-size: 15px;
+	font-family: Nunito-Bold;
+	font-size: 12.50px;
+	padding-bottom: 3px;
 }
 
 .projectDetails H2, .projectStats H2{
 	font-size: 11px;
-	font-family: Roboto-Regular;
+	font-family: Nunito-Regular;
 }
 
 .projectStats{
@@ -108,15 +110,15 @@
 
 .projectDetails p{
 	margin-top: 5px;
-	font-size: 12.5px;
-	font-family: Roboto-Light;
+	font-size: 12px;
+	font-family: Nunito-Light;
 	line-height: 115%;
 }
 
 .projectStats h2{
 	margin-top: 10px;
-	font-size: 13px;
-	font-family: MyriadPro-SemiBold;
+	font-size: 12px;
+	font-family: Nunito-Bold;
 	line-height: 0%;
 }
 
@@ -140,15 +142,15 @@
 }
 .statsText p{
 	font-size: 11px;
-	font-family: Roboto-Light;
+	font-family: Nunito-Light;
 }
 
 .statsNumber p{
-	font-family: MyriadPro-SemiBold;
+	font-family: Nunito-Bold;
 }
 
 .projectSectionDonateButton{
-	background-color: #38c0ff;
+	background-color: rgb(53,195,245);
 	color: white;
 	text-align: center;
 	cursor: pointer;
@@ -156,16 +158,14 @@
 
 .projectSectionDonateButton h2{
 	font-size: 14px;
-	padding: 7px;
+	padding: 10px;
 	padding-top: 6px;
 	margin-bottom: -2px;
-	font-family: BwModelica-Regular;
+	font-family: Nunito-Regular;
 }
 
 .projectSectionDonateButton h2:hover{
-	font-size: 15px;
-	padding: 6px;
-	font-weight: bold;
+	background-color: rgb(0,180,255);
 }
 
 .recommendedProjectsFooter{
@@ -176,14 +176,18 @@
 	cursor: pointer;
 }
 
-.recommendedProjectsFooter h2{
-	font-size: 28px;
-	font-family: Rajdhani-Light;
+.recommendedProjectsFooter a{
+	font-size: 15px;
+	border-radius: 40px;
+	border: 1px solid rgb(53,195,254);
+	padding: 8px 30px 12px 30px;
+	font-family: Nunito-Light;
+	color: rgb(53,195,254);
 }
 
 .recommendedProjectsFooter a:hover{
 	font-weight: Bold;
-	border: 1px solid #a2a2a2;
+	color: white;
 	border-radius: 25px;
-	padding: 3px 15px 3px 15px;
+	background-color: rgb(53,195,254);
 }

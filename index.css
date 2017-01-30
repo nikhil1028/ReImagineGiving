@@ -8,18 +8,16 @@
 
 .statsBar p{
 	padding: 10px !important;
-	font-family: BwModelica-Regular;
+	font-family: Nunito-Regular;
 }
 
 .statsBarNumber{
 	font-size: 30px;
-	/*! font-family: BwModelica; */
 	margin-right: 5px;
 }
 
 .statsBarText{
 	font-size: 18px;
-	/*! font-family: BebasNeue_Book; */
 	letter-spacing: 1px;
 }
 
@@ -38,13 +36,12 @@
 }
 .connectWithFacebook h1{
 	font-size: 50px;
-	font-family: MyriadPro-Regular;
-	/*! padding-left: 50px; */
+	font-family: Nunito-Regular;
 	letter-spacing: 1.5px;
 }
 .connectWithFacebook span{
 	color: #39c0ff;
-	font-family: MyriadPro-Bold;
+	font-family: Nunito-Bold;
 }
 .connectWithFacebookImage{
 	position: absolute;

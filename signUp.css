@@ -35,7 +35,7 @@
 	/*! background-color: #69ceff ; */
     top: 50%;
     transform: translate(-50%,-50%);
-    font-family: BebasNeue_Book;
+    font-family: Nunito-Regular;
 	transition: 0.4s;
 	/*! opacity: 0; */
 }
@@ -120,7 +120,7 @@
 	background-color: #7dcae6;
 	text-align: center;
 	color: white !Important;
-	font-family: BebasNeue_Bold;
+	font-family: Nunito-Bold;
 }
 
 .optionDonorHeading{

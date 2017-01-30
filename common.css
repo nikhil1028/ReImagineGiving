@@ -111,46 +111,37 @@
     font-family: BwModelica-SemiBold;
     src: url(fonts/BwModelica/BwModelicaSS01-BlackExpanded.ttf);
 }
-
 @font-face {
-    font-family: MyriadPro-SemiBold;
-    src: url(fonts/MyriadPro/MyriadPro-SemiBold.otf);
+    font-family: Nunito-Bold;
+    src: url(fonts/Nunito/Nunito-Bold.ttf);
 }
 @font-face {
-    font-family: MyriadPro-Regular;
-    src: url(fonts/MyriadPro/MyriadPro-Regular.otf);
+    font-family: Nunito-ExtraLight;
+    src: url(fonts/Nunito/Nunito-ExtraLight.ttf);
 }
 @font-face {
-    font-family: MyriadPro-Cond;
-    src: url(fonts/MyriadPro/MyriadPro-Cond.otf);
+    font-family: Nunito-Light;
+    src: url(fonts/Nunito/Nunito-Light.ttf);
 }
 @font-face {
-    font-family: MyriadPro-Bold;
-    src: url(fonts/MyriadPro/MyriadPro-Bold.otf);
+    font-family: Nunito-SemiBold;
+    src: url(fonts/Nunito/Nunito-SemiBold.ttf);
 }
 @font-face {
-    font-family: MyriadPro-BoldCond;
-    src: url(fonts/MyriadPro/MyriadPro-BoldCond.otf);
+    font-family: Nunito-Medium;
+    src: url(fonts/Nunito/Nunito-Medium.ttf);
 }
 @font-face {
-    font-family: BebasNeue_Bold;
-    src: url(fonts/Bebas_Neue/BebasNeue_Bold.otf);
+    font-family: Nunito-Black;
+    src: url(fonts/Nunito/Nunito-Black.ttf);
 }
 @font-face {
-    font-family: BebasNeue_Book;
-    src: url(fonts/Bebas_Neue/BebasNeue_Book.otf);
+    font-family: Nunito-Bold;
+    src: url(fonts/Nunito/Nunito-Bold.ttf);
 }
 @font-face {
-    font-family: BebasNeue_Light;
-    src: url(fonts/Bebas_Neue/BebasNeue_Light.otf);
-}
-@font-face {
-    font-family: BebasNeue_Thin;
-    src: url(fonts/Bebas_Neue/BebasNeue_Thin.otf);
-}
-@font-face {
-    font-family: BebasNeue_Regular;
-    src: url(fonts/Bebas_Neue/BebasNeue_Regular.otf);
+    font-family: Nunito-Regular;
+    src: url(fonts/Nunito/Nunito-Regular.ttf);
 }
 
 
@@ -192,8 +183,9 @@
 }
 
 header, body{
-	font-family: MyriadPro-Regular;
+	font-family: Nunito-Regular;
 	background-color: white;
+	overflow-x: hidden;
 }
 h, h2, h3, h4, p{
 	line-height: 100%;
