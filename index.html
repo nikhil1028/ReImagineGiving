@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="exploreButton.css" media="screen"/>
 	
 	<script src="whatWeDo.js"></script>
+	<script src="googleapi.js"></script>
 	<script src="explore.js"></script>
 	<script src="SignUp.js"></script>
 	<script src="slider.js"></script>
@@ -173,16 +174,18 @@
 		</div>
 	</header>
 
-	<div class="row slideshow">
-		<div class="row sliderContent">
-			<div class="image"><img class="mySlides" src="images/slider1.jpg" ></div>	  
-			<div class="image"><img class="mySlides" src="images/slider5.jpg" ></div>
-			<div class="image"><img class="mySlides" src="images/slider2.jpg"></div>
-			<div class="image"><img class="mySlides" src="images/slider4.jpg"></div>
-			<div class="sliderNavBarCenterMiddle" style="width:100%">
-				<div class="floatLeft sliderNavLeft" onclick="plusDivs(-1)">&#10094;</div>
-				<div class="floatRight sliderNavRight" onclick="plusDivs(1)">&#10095;</div>
+	<div class="slider">
+		<div class="slide_viewer">
+			<div class="slide_group">
+			<div class="slide"><img class="mySlides" src="images/slider1.jpg" ></div>
+				<div class="slide"><img class="mySlides" src="images/slider5.jpg" ></div>
+				<div class="slide"><img class="mySlides" src="images/slider2.jpg"></div>
+				<div class="slide"><img class="mySlides" src="images/slider4.jpg"></div>
 			</div>
+		</div>
+		<div class="directional_nav" style="width:100%">
+			<div class="previous_btn" onclick="plusDivs(-1)">&#10094;</div>
+			<div class="next_btn" onclick="plusDivs(1)">&#10095;</div>
 		</div>
 	</div>
 	<script src="slider.js"></script>
