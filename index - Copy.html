@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="recommendedProjects.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="footer.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="whatWeDo.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
 	
 	<script src="whatWeDo.js"></script>
 	<script src="explore.js"></script>
@@ -24,94 +25,93 @@
 <body>
 	<header>
 		<div class="row header">
+			
 			<div class="col-2 mainNavBarButton">
 				<div class="col-4">
 					<span onclick="toggleNav()"><img class="navBarLowerArrow" src="images/lowerArrow.png"></span>
 				</div>
 				<div class="col-8 navBarExploreButton">
-					<span onclick="openNav()"><h2 class="exploreButton"><a href="javascript:toggleNav()">Explore</a></h2></span>
-				</div>
-			</div>
-			<div id="myNav" class="explore">
-				<div style="background-color:black;"class="translucentContainer"></div>
-				<div id="exploreContent" class="exploreContent">	
-					<form>
-						<div class="location">
-							<span  onclick="myfunction1()">
-								<div class="exploreHeading row">
-									<div class="col-9"><h2>Location</h2></div>
-									<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
-								</div>
-							</span>
-							<div class="inputField" id="locationInput">
-								<input type="text" name="location" autocomplete="off"/>
-							</div>
-						</div>
-						
-						<div class="funding">
-							<span onclick="myfunction2()">
-								<div class="exploreHeading row">
-									<div class="col-9"><h2>Funding</h2></div>
-									<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
-								</div>
-							</span>
-							<div class="fundingLevels row" id="fundingInput">
-								<div class="row">
-									<div class="col-2 exploreRadioButton"><input type="radio" name="fundingLevels" value="almost" checked/></div>
-									<div class="col-10"><p>Nearly Completed</p></div>
-								</div>
-								<div class="row">
-									<div class="col-2 exploreRadioButton"><input  type="radio" name="fundingLevels" value="new"/></div>
-									<div class="col-10"><p>Just Started</p></div>
-								</div>
-								<div class="row">
-									<div class="col-2 exploreRadioButton"><input type="radio" name="fundingLevels" value="ongoing"/></div>
-									<div class="col-10"><p>Ongoing</p></div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="causes" >
-							<span  onclick="myfunction3()">
-								<div class="exploreHeading row">
-									<div class="col-9"><h2>Causes</h2></div>
-									<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
-								</div>
-							</span>
-							<div class="causesList" id="causeInput">
-								<div class="causesList1">
-									<a>Education</a>
-								</div>
-								<div class="causesList2">
-									<a>Health</a>
-								</div>
-								<div class="causesList3">
-									<a>Children</a>
-								</div>
-								<div class="causesList4">
-									<a>Women Empowerment</a>
-								</div>
-								<div class="causesList5">
-									<a>Food and Hunger</a>
-								</div>
-								<div class="causesList1">
-									<a>Sports</a>
-								</div>
-								<div class="causesList1">
-									<a>Animal Welfare</a>
-								</div>
-								<div class="causesList1">
-									<a>Enviroment</a>
-								</div>
-								<div class="causesList6">
-									<a>Others</a>
-								</div>
-							</div>
-						</div>
-					</form>
+					<span onclick="toggleNav()"><h2 class="exploreButton">Explore</h2></span>
 				</div>
 			</div>
 			
+			<nav class="side-nav" id="side-nav">
+				<div style="background-color:black;"class="translucentContainer"></div>
+				<form class="side-navForm" id="side-navForm">
+					<div class="location">
+						<span  onclick="myfunction1()">
+							<div class="exploreHeading row">
+								<div class="col-9"><h2>Location</h2></div>
+								<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
+							</div>
+						</span>
+						<div class="inputField" id="locationInput">
+							<input type="text" name="location" autocomplete="off"/>
+						</div>
+					</div>
+					
+					<div class="funding">
+						<span onclick="myfunction2()">
+							<div class="exploreHeading row">
+								<div class="col-9"><h2>Funding</h2></div>
+								<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
+							</div>
+						</span>
+						<div class="fundingLevels row" id="fundingInput">
+							<div class="row">
+								<div class="col-2 exploreRadioButton"><input type="radio" name="fundingLevels" value="almost" checked/></div>
+								<div class="col-10"><p>Nearly Completed</p></div>
+							</div>
+							<div class="row">
+								<div class="col-2 exploreRadioButton"><input  type="radio" name="fundingLevels" value="new"/></div>
+								<div class="col-10"><p>Just Started</p></div>
+							</div>
+							<div class="row">
+								<div class="col-2 exploreRadioButton"><input type="radio" name="fundingLevels" value="ongoing"/></div>
+								<div class="col-10"><p>Ongoing</p></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="causes" >
+						<span  onclick="myfunction3()">
+							<div class="exploreHeading row">
+								<div class="col-9"><h2>Causes</h2></div>
+								<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
+							</div>
+						</span>
+						<div class="causesList" id="causeInput">
+							<div class="causesList1">
+								<a>Education</a>
+							</div>
+							<div class="causesList2">
+								<a>Health</a>
+							</div>
+							<div class="causesList3">
+								<a>Children</a>
+							</div>
+							<div class="causesList4">
+								<a>Women Empowerment</a>
+							</div>
+							<div class="causesList5">
+								<a>Food and Hunger</a>
+							</div>
+							<div class="causesList1">
+								<a>Sports</a>
+							</div>
+							<div class="causesList1">
+								<a>Animal Welfare</a>
+							</div>
+							<div class="causesList1">
+								<a>Enviroment</a>
+							</div>
+							<div class="causesList6">
+								<a>Others</a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</nav>
 			
 			<div class="col-8 logo">
 				<a href="index.html">
@@ -191,7 +191,9 @@
 	
 	
 	<div class=" row container">
-		<h2>What We Do</h2>
+		<h2 style="text-align:center;padding-bottom:15px;padding-right:15%;">What We Do</h2>
+		<h2 style="margin-bottom:39.5px;border-top:1px solid rgb(56, 192, 247);margin-right: 54%;
+margin-left: 40%;"></h2>
 		<div class="box first" id="first">
 			<span class="icon-cont"><i><img class="circleIconImage" src="images/1.png"></i></span>
 			

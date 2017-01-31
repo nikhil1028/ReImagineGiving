@@ -31,9 +31,8 @@ window.onclick = function(event) {
 		document.getElementById("LogIn").style.height = "0%";
 		document.getElementById("SignUpForms").style.opacity = "0";
 		document.getElementById("LogInForms").style.opacity = "0";
-		document.getElementById("myNav").style.width = "0";
-		document.getElementById("exploreContent").style.height = "0";
-		document.getElementById("exploreContent").style.opacity = "0";
+		document.getElementById('side-nav').classList.toggle('navOpen');
+    document.getElementById('side-navForm').classList.toggle('formOpen');
 		document.getElementsByTagName("body")[0].style.overflowY = "scroll";
     }
 }
