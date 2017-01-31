@@ -36,6 +36,7 @@
 	border-radius: 10px;
 	overflow: hidden;
 	width: 22%;
+	position: relative;
 }
 
 .projectSection1{
