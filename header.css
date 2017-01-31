@@ -1,10 +1,7 @@
-.header{
-	box-shadow: 0 4px 8px 0 #373737;
-}
-
 header{
 	text-align: center;
 	color: #373737;
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.5);
 }
 
 header h2{
