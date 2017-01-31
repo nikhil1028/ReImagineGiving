@@ -1,27 +1,6 @@
-/* Position the content inside the explore */
-.explore {
-    width: 0;
-	height: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    transition: 0.3s;
-}
 
-.exploreContent{
-	position: relative;
-    width: 25%;
-	height: 0;
-    text-align: left;
-	 font-family: Nunito-Regular;
-	transition: 0.3s;
-	background-color: white;
-	overflow-x: hidden;
-}
 
-.exploreContent input{
+.side-nav input{
 	transition: all 0.4s;
 	background-color: transparent;
 	width: 100%;
@@ -31,14 +10,8 @@
 	border-radius: 5px;
 }
 
-.exploreContent input:hover, .exploreContent input:focus {
+.side-nav input:hover, .side-nav input:focus {
   border-color: #38c0ff;
-}
-
-.exploreCloseButton{
-	top: 5px;
-	right: 5px;
-	text-align: right;
 }
 
 .exploreRadioButton{margin-top: 13px; padding-left: 8px;}
@@ -49,7 +22,7 @@
 }
 
 /* The navigation links inside the explore */
-.exploreContent a {
+.side-nav a {
 	cursor: pointer;
     padding: 8px;
     text-decoration: none;
@@ -61,11 +34,11 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.exploreContent a:hover, .exploreContent a:focus {
+.side-nav a:hover, .side-nav a:focus {
     color: #2871af;
 }
 
-.exploreContent h2 {
+.side-nav h2 {
     text-decoration: none;
     width: 100%;
     font-size: 18px;
@@ -78,7 +51,7 @@
     cursor: pointer;
 }
 
-.exploreContent p{
+.side-nav p{
     text-decoration: none;
     font-size: 20px;
 	padding: 7px;
@@ -92,7 +65,7 @@
 	margin-top: 5px;
 	margin-bottom: 8px;
 }
-.exploreContent input[type=text]{
+.side-nav input[type=text]{
     width: 100%;
     box-sizing: border-box;
     border-radius: 4px;
@@ -103,8 +76,28 @@
     transition: width 0.4s ease-in-out;
 }
 
-.exploreContent form{
-	padding: 20px;
+.formOpen{
+	width: 25% !important;
+	opacity: 1 !important;
+}
+
+.navOpen{
+	margin-left: 100%;
+	opacity: 1;
+	 visibility: visible;
+}
+.toggleOverflow{
+	overflow: hidden;
+}
+
+.side-nav form{
+	position: relative;
+	padding: 50px 20px;
+	background-color: white;
+	width: 25%;
+	text-align: left;
+	opacity: 0;
+    height: 100vh;
 }
 
 .fundingLevels{
@@ -119,7 +112,7 @@
 }
 
 /* Position the close button (top right corner) */
-.exploreContent .closebtn {
+.side-nav .closebtn {
     position: absolute;
 	right: 30px;
     font-size: 40px;

@@ -10,7 +10,7 @@ header{
 header h2{
 	font-size: 14px;
 	font-family: Nunito-Regular;
-	margin-top: -4px;
+	/*! margin-top: -4px; */
 	transition: 0.1s;
 }
 
@@ -29,6 +29,9 @@ header h2{
 	float: right;
 	margin-right: 3px;
 	cursor: pointer;
+	margin-top: 6px;
+	z-index: 4;
+	position: relative;
 }
 
 .mainNavBarButton{
@@ -39,6 +42,9 @@ header h2{
 .navBarExploreButton{
 	cursor: pointer;
 	text-align: left !Important;
+	margin-top: 2px;
+	z-index: 4;
+	position: relative;
 }
 
 .navBarSignUpButton{
