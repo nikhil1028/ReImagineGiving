@@ -21,6 +21,27 @@
 	letter-spacing: 1px;
 }
 
+h2.whatWeDoHeading{
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 1%;
+	padding-right: 5px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 2%;
+	letter-spacing: 1px;
+	font-family: Montserrat-SemiBold;
+}
+
+h2.whatWeDoHeading:before{
+	  content: "";
+    position: absolute;
+    width: 8.6%;
+    bottom: 0;
+    left: 46%;
+    border-bottom: 2px solid #38c0ff;
+}
+
 .connectWithFacebook {
     background-color: #f8f8ff;
     padding: 30px;

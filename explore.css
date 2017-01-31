@@ -7,18 +7,29 @@
     top: 0;
     left: 0;
     background-color: transparent;
-    transition: 0.3s;
+	transition: color .3s ease;
+}
+
+.exploreDiv{
+	position: absolute;
+	z-index: 4;
+}
+.exploreButtonActive{
+	font-size: 17px;
+	margin-top: -6px;
 }
 
 .exploreContent{
 	position: relative;
     width: 25%;
-	height: 0;
     text-align: left;
 	 font-family: Nunito-Regular;
 	transition: 0.3s;
 	background-color: white;
 	overflow-x: hidden;
+}
+#exploreContent{
+	height: 0;
 }
 
 .exploreContent input{
@@ -45,7 +56,8 @@
 
 .exploreHeading{
 	margin-bottom: 3px;
-	background-color: #69ceff;
+	background-color: rgb(53,195,254);
+    padding: 2px;
 }
 
 /* The navigation links inside the explore */
@@ -70,12 +82,11 @@
     width: 100%;
     font-size: 18px;
     color: white;
-    transition: 0.3s; /* Transition effects on hover (color) */
-    /* padding-top: 0px; */
+    transition: 0.3s;
     padding-bottom: 5px;
-    background-color: #69ceff;
     padding-left: 5px;
     cursor: pointer;
+    padding-top: 3px;
 }
 
 .exploreContent p{
@@ -104,7 +115,7 @@
 }
 
 .exploreContent form{
-	padding: 20px;
+	padding: 50px 20px;
 }
 
 .fundingLevels{

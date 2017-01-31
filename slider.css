@@ -4,11 +4,12 @@
 	overflow: hidden;
 	position: relative;
 	display: block;
-	height: 39.5vw;
+	height: 44vw;
 }
-.sliderContent > div > img {
+img.mySlides {
 	max-width: 100%;
 	width: auto\9;
+	transition: 0.4s;
 }
 .sliderNavBarCenterMiddle {
 	position: absolute;

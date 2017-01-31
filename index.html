@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="recommendedProjects.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="footer.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="whatWeDo.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="exploreButton.css" media="screen"/>
 	
 	<script src="whatWeDo.js"></script>
 	<script src="explore.js"></script>
@@ -24,12 +25,12 @@
 <body>
 	<header>
 		<div class="row header">
-			<div class="col-2 mainNavBarButton">
-				<div class="col-4">
-					<span onclick="openNav()"><img class="navBarLowerArrow" src="images/lowerArrow.png"></span>
+			<div class="col-4 mainNavBarButton" id="exploreDiv">
+				<div class="col-2">
+					 <a class="ninja-btn" id="ninja-btn" title="menu" onclick="openNav()"><span></span></a>
 				</div>
-				<div class="col-8 navBarExploreButton">
-					<span onclick="openNav()"><h2 class="exploreButton">Explore</h2></span>
+				<div class="col-10 navBarExploreButton">
+					<span onclick="openNav()"><h2 class="exploreButton" id="exploreButton">Explore</h2></span>
 				</div>
 			</div>
 			<div id="myNav" class="explore">
@@ -112,61 +113,61 @@
 				</div>
 			</div>
 			
-			
-			<div class="col-8 logo">
-				<a href="index.html">
-					<img src="logo/logo-final.png"></img>
-				</a>
-			</div>
-			
-			<div class="col-2 mainNavBarButton">
-				<div class="col-6 navBarSignUpButton">
-					<h2 id="registration"><span class="SignUpSpan" onclick="openSignUpOverlay()">Sign Up</span></h2>
+			<div class="col-8 floatRight">
+				<div class="col-6 logo">
+					<a href="index.html">
+						<img src="logo/logo-final.png"></img>
+					</a>
 				</div>
-				<div id="SignUp" class="overlay">
-					<div class="translucentContainer"></div>
-						<!-- overlay content -->
-					<div id="overlayContent" class="overlayContent">
-						<div id="SignUpForms">
-							<h1 class="main-heading">Signup Now</h1>
-							<a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a>
-							<form class="signup-form" method="post" action="#" novalidate="novalidate">
-							  <label for="signup-name">Full Name</label>
-							  <input id="signup-name" type="text" name="name" autocomplete="off"/>
-							  <label for="signup-email">Email Address</label>
-							  <input id="signup-email" type="email" name="email" autocomplete="off"/>
-							  <label for="signup-pw">Password</label>
-							  <input id="signup-pw" type="password" name="pw" autocomplete="off"/>
-							  <label for="signup-cpw">Confirm Password</label>
-							  <input id="signup-cpw" type="password" name="cpw" autocomplete="off"/>
-							  <button class="btn btn-outline submit-btn"><span>signup</span></button>
-							</form>
+				
+				<div class="col-6 mainNavBarButton">
+					<div class="col-9 navBarSignUpButton">
+						<h2 id="registration"><span class="SignUpSpan" onclick="openSignUpOverlay()">Sign Up</span></h2>
+					</div>
+					<div id="SignUp" class="overlay">
+						<div class="translucentContainer"></div>
+							<!-- overlay content -->
+						<div id="overlayContent" class="overlayContent">
+							<div id="SignUpForms">
+								<h1 class="main-heading">Signup Now</h1>
+								<a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a>
+								<form class="signup-form" method="post" action="#" novalidate="novalidate">
+								  <label for="signup-name">Full Name</label>
+								  <input id="signup-name" type="text" name="name" autocomplete="off"/>
+								  <label for="signup-email">Email Address</label>
+								  <input id="signup-email" type="email" name="email" autocomplete="off"/>
+								  <label for="signup-pw">Password</label>
+								  <input id="signup-pw" type="password" name="pw" autocomplete="off"/>
+								  <label for="signup-cpw">Confirm Password</label>
+								  <input id="signup-cpw" type="password" name="cpw" autocomplete="off"/>
+								  <button class="btn btn-outline submit-btn"><span>signup</span></button>
+								</form>
+							</div>
 						</div>
 					</div>
-				
-				</div>
-				
-				<div class="col-6 navBarLogInButton">
-					<h2 id="registration"><span class="LogInSpan" onclick="openLogInOverlay()">Log In</span></h2>
-				</div>
-				<div id="LogIn" class="overlay">
-				
-					<div class="translucentContainer"></div>
-						<!-- overlay content -->
-					<div id="overlayContent" class="overlayContent">
-						<div id="LogInForms">
-							<h1 class="main-heading">LogIn</h1>
-							<a href="javascript:void(0)" class="closebtn tablinks" onclick="closeLogInOverlay()">&times;</a>
-							<form class="signup-form" method="post" action="#" novalidate="novalidate">
-							  <label for="signup-email">Email Address</label>
-							  <input id="signup-email" type="email" name="email" autocomplete="off"/>
-							  <label for="signup-pw">Password</label>
-							  <input id="signup-pw" type="password" name="pw" autocomplete="off"/>
-							  <button class="btn btn-outline submit-btn"><span>LogIn</span></button>
-							</form>
-						</div>
+					
+					<div class="col-3 navBarLogInButton">
+						<h2 id="registration"><span class="LogInSpan" onclick="openLogInOverlay()">Log In</span></h2>
 					</div>
-				
+					<div id="LogIn" class="overlay">
+					
+						<div class="translucentContainer"></div>
+							<!-- overlay content -->
+						<div id="overlayContent" class="overlayContent">
+							<div id="LogInForms">
+								<h1 class="main-heading">LogIn</h1>
+								<a href="javascript:void(0)" class="closebtn tablinks" onclick="closeLogInOverlay()">&times;</a>
+								<form class="signup-form" method="post" action="#" novalidate="novalidate">
+								  <label for="signup-email">Email Address</label>
+								  <input id="signup-email" type="email" name="email" autocomplete="off"/>
+								  <label for="signup-pw">Password</label>
+								  <input id="signup-pw" type="password" name="pw" autocomplete="off"/>
+								  <button class="btn btn-outline submit-btn"><span>LogIn</span></button>
+								</form>
+							</div>
+						</div>
+					
+					</div>
 				</div>
 			</div>
 		</div>
@@ -174,9 +175,10 @@
 
 	<div class="row slideshow">
 		<div class="row sliderContent">
-			<div class="image"><img class="mySlides" src="images/web1.jpg" ></div>	  
-			<div class="image"><img class="mySlides" src="images/web2.jpg" ></div>
-			<div class="image"><img class="mySlides" src="images/web4.jpg"></div>
+			<div class="image"><img class="mySlides" src="images/slider1.jpg" ></div>	  
+			<div class="image"><img class="mySlides" src="images/slider5.jpg" ></div>
+			<div class="image"><img class="mySlides" src="images/slider2.jpg"></div>
+			<div class="image"><img class="mySlides" src="images/slider4.jpg"></div>
 			<div class="sliderNavBarCenterMiddle" style="width:100%">
 				<div class="floatLeft sliderNavLeft" onclick="plusDivs(-1)">&#10094;</div>
 				<div class="floatRight sliderNavRight" onclick="plusDivs(1)">&#10095;</div>
@@ -185,12 +187,14 @@
 	</div>
 	<script src="slider.js"></script>
 	
-	<div class="row statsBar">
+	<div class="row statsBar" style="display:none;">
 		<p><span class="statsBarText">In 2012 </span><span class="statsBarNumber">37%</span><span class="statsBarText"> of India's </span><span class="statsBarNumber">1.21</span><span class="statsBarText"> billion people fell below international poverty line, which is $1.25/Day.</span></p>
 	</div>
 	
 	
 	<div class=" row container">
+		<h2 class="row whatWeDoHeading"><span>What We Do</span></h2>
+		
 		<div class="box first" id="first">
 			<span class="icon-cont"><i><img class="circleIconImage" src="images/1.png"></i></span>
 			
@@ -257,8 +261,9 @@
 	</div>
 	
 	<div class="row projects">
-		<div  class="recommendedProjectsHeading">
-			<h2>Recommended Projects</h2>
+		<div class="row recommendedProjectsHeading">
+			<h2 class="col-6">Recommended Projects</h2>
+			<h2 class="col-6" style="margin-top:-5px;"><a>View all</a></h2>
 		</div>
 		<div class="row projectsContent">
 			<div class="projectSection1">
@@ -471,15 +476,13 @@
 			</div>
 			
 		</div>
-		<div  class="recommendedProjectsFooter">
-			<h2><a>See More</a></h2>
 		</div>
-	</div>
 	</div>
 	
 	<div class="row projects">
-		<div  class="recommendedProjectsHeading">
-			<h2>Almost Funded</h2>
+		<div class="row recommendedProjectsHeading">
+			<h2 class="col-6">Almost Funded</h2>
+			<h2 class="col-6" style="margin-top:-5px;"><a>View all</a></h2>
 		</div>
 		<div class="row projectsContent">
 			<div class="projectSection1">
@@ -576,7 +579,7 @@
 							</p>
 						</div>
 						
-<div class="row projectBottom">
+					<div class="row projectBottom">
 						<div class="row projectStats">
 							<div class="row" style="margin-bottom: 12px;">
 								<h2 class="floatRight">50%</h2>
@@ -691,9 +694,6 @@
 			</div>
 			
 		</div>
-		<div  class="recommendedProjectsFooter">
-			<h2><a>See More</a></h2>
-		</div>
 	</div>
 	
 	<div class="row connectWithFacebook">
@@ -704,13 +704,13 @@
 	<footer>
 		<div class="row footerOptions">
 			<div class="col-2 footerAboutUs">
-				<h1 class="footerH1"><a>About Us</a></h1>
+				<h1>About Us</h1>
 				<h2><a>What is Reimagine?</a></h2>
 				<h2><a>Who are we</a></h2>
 			</div>
 			<div class="col-4 footerCauses" >
 				<div class="col-6 footerCauses1">
-					<h1 class="footerH1"><a>Causes</a></a></h1>
+					<h1>Causes</h1>
 					<h2><a>Education</a></h2>
 					<h2><a>Poverty</a></h2>
 					<h2><a>Sanitation</a></h2>
@@ -726,7 +726,7 @@
 				</div>
 			</div>
 			<div class="col-2 footerWorks">
-				<h1 class="footerH1"><a>How it Works</a></h1>
+				<h1>How it Works</h1>
 				<h2><a>Stuff</a></h2>
 				<h2><a>Stuff Stuff</a></h2>
 				<h2><a>We really need to think</a></h2>
@@ -740,6 +740,7 @@
 				<img src="logo/logo-final-web-white.png"></img>
 			</a>
 			<h2>cc 2017.</h2>
+		</div>
 		</div>
 	</footer>
 </body>

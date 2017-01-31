@@ -1,15 +1,28 @@
 
 function openNav() {
+	var div = document.getElementById('exploreContent');
+	if(div.style.height == ""){
     document.getElementById("myNav").style.width = "100%";
 	document.getElementById("exploreContent").style.height = "100%";
 	document.getElementById("exploreContent").style.opacity = "1";
+	document.getElementById('exploreDiv').classList.toggle('exploreDiv');
+	document.getElementById('ninja-btn').classList.toggle('active');
+	document.getElementById('exploreButton').classList.toggle('exploreButtonActive');
 	document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+	}
+	else
+	{
+		closeNav();
+	}
 }
 
 function closeNav() {
     document.getElementById("myNav").style.width = "0";
-	document.getElementById("exploreContent").style.height = "0";
+	document.getElementById("exploreContent").style.height = "";
 	document.getElementById("exploreContent").style.opacity = "0";
+	document.getElementById('exploreDiv').classList.toggle('exploreDiv');
+	document.getElementById('ninja-btn').classList.toggle('active');
+	document.getElementById('exploreButton').classList.toggle('exploreButtonActive');
 	document.getElementsByTagName("body")[0].style.overflowY = "scroll";
 }
 

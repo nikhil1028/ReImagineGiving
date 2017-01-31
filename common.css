@@ -1,116 +1,4 @@
-@font-face {
-    font-family: Rajdhani-Bold;
-    src: url(fonts/Rajdhani-Bold.ttf);
-}
-@font-face {
-    font-family: Rajdhani-Light;
-    src: url(fonts/Rajdhani-Light.ttf);
-}
-@font-face {
-    font-family: Rajdhani-Regular;
-    src: url(fonts/Rajdhani-Regular.ttf);
-}
-@font-face {
-    font-family: Rajdhani-Medium;
-    src: url(fonts/Rajdhani-Medium.ttf);
-}
-@font-face {
-    font-family: Rajdhani-SemiBold;
-    src: url(fonts/Rajdhani-SemiBold.ttf);
-}
-@font-face {
-    font-family: Raleway-Bold;
-    src: url(fonts/Raleway/Raleway-Bold.ttf);
-}
-@font-face {
-    font-family: Raleway-ExtraBold;
-    src: url(fonts/Raleway/Raleway-ExtraBold.ttf);
-}
-@font-face {
-    font-family: Raleway-ExtraLight;
-    src: url(fonts/Raleway/Raleway-ExtraLight.ttf);
-}
-@font-face {
-    font-family: Raleway-Light;
-    src: url(fonts/Raleway/Raleway-Light.ttf);
-}
-@font-face {
-    font-family: Raleway-Medium;
-    src: url(fonts/Raleway/Raleway-Medium.ttf);
-}
-@font-face {
-    font-family: Raleway-Regular;
-    src: url(fonts/Raleway/Raleway-Regular.ttf);
-}
-@font-face {
-    font-family: Raleway-Thin;
-    src: url(fonts/Raleway/Raleway-Thin.ttf);
-}
-@font-face {
-    font-family: Raleway-SemiBold;
-    src: url(fonts/Raleway/Raleway-SemiBold.ttf);
-}
-@font-face {
-    font-family: Raleway-Bold;
-    src: url(fonts/Raleway/Raleway-Bold.ttf);
-}
-@font-face {
-    font-family: Roboto-Bold;
-    src: url(fonts/Roboto/Roboto-Bold.ttf);
-}
-@font-face {
-    font-family: Roboto-Black;
-    src: url(fonts/Roboto/Roboto-Black.ttf);
-}
-@font-face {
-    font-family: Roboto-Light;
-    src: url(fonts/Roboto/Roboto-Light.ttf);
-}
-@font-face {
-    font-family: Roboto-Regular;
-    src: url(fonts/Roboto/Roboto-Regular.ttf);
-}
-@font-face {
-    font-family: Roboto-Medium;
-    src: url(fonts/Roboto/Roboto-Medium.ttf);
-}
-@font-face {
-    font-family: Roboto-Thin;
-    src: url(fonts/Roboto/Roboto-Thin.ttf);
-}
 
-@font-face {
-    font-family: BwModelica-Bold;
-    src: url(fonts/BwModelica/BwModelicaSS01-BoldExpanded.ttf);
-}
-@font-face {
-    font-family: BwModelica-ExtraBold;
-    src: url(fonts/BwModelica/BwModelicaSS01-ExtraBoldExpanded.ttf);
-}
-@font-face {
-    font-family: BwModelica-ExtraLight;
-    src: url(fonts/BwModelica/BwModelicaSS01-HairlineExpanded.ttf);
-}
-@font-face {
-    font-family: BwModelica-Light;
-    src: url(fonts/BwModelica/BwModelicaSS01-LightExpanded.ttf);
-}
-@font-face {
-    font-family: BwModelica-Medium;
-    src: url(fonts/BwModelica/BwModelicaSS01-MediumExpanded.ttf);
-}
-@font-face {
-    font-family: BwModelica-Regular;
-    src: url(fonts/BwModelica/BwModelicaSS01-RegularExpanded.ttf);
-}
-@font-face {
-    font-family: BwModelica-Thin;
-    src: url(fonts/BwModelica/BwModelicaSS01-ThinExpanded.ttf);
-}
-@font-face {
-    font-family: BwModelica-SemiBold;
-    src: url(fonts/BwModelica/BwModelicaSS01-BlackExpanded.ttf);
-}
 @font-face {
     font-family: Nunito-Bold;
     src: url(fonts/Nunito/Nunito-Bold.ttf);
@@ -135,13 +23,48 @@
     font-family: Nunito-Black;
     src: url(fonts/Nunito/Nunito-Black.ttf);
 }
-@font-face {
-    font-family: Nunito-Bold;
-    src: url(fonts/Nunito/Nunito-Bold.ttf);
-}
+
 @font-face {
     font-family: Nunito-Regular;
     src: url(fonts/Nunito/Nunito-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(fonts/Montserrat/Montserrat-Bold.otf);
+}
+@font-face {
+    font-family: Montserrat-ExtraLight;
+    src: url(fonts/Montserrat/Montserrat-ExtraLight.otf);
+}
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(fonts/Montserrat/Montserrat-Light.otf);
+}
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(fonts/Montserrat/Montserrat-SemiBold.otf);
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(fonts/Montserrat/Montserrat-Medium.otf);
+}
+@font-face {
+    font-family: Montserrat-Black;
+    src: url(fonts/Montserrat/Montserrat-Black.otf);
+}
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url(fonts/Montserrat/Montserrat-ExtraBold.otf);
+}
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(fonts/Montserrat/Montserrat-Regular.otf);
+}
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url(fonts/Montserrat/Montserrat-Thin.otf);
 }
 
 

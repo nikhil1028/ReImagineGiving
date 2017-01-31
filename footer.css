@@ -14,12 +14,7 @@ footer{
 
 .footerOptions a:hover, .footerOptions a:focus {
     color: #38c0ff;
-	  font-size: 20px;
-}
-
-.footerH1 a:hover{
-	color: #38c0ff;
-	font-size: 26px;
+	  font-size: 16px;
 }
 
 .footerAboutUs, .footerCauses, .footerWorks{
@@ -39,14 +34,15 @@ footer{
 }
 
 footer h2{
-	font-size: 18px;
-	font-family: Rajdhani-Regular;
+	font-size: 16px;
+	font-family: Nunito-Regular;
 	color: white;
 }
 
 footer h1{
-	font-size: 25px;
-	font-family: Rajdhani-Bold;
+	font-size: 23.5px;
+	font-family: Montserrat-SemiBold;
+	color: white;
 }
 
 footer img{
