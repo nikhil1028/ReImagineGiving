@@ -1,8 +1,8 @@
 
 function openNav() {
-    document.getElementById("side-nav").style.width = "100%";
-	document.getElementById("side-navForm").style.height = "25%";
-	document.getElementById("side-navForm").style.opacity = "1";
+    document.getElementById("myNav").style.width = "100%";
+	document.getElementById("exploreContent").style.height = "100%";
+	document.getElementById("exploreContent").style.opacity = "1";
 	document.getElementsByTagName("body")[0].style.overflowY = "hidden";
 }
 
@@ -11,12 +11,6 @@ function closeNav() {
 	document.getElementById("exploreContent").style.height = "0";
 	document.getElementById("exploreContent").style.opacity = "0";
 	document.getElementsByTagName("body")[0].style.overflowY = "scroll";
-}
-
-function toggleNav() {
-    document.getElementById('side-nav').classList.toggle('navOpen');
-    document.getElementById('side-navForm').classList.toggle('formOpen');
-	document.getElementsByTagName("body")[0].classList.toggle = ('toggleOverflow');
 }
 
 function myfunction1(){
