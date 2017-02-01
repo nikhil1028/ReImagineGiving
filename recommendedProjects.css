@@ -8,6 +8,18 @@
 	padding-bottom: 4%;
 }
 
+.divLink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+	left: 0;
+	 text-decoration: none;
+	 z-index: 5;
+	 opacity: 0;
+	  background-color: white;
+}
+
 .recommendedProjectsHeading h2{
 	font-size: 30px;
 	font-family: Nunito-Regular;
@@ -76,8 +88,8 @@
 .locationHeading, .causeHeading{
 	height: 30px;
 	width:0;
-	display:none;
 	transition: 0.4s;
+	display: none;
 }
 .locationHeading h2{
 	background-color:#38c0ff;
@@ -128,7 +140,8 @@
 
 .projectStats{
 	padding-right: 10px;
-	margin-bottom: 5px;
+	position: absolute;
+	bottom: 28px;
 }
 
 .projectDetails p{
@@ -177,6 +190,9 @@
 	color: white;
 	text-align: center;
 	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	z-index: 6;
 }
 
 .projectSectionDonateButton h2{

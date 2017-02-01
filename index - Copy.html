@@ -46,7 +46,7 @@
 								</div>
 							</span>
 							<div class="inputField" id="locationInput">
-								<input placeholder="Location.." type="text" name="location" autocomplete="off"/>
+								<input type="text" name="location" autocomplete="off"/>
 							</div>
 						</div>
 						
@@ -57,31 +57,58 @@
 									<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
 								</div>
 							</span>
-							<ul class="fundingLevels" id="fundingInput">
-								<li><a>Nearly Funded</a></li>
-								<li><a>Just Started</a></li>
-								<li><a>Ongoing</a></li>
-							</ul>
+							<div class="fundingLevels row" id="fundingInput">
+								<div class="row">
+									<div class="col-2 exploreRadioButton"><input type="radio" name="fundingLevels" value="almost" checked/></div>
+									<div class="col-10"><p>Nearly Completed</p></div>
+								</div>
+								<div class="row">
+									<div class="col-2 exploreRadioButton"><input  type="radio" name="fundingLevels" value="new"/></div>
+									<div class="col-10"><p>Just Started</p></div>
+								</div>
+								<div class="row">
+									<div class="col-2 exploreRadioButton"><input type="radio" name="fundingLevels" value="ongoing"/></div>
+									<div class="col-10"><p>Ongoing</p></div>
+								</div>
+							</div>
 						</div>
 						
-						<div class="causes">
+						<div class="causes" >
 							<span  onclick="myfunction3()">
 								<div class="exploreHeading row">
 									<div class="col-9"><h2>Causes</h2></div>
 									<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
 								</div>
 							</span>
-							<ul class="causeList" id="causeInput">
-								<li><a>Education</a></li>
-								<li><a>Health</a></li>
-								<li><a>Children</a></li>
-								<li><a>Women Empowerment</a></li>
-								<li><a>Food and Hunger</a></li>
-								<li><a>Sports</a></li>
-								<li><a>Animal Welfare</a></li>
-								<li><a>Environment</a></li>
-								<li><a>Others</a></li>
-							</ul>
+							<div class="causesList" id="causeInput">
+								<div class="causesList1">
+									<a>Education</a>
+								</div>
+								<div class="causesList2">
+									<a>Health</a>
+								</div>
+								<div class="causesList3">
+									<a>Children</a>
+								</div>
+								<div class="causesList4">
+									<a>Women Empowerment</a>
+								</div>
+								<div class="causesList5">
+									<a>Food and Hunger</a>
+								</div>
+								<div class="causesList1">
+									<a>Sports</a>
+								</div>
+								<div class="causesList1">
+									<a>Animal Welfare</a>
+								</div>
+								<div class="causesList1">
+									<a>Enviroment</a>
+								</div>
+								<div class="causesList6">
+									<a>Others</a>
+								</div>
+							</div>
 						</div>
 					</form>
 				</div>
@@ -114,20 +141,20 @@
 							  </div>
 							</div>
 							<div class="form-container actived">
-								<img src="logo/logo-final.png"/>
-								<div class="form-item">
-									<form class="form-log-in animated">
-									  <input name="Username" placeholder="Username" type="text" />
-									  <input name="Password" placeholder="Password" type="Password" />
-									  <div class="btn">Log in</div>
-									</form>
-									<form class="form-sign-up animated">
-									  <input name="Username" placeholder="Username" type="text" />
-									  <input name="Password" placeholder="Password" type="Password" />
-									  <input name="CPassword" placeholder="Confirm Password" type="Password" />
-									  <div class="btn">Sign Up</div>
-									</form>
-								</div>
+							  <div class="form-item">
+								
+								<form class="form-log-in animated">
+								  <input name="Username" placeholder="Username" type="text" />
+								  <input name="Password" placeholder="Password" type="Password" />
+								  <div class="btn">Log in</div>
+								</form>
+								<form class="form-sign-up animated">
+								  <input name="Username" placeholder="Username" type="text" />
+								  <input name="Password" placeholder="Password" type="Password" />
+								  <input name="CPassword" placeholder="Confirm Password" type="Password" />
+								  <div class="btn">Sign Up</div>
+								</form>
+							  </div>
 							</div>
 							</div>
 						</div>
@@ -152,20 +179,20 @@
 								  </div>
 								</div>
 								<div class="form-container1">
-									<img src="logo/logo-final.png"/>
-									<div class="form-item1">
-										<form class="form-log-in1 animated">
-										  <input name="Username" placeholder="Username" type="text" />
-										  <input name="Password" placeholder="Password" type="Password" />
-										  <div class="btn">Log in</div>
-										</form>
-										<form class="form-sign-up1 animated">
-										  <input name="Username" placeholder="Username" type="text" />
-										  <input name="Password" placeholder="Password" type="Password" />
-										  <input name="CPassword" placeholder="Confirm Password" type="Password" />
-										  <div class="btn">Sign Up</div>
-										</form>
-									</div>
+								  <div class="form-item1">
+									
+									<form class="form-log-in1 animated">
+									  <input name="Username" placeholder="Username" type="text" />
+									  <input name="Password" placeholder="Password" type="Password" />
+									  <div class="btn">Log in</div>
+									</form>
+									<form class="form-sign-up1 animated">
+									  <input name="Username" placeholder="Username" type="text" />
+									  <input name="Password" placeholder="Password" type="Password" />
+									  <input name="CPassword" placeholder="Confirm Password" type="Password" />
+									  <div class="btn">Sign Up</div>
+									</form>
+								  </div>
 								</div>
 							</div>
 						</div>

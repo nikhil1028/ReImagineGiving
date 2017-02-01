@@ -1,12 +1,12 @@
 
 function openNav() {
 	var div = document.getElementById('exploreContent');
-	if(div.style.height == ""){
+	if(div.style.width == ""){
     document.getElementById("myNav").style.width = "100%";
-	document.getElementById("exploreContent").style.height = "100%";
+	document.getElementById("exploreContent").style.width = "25%";
 	document.getElementById("exploreContent").style.opacity = "1";
 	document.getElementById('exploreDiv').classList.toggle('exploreDiv');
-	document.getElementById('ninja-btn').classList.toggle('active');
+	document.getElementById('ninja-btn').classList.toggle('activated');
 	document.getElementById('exploreButton').classList.toggle('exploreButtonActive');
 	document.getElementsByTagName("body")[0].style.overflowY = "hidden";
 	}
@@ -18,10 +18,10 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("myNav").style.width = "0";
-	document.getElementById("exploreContent").style.height = "";
+	document.getElementById("exploreContent").style.width = "";
 	document.getElementById("exploreContent").style.opacity = "0";
 	document.getElementById('exploreDiv').classList.toggle('exploreDiv');
-	document.getElementById('ninja-btn').classList.toggle('active');
+	document.getElementById('ninja-btn').classList.toggle('activated');
 	document.getElementById('exploreButton').classList.toggle('exploreButtonActive');
 	document.getElementsByTagName("body")[0].style.overflowY = "scroll";
 }

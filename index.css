@@ -28,7 +28,7 @@ h2.whatWeDoHeading{
 	padding-right: 5px;
 	position: relative;
 	display: inline-block;
-	margin-bottom: 2%;
+	margin-bottom: 3%;
 	letter-spacing: 1px;
 	font-family: Montserrat-SemiBold;
 }
@@ -40,6 +40,12 @@ h2.whatWeDoHeading:before{
     bottom: 0;
     left: 46%;
     border-bottom: 2px solid #38c0ff;
+}
+
+.trustNetwork{
+	height: 25vw;
+	background-image: url(images/reimagineTrustNetworkBackground.png);
+	background-size: contain;
 }
 
 .connectWithFacebook {
