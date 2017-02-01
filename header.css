@@ -9,8 +9,8 @@ header{
 
 header h2{
 	font-size: 15px;
-	font-family: Nunito-Regular;
-	margin-top: -5px;
+	font-family: Nunito-ExtraLight;
+	margin-top: -6px;
 	transition: 0.1s;
 }
 
@@ -24,13 +24,6 @@ header h2{
 	cursor:pointer;
 }
 
-.navBarLowerArrow{
-	height: 10px;
-	float: right;
-	margin-right: 3px;
-	cursor: pointer;
-}
-
 .mainNavBarButton{
 	margin-top: 15px;
 	padding-bottom: 5px;
@@ -40,14 +33,15 @@ header h2{
 .navBarExploreButton{
 	cursor: pointer;
 	text-align: left !Important;
+	padding-top: 5px;
 }
 
 .navBarSignUpButton{
 	text-align: right !Important;
 	padding-right: 10px;
 	border-right: 2px solid black;
-	padding-top: 3px;
-	padding-bottom: 4px;
+	padding-top: 5px;
+	padding-bottom: 2px;
 	cursor:pointer;
 }
 
@@ -55,5 +49,5 @@ header h2{
 	text-align: left !Important; 
 	padding-left: 10px;
 	cursor:pointer;
-	padding-top: 3px;
+	padding-top: 5px;
 }

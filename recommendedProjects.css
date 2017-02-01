@@ -20,23 +20,39 @@
 	  background-color: white;
 }
 
+.stats3 {
+    padding-left: 7%;
+}
+
 .recommendedProjectsHeading h2{
 	font-size: 30px;
 	font-family: Nunito-Regular;
 	padding-left: 12.5%;
 }
 
-.recommendedProjectsHeading a{
-	font-size: 16px;
-	font-family: Nunito-Light;
-	margin-left: 45%;
-	border-radius: 40px;
-	border: 1px solid rgb(53,195,254);
-	padding: 8px 30px 12px 30px;
-	font-family: Nunito-Light;
-	color: rgb(53,195,254);
+.recommendedProjectsHeading a:hover:after {
+    /* height: 140%; */
+    opacity: 1;
 }
-
+.recommendedProjectsHeading a:after {
+    transform: translateX(-50%) translateY(-50%);
+    background: rgb(53,195,254);
+    opacity: 0.5;
+    transition: all 0.7s ease;
+}
+.recommendedProjectsHeading a {
+    font-size: 16px;
+    font-family: Nunito-Light;
+    margin-left: 45%;
+    border-radius: 40px;
+    border: 1px solid rgb(53,195,254);
+    padding: 8px 30px 10px 30px;
+    line-height: 100%;
+    font-family: Nunito-Light;
+    color: rgb(53,195,254);
+    transition: all 1s ease;
+	cursor: pointer;
+}
 .recommendedProjectsHeading a:hover{
 	color: white;
 	background-color: rgb(53,195,254);
@@ -128,34 +144,36 @@
 }
 
 .projectDetails H1, .projectStats H1 {
-	font-family: Nunito-Bold;
-	font-size: 12.50px;
-	padding-bottom: 3px;
+	font-family: Montserrat-Regular;
+	font-size: 12.5px;
+	line-height: 100%;
+	padding-bottom: 1px;
 }
 
 .projectDetails H2, .projectStats H2{
 	font-size: 11px;
-	font-family: Nunito-Regular;
+	font-family: Nunito-Light;
 }
 
 .projectStats{
 	padding-right: 10px;
 	position: absolute;
-	bottom: 28px;
+	bottom: 30px;
 }
 
 .projectDetails p{
 	margin-top: 5px;
 	font-size: 12px;
-	font-family: Nunito-Light;
-	line-height: 115%;
+	font-family: Nunito-ExtraLight;
+	line-height: 110%;
 }
 
 .projectStats h2{
 	margin-top: 10px;
 	font-size: 12px;
-	font-family: Nunito-Bold;
+	font-family: Nunito-Regular;
 	line-height: 0%;
+	letter-spacing: 0.5px;
 }
 
 .progress {
@@ -177,7 +195,7 @@
 	font-size: 13px;
 }
 .statsText p{
-	font-size: 11px;
+	font-size: 12px;
 	font-family: Nunito-Light;
 }
 

@@ -42,12 +42,6 @@ h2.whatWeDoHeading:before{
     border-bottom: 2px solid #38c0ff;
 }
 
-.trustNetwork{
-	height: 25vw;
-	background-image: url(images/reimagineTrustNetworkBackground.png);
-	background-size: contain;
-}
-
 .connectWithFacebook {
     background-color: #f8f8ff;
     padding: 30px;
@@ -84,4 +78,75 @@ h2.whatWeDoHeading:before{
     height: 55px;
     margin-top: -2px;
     margin-left: -2px;
+}
+
+
+.trustNetwork{
+	height: 24.93vw;
+	background-image: url(images/reimagineTrustNetworkBackground.png);
+	background-size: contain;
+	position: relative;
+	font-family: Montserrat-Regular;
+}
+
+/*trustNetworkButton*/
+
+.trustNetworkButton {
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  line-height: 45px;
+  margin: 0 auto 2em;
+  max-width: 160px;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+  background: rgb(255,255,255);
+  font-weight: 100;
+  color: rgb(0,180,255);
+  text-align: center;
+}
+
+.trustNetworkButton svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.trustNetworkButton rect {
+  fill: none;
+  stroke: rgb(255,255,255);
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+}
+
+.trustNetworkButton:hover {
+  background: rgba(225, 51, 45, 0);
+  color:white;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.trustNetworkButton:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.trustNetworkHeading{
+	position: absolute;
+	bottom: 34%;
+	left: 1.41%;
+	color: white;
+  letter-spacing: 0.5px;
+}
+
+.trustNetworkHeading span{
+	font-family: Montserrat-SemiBold;
 }
