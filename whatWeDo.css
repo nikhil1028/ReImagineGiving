@@ -128,11 +128,13 @@
 }
 .box a.expand span.minus {
   opacity: 0;
+  transition: all 0.3s ease;
 }
 .box a.expand span.plus {
   opacity: 1;
   font-size: 45px;
   margin-left: -1px;
+  transition: all 0.3s ease;
 }
 .box.selected a.expand {
   display: block;
@@ -161,9 +163,11 @@
   font-size: 60px;
   margin-left: -3.5px;
   margin-top: 6px;
+  transition: all 0.3s ease-in-out;
 }
 .box.selected a.expand span.plus {
   opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 .box.selected .icon-cont {
   -webkit-transform: scale(1.5,1.5);
@@ -173,6 +177,7 @@
   top: -20px;
   left: -5px;
   right: 180px;
+  transition: all 0.4s ease-in-out;
 }
 .box.selected:hover .icon-cont {
   -webkit-animation: none;

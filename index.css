@@ -44,10 +44,10 @@ h2.whatWeDoHeading:before{
 
 .connectWithFacebook {
     background-color: #f8f8ff;
-    padding: 30px;
-    margin-top: 30px;
-	 position: relative;
-	height: 20vw;
+    padding: 4vw 3vw 4vw 3vw;
+    position: relative;
+    height: 25vw;
+  line-height: 400%;
 }
 .connectWithFacebookLine {
   position: absolute;
@@ -57,12 +57,12 @@ h2.whatWeDoHeading:before{
 }
 .connectWithFacebook h1{
 	font-size: 50px;
-	font-family: Nunito-Regular;
+	font-family: Montserrat-Light;
 	letter-spacing: 1.5px;
 }
 .connectWithFacebook span{
 	color: #39c0ff;
-	font-family: Nunito-Bold;
+	font-family: Montserrat-SemiBold;
 }
 .connectWithFacebookImage{
 	position: absolute;
@@ -82,7 +82,7 @@ h2.whatWeDoHeading:before{
 
 
 .trustNetwork{
-	height: 24.93vw;
+	height: 33vw;
 	background-image: url(images/reimagineTrustNetworkBackground.png);
 	background-size: contain;
 	position: relative;
@@ -141,8 +141,8 @@ h2.whatWeDoHeading:before{
 
 .trustNetworkHeading{
 	position: absolute;
-	bottom: 34%;
-	left: 1.41%;
+	bottom: 35%;
+	left: 5.65%;
 	color: white;
   letter-spacing: 0.5px;
 }

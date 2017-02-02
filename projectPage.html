@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="header.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="explore.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="signUp.css" media="screen"/>
-	<link rel="stylesheet" type="text/css" href="slidingOverlay.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="projectPage.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="timeline.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="recommendedProjects.css" media="screen"/>
@@ -19,19 +18,18 @@
 	<script src="cloudflare1.js"></script>
 	<script src="explore.js"></script>
 	<script src="googleapi.js"></script>
-	<script src="SignUp.js"></script>
 	<script src="projectPageMainTabs.js"></script>
 </head>
 
 <body>
 	<header>
 		<div class="row header">
-			<div class="col-4 mainNavBarButton" id="exploreDiv">
+			<div class="col-3 mainNavBarButton" id="exploreDiv">
 				<div class="col-2">
 					 <a class="ninja-btn" id="ninja-btn" title="menu" onclick="openNav()"><span></span></a>
 				</div>
 				<div class="col-10 navBarExploreButton">
-					<span onclick="openNav()"><h2 class="exploreButton" id="exploreButton">Explore</h2></span>
+					<h2 class="exploreButton" id="exploreButton"><span onclick="openNav()">Explore</span></h2>
 				</div>
 			</div>
 			<div id="myNav" class="explore">
@@ -40,13 +38,22 @@
 					<form>
 						<div class="location">
 							<span  onclick="myfunction1()">
-								<div class="exploreHeading row">
+								<div class="exploreHeading1 row">
 									<div class="col-9"><h2>Location</h2></div>
 									<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
 								</div>
 							</span>
 							<div class="inputField" id="locationInput">
-								<input placeholder="Location.." type="text" name="location" autocomplete="off"/>
+								<div class="row" id="wrap">
+									<form action="" autocomplete="on">
+										<input id="search" name="search" type="text" placeholder="Search"><input id="search_submit" value="Rechercher" type="submit">
+									</form>
+								</div>
+								<ul>
+									<li><a>Delhi</a></li>
+									<li><a>Varanasi</a></li>
+									<li><a>Jaipur</a></li>
+								</ul>
 							</div>
 						</div>
 						
@@ -178,7 +185,7 @@
 			</div>
 		</div>
 	</header>
-	
+
 	<div class="row">
 		<div class="col-7 projectPageLeft">
 			<div class="projectPageProjectMainImage">
@@ -439,16 +446,6 @@
 				<div class="row projectContent">
 					<div class="projectThumbnail">
 						<img class="img-thumbnail" src="images/web1.jpg" >
-						<div class="row locationCause">
-							<div class="location">
-								<div class="col-1 locationImage"><img src="images/locationThumbnail.png"></div>
-								<div class="col-2 locationHeading"><h2>Varanasi</h2></div>
-							</div>
-							<div class="cause">
-								<div class="col-1 causeImage"><img src="images/causeThumbnail.png"></div>
-								<div class="col-4 causeHeading"><h2>Child Education</h2></div>
-							</div>
-						</div>
 					</div>
 					
 					<div class="projectDetails">
@@ -511,16 +508,6 @@
 				<div class="row projectContent">
 					<div class="projectThumbnail">
 						<img class="img-thumbnail" src="images/web2.jpg" >
-						<div class="row locationCause">
-							<div class="location">
-								<div class="col-1 locationImage"><img src="images/locationThumbnail.png"></div>
-								<div class="col-2 locationHeading"><h2>Varanasi</h2></div>
-							</div>
-							<div class="cause">
-								<div class="col-1 causeImage"><img src="images/causeThumbnail.png"></div>
-								<div class="col-4 causeHeading"><h2>Child Education</h2></div>
-							</div>
-						</div>
 					</div>
 					
 					
@@ -582,16 +569,6 @@
 				<div class="row projectContent">
 					<div class="projectThumbnail">
 						<img class="img-thumbnail" src="images/web3.jpg" >
-						<div class="row locationCause">
-							<div class="location">
-								<div class="col-1 locationImage"><img src="images/locationThumbnail.png"></div>
-								<div class="col-2 locationHeading"><h2>Varanasi</h2></div>
-							</div>
-							<div class="cause">
-								<div class="col-1 causeImage"><img src="images/causeThumbnail.png"></div>
-								<div class="col-4 causeHeading"><h2>Child Education</h2></div>
-							</div>
-						</div>
 					</div>
 					
 					<div class="projectDetails">

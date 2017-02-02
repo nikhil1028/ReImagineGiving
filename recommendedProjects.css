@@ -4,7 +4,6 @@
 }
 
 .projects{
-	border-bottom: 1px solid rgba(55,55,55,0.5);
 	padding-bottom: 4%;
 }
 
@@ -26,12 +25,11 @@
 
 .recommendedProjectsHeading h2{
 	font-size: 30px;
-	font-family: Nunito-Regular;
+	font-family: Nunito-ExtraLight;
 	padding-left: 12.5%;
 }
 
 .recommendedProjectsHeading a:hover:after {
-    /* height: 140%; */
     opacity: 1;
 }
 .recommendedProjectsHeading a:after {
@@ -88,52 +86,11 @@
 }
 
 .projectThumbnail > img{
-	position: relative;
+	position: absolute;
 	max-width: 100%;
 	margin: 0;
+	top: 0;
 }
-.locationCause{
-	position:absolute;
-	bottom:4px;
-	margin-left: 4px;
-}
-.locationCause img{
-	height: 30px;
-	cursor:pointer;
-}
-.locationHeading, .causeHeading{
-	height: 30px;
-	width:0;
-	transition: 0.4s;
-	display: none;
-}
-.locationHeading h2{
-	background-color:#38c0ff;
-	margin-left: -2px;
-}
-.causeHeading h2{
-	background-color: #13aa21;
-	margin-left: 3px;
-}
-.locationHeading h2, .causeHeading h2{
-	font-size: 11px;
-	color: white;
-	margin-top: 7px;
-	padding: 4px;
-	padding-top: 2px;
-}
-.cause img{
-	margin-left: 5px;
-}
-.location:hover .locationHeading{
-	width: 16.66%;
-	display:block;
-}
-.cause:hover .causeHeading{
-	width: 31%;
-	display:block;
-}
-
 .projectDetails, .projectStats{
 	margin: 5px;
 }
@@ -223,4 +180,42 @@
 
 .projectSectionDonateButton h2:hover{
 	background-color: rgb(0,180,255);
+}
+
+.locationCause {
+    position: absolute;
+    bottom: 0;
+	z-index: 7;
+}
+img.locationImage, img.causeImage {
+    position: absolute;
+    bottom: 4px;
+	height: 30px;
+    margin-left: 2px;
+	cursor: pointer;
+}
+img.causeImage{
+	margin-left: 30px;
+}
+.projectHeading, .causeHeading {
+    font-size: 12px;
+	color: white;
+    width: 0;
+    display: none;
+}
+.causeHeading{
+background-color: #00b0ff;
+}
+.projectHeading{
+background-color: #13a921;
+}
+
+.projectLocation:hover .projectHeading{
+	display:block;
+	width:18%;
+}
+
+.projectCause:hover .causeHeading{
+	display: none;
+	width: 25%;
 }

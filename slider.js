@@ -22,8 +22,8 @@ $('.slider').each(function() {
       slideLeft = '100%';
       animateLeft = '-100%';
     } else {
-      slideLeft = '-100%';
-      animateLeft = '100%';
+      slideLeft = '100%';
+      animateLeft = '-100%';
     }
     
     $slides.eq(newIndex).css({

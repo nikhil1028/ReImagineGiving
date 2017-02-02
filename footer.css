@@ -1,10 +1,8 @@
-footer{
-	margin-top: 30px;
-}
+
 .footerOptions{
 	background-color: #0d0d0d;
-	padding: 30px;
-	border-bottom: 1px solid #c2c2c2;
+	padding: 3.5%;
+	border-bottom: 2px solid #c2c2c2;
 }
 
 .footerOptions a{
@@ -14,7 +12,6 @@ footer{
 
 .footerOptions a:hover, .footerOptions a:focus {
     color: #38c0ff;
-	  font-size: 16px;
 }
 
 .footerAboutUs, .footerCauses, .footerWorks{
@@ -23,26 +20,26 @@ footer{
 }
 
 .footerCauses2{
-	margin-top: 28px;
+	margin-top: 34px;
 }
 
 .footerBottom{
 	background-color: #0a0a0a;
-	padding-left: 30px;
-	padding-top: 10px;
-	padding-bottom: 5px;
+	padding: 15px 30px 15px 30px;
 }
 
 footer h2{
-	font-size: 16px;
-	font-family: Nunito-Regular;
+	font-size: 18px;
+	font-family: Nunito-ExtraLight;
 	color: white;
+	margin: 3px 0 3px 0;
 }
 
 footer h1{
-	font-size: 23.5px;
-	font-family: Montserrat-SemiBold;
+	font-size: 24px;
+	font-family: Montserrat-Regular;
 	color: white;
+	margin-bottom: 5px;
 }
 
 footer img{
