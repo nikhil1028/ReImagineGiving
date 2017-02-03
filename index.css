@@ -82,7 +82,7 @@ h2.whatWeDoHeading:before{
 
 
 .trustNetwork{
-	height: 33vw;
+	height: 33.33vw;
 	background-image: url(images/reimagineTrustNetworkBackground.png);
 	background-size: contain;
 	position: relative;
@@ -90,6 +90,16 @@ h2.whatWeDoHeading:before{
 }
 
 /*trustNetworkButton*/
+
+.content {
+    font-family: Nunito-Light;
+    color: white;
+    margin-left: 50%;
+    padding-top: 9%;
+    font-size: 19px;
+  text-align: justify;
+    margin-right: 5%;
+}
 
 .trustNetworkButton {
   cursor: pointer;
