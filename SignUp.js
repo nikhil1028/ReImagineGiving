@@ -67,14 +67,15 @@ function SignMeUp() {
     document.getElementById("SignUp").style.height = "0%";
 	document.getElementById("LogIn").style.height = "0%";
 	document.getElementsByTagName("body")[0].style.overflowY = "scroll";
-	document.getElementById("Profile").style.display = "inline-block";
-	document.getElementById("registrationDiv").style.display = "none";
-	document.getElementById("LogInOverlay").style.display = "none";
+	document.getElementById("navBarProfileButton").style.display = "inline-block";
+	document.getElementById("navBarLogInButton").style.display = "none";
+	document.getElementById("navBarSignUpButton").style.display = "none";
 }
 
 function logout() {
-	document.getElementById("registrationDiv").style.display = "inline-block";
-	document.getElementById("Profile").style.display = "none";
+	document.getElementById("navBarProfileButton").style.display = "none";
+	document.getElementById("navBarLogInButton").style.display = "inline-block";
+	document.getElementById("navBarSignUpButton").style.display = "inline-block";
 }
 
 

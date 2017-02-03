@@ -55,5 +55,44 @@ header h2{
 	padding-top: 5px;
 }
 
+.navBarProfileButton{
+	display:none;
+	padding-top: 5px;
+	position: relative;
+	padding-bottom: 16px;
+	padding-right: 55%;
+	margin-left: 50%;
+}
 
+.navBarProfileButton:hover .navBarProfileOptions{
+	display: block;
+}
+
+#navBarProfile {
+    text-align: right;
+    margin-right: 10%;
+}
+
+.navBarProfileOptions{
+	position: fixed;
+	display: none;
+	right: 0;
+	z-index: 2;
+	margin-right: 2%;
+	background: #38c0ff;
+	padding: 10px;
+	overflow: auto;
+	right: 0;
+	margin-top: 16px;
+}
+
+
+.navBarProfileOptions a{
+	padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+	z-index: 2;
+	border-bottom: 1px solid #373737;
+	color: white;
+}
 /*search bar*/
