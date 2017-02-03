@@ -8,6 +8,11 @@
   padding-bottom: 3%;
 }
 
+.second .circleIconImage {
+    height: 70%;
+    margin-top: 15.5%;
+}
+
 #first {
     background-color: rgba(255,255,255,1.0);
   margin-left: 11vw;
@@ -33,10 +38,10 @@
 }
 
 .circleIconImage{
-  height: 64%;
+  height: 79%;
   padding-top: 0px;
-  margin-top: 18%;
-  margin-bottom: 18%;
+  margin-top: 11%;
+  margin-bottom: 17%;
 }
 
 .box .icon-cont {
