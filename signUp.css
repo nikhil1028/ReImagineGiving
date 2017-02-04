@@ -99,6 +99,9 @@
     background: #3b5998 !important;
     border: 1px solid #3b5998 !important;
 }
+.btn i {
+    margin-right: 10px;
+}
 .container .form-container .form-item form .btn{
   cursor: pointer;
   display: block;
@@ -218,7 +221,7 @@
   padding: 10px;
   width: 250px;
   margin: 5px;
-  text-align: center;
+  /*! text-align: center; */
   border: 2px solid rgba(0,180,255,1.0);
   background-color: rgba(0,180,355,1.0);
   color: white;

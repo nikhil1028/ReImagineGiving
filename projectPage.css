@@ -264,13 +264,13 @@ ul.projectPageDonationOptions li a{
 .projectPageDonationAmount{
 	text-align: center;
 	background-color: #82dafe;
-	border: 1px solid #ccfoff;
+	border: 1px solid #ccf0ff;
 	font-family: Nunito-ExtraLight;
 }
 .projectPageDonationReason{
 	background-color: #ccf0ff;
 	padding-left: 10px;
-	border: 1px solid #ccfoff;
+	border: 1px solid #ccf0ff;
 	font-family: Nunito-ExtraLight;
 	color: #373737;
 }

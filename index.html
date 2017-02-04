@@ -27,188 +27,188 @@
 </head>
   
 <body>
-	<header>
-		<div class="row header">
-			<div class="col-3 mainNavBarButton" id="exploreDiv">
-				<div class="col-2">
-					 <a class="ninja-btn" id="ninja-btn" title="menu" onclick="openNav()"><span></span></a>
+		<header>
+			<div class="row header">
+				<div class="col-3 mainNavBarButton" id="exploreDiv">
+					<div class="col-2">
+						 <a class="ninja-btn" id="ninja-btn" title="menu" onclick="openNav()"><span></span></a>
+					</div>
+					<div class="col-10 navBarExploreButton">
+						<h2 class="exploreButton" id="exploreButton"><span onclick="openNav()">Explore</span></h2>
+					</div>
 				</div>
-				<div class="col-10 navBarExploreButton">
-					<h2 class="exploreButton" id="exploreButton"><span onclick="openNav()">Explore</span></h2>
-				</div>
-			</div>
-			<div id="myNav" class="explore">
-				<div style="background-color:black;"class="translucentContainer"></div>
-				<div id="exploreContent" class="exploreContent">	
-					<form>
-						<div class="location">
-							<span  onclick="myfunction1()">
-								<div class="exploreHeading1 row">
-									<div class="col-9"><h2>Location</h2></div>
-									<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
+				<div id="myNav" class="explore">
+					<div style="background-color:black;"class="translucentContainer"></div>
+					<div id="exploreContent" class="exploreContent">	
+						<form>
+							<div class="location">
+								<span  onclick="myfunction1()">
+									<div class="exploreHeading1 row">
+										<div class="col-9"><h2>Location</h2></div>
+										<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
+									</div>
+								</span>
+								<div class="inputField" id="locationInput">
+									<div class="row" id="wrap">
+										<form action="" autocomplete="on">
+											<input id="search" name="search" type="text" placeholder="Search"><input id="search_submit" value="Rechercher" type="submit">
+										</form>
+									</div>
+									<ul>
+										<li><a>Delhi</a></li>
+										<li><a>Varanasi</a></li>
+										<li><a>Jaipur</a></li>
+									</ul>
 								</div>
-							</span>
-							<div class="inputField" id="locationInput">
-								<div class="row" id="wrap">
-									<form action="" autocomplete="on">
-										<input id="search" name="search" type="text" placeholder="Search"><input id="search_submit" value="Rechercher" type="submit">
-									</form>
-								</div>
-								<ul>
-									<li><a>Delhi</a></li>
-									<li><a>Varanasi</a></li>
-									<li><a>Jaipur</a></li>
+							</div>
+							
+							<div class="funding">
+								<span onclick="myfunction2()">
+									<div class="exploreHeading row">
+										<div class="col-9"><h2>Funding</h2></div>
+										<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
+									</div>
+								</span>
+								<ul class="fundingLevels" id="fundingInput">
+									<li><a>Nearly Funded</a></li>
+									<li><a>Just Started</a></li>
+									<li><a>Ongoing</a></li>
 								</ul>
 							</div>
-						</div>
-						
-						<div class="funding">
-							<span onclick="myfunction2()">
-								<div class="exploreHeading row">
-									<div class="col-9"><h2>Funding</h2></div>
-									<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
-								</div>
-							</span>
-							<ul class="fundingLevels" id="fundingInput">
-								<li><a>Nearly Funded</a></li>
-								<li><a>Just Started</a></li>
-								<li><a>Ongoing</a></li>
-							</ul>
-						</div>
-						
-						<div class="causes">
-							<span  onclick="myfunction3()">
-								<div class="exploreHeading row">
-									<div class="col-9"><h2>Causes</h2></div>
-									<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
-								</div>
-							</span>
-							<ul class="causeList" id="causeInput">
-								<li><a>Education</a></li>
-								<li><a>Health</a></li>
-								<li><a>Children</a></li>
-								<li><a>Women Empowerment</a></li>
-								<li><a>Food and Hunger</a></li>
-								<li><a>Sports</a></li>
-								<li><a>Animal Welfare</a></li>
-								<li><a>Environment</a></li>
-								<li><a>Others</a></li>
-							</ul>
-						</div>
-					</form>
-				</div>
-			</div>
-			
-			<div class="col-9 floatRight">
-				
-				<div class="col-8 logo">
-					<a href="index.html">
-						<img src="logo/logo-final.png"></img>
-					</a>
-				</div>
-				
-				<div class="col-4 mainNavBarButton">
-					<div class="col-9 navBarSignUpButton" id="navBarSignUpButton">
-						<h2 id="registration"><span class="SignUpSpan" onclick="openSignUpOverlay()">Sign Up</span></h2>
+							
+							<div class="causes">
+								<span  onclick="myfunction3()">
+									<div class="exploreHeading row">
+										<div class="col-9"><h2>Causes</h2></div>
+										<div class="col-3"><h2 class="downArrow">&#9660;</h2></div>
+									</div>
+								</span>
+								<ul class="causeList" id="causeInput">
+									<li><a>Education</a></li>
+									<li><a>Health</a></li>
+									<li><a>Children</a></li>
+									<li><a>Women Empowerment</a></li>
+									<li><a>Food and Hunger</a></li>
+									<li><a>Sports</a></li>
+									<li><a>Animal Welfare</a></li>
+									<li><a>Environment</a></li>
+									<li><a>Others</a></li>
+								</ul>
+							</div>
+						</form>
 					</div>
-					<div id="SignUp" class="overlay">
-						<div class="translucentContainer"></div>
-							<!-- overlay content -->
-						<div class="outer-container">
-						  <div class="container">
-							<div class="info-container">
-							  <div class="info-item log-in">
-								<p>Have an account?</p>
-								<div class="btn1">Log In</div>
-							  </div>
-							  <div class="info-item sign-up">
-								<p>Don't have an account?</p>
-								<div class="btn1">Sign Up</div>
-							  </div>
-							</div>
-							<div class="form-container actived">
-								<img src="logo/logo-final.png"/>
-								<div class="form-item">
-									<form class="form-log-in animated">
-									  <input name="Username" placeholder="Username" type="text" />
-									  <input name="Password" placeholder="Password" type="Password" />
-										 <span onclick="SignMeUp()"> <div class="btn">Log in</div></span>
-										 <div class="btn googlebtn">Google</div>
-										 <div class="btn fbbtn">Facebook</div>
-									</form>
-									<form class="form-sign-up animated">
-									  <input name="Username" placeholder="Username" type="text" />
-									  <input name="Password" placeholder="Password" type="Password" />
-									  <input name="CPassword" placeholder="Confirm Password" type="Password" />
-									  <span onclick="SignMeUp()"><div class="btn">Sign Up</div></span>
-									  <div class="btn googlebtn">Google</div>
-										 <div class="btn fbbtn">Facebook</div>
-									</form>
-								</div>
-							</div>
-							</div>
-						</div>
+				</div>
+				
+				<div class="col-9 floatRight">
+					
+					<div class="col-8 logo">
+						<a href="index.html">
+							<img src="logo/logo-final.png"></img>
+						</a>
 					</div>
 					
-					<div class="col-3 navBarLogInButton" id="navBarLogInButton">
-						<h2 id="registration"><span class="LogInSpan" onclick="openLogInOverlay()">Log In</span></h2>
-					</div>
-					<div id="LogIn" class="overlay">
-						<div class="translucentContainer"></div>
-							<!-- overlay content -->
-						<div class="outer-container1">
-							<div class="container1">
-								<div class="info-container1">
-								  <div class="info-item1 log-in1">
+					<div class="col-4 mainNavBarButton">
+						<div class="col-9 navBarSignUpButton" id="navBarSignUpButton">
+							<h2 id="registration"><span class="SignUpSpan" onclick="openSignUpOverlay()">Sign Up</span></h2>
+						</div>
+						<div id="SignUp" class="overlay">
+							<div class="translucentContainer"></div>
+								<!-- overlay content -->
+							<div class="outer-container">
+							  <div class="container">
+								<div class="info-container">
+								  <div class="info-item log-in">
 									<p>Have an account?</p>
-									<div class="btn2">Log In</div>
+									<div class="btn1">Log In</div>
 								  </div>
-								  <div class="info-item1 sign-up1">
+								  <div class="info-item sign-up">
 									<p>Don't have an account?</p>
-									<div class="btn2">Sign Up</div>
+									<div class="btn1">Sign Up</div>
 								  </div>
 								</div>
-								<div class="form-container1">
+								<div class="form-container actived">
 									<img src="logo/logo-final.png"/>
-									<div class="form-item1">
-										<form class="form-log-in1 animated">
+									<div class="form-item">
+										<form class="form-log-in animated">
 										  <input name="Username" placeholder="Username" type="text" />
 										  <input name="Password" placeholder="Password" type="Password" />
-										  <span onclick="SignMeUp()"><div class="btn">Log in</div></span>
-										  <div class="btn googlebtn">Google</div>
-										 <div class="btn fbbtn">Facebook</div>
+											 <span onclick="SignMeUp()"> <div class="btn">Log in</div></span>
+											 <div class="btn googlebtn"><i class="fa fa-google-plus"></i>Log In</div>
+											 <div class="btn fbbtn"><i class="fa fa-facebook"></i>Log In</div>
 										</form>
-										<form class="form-sign-up1 animated">
+										<form class="form-sign-up animated">
 										  <input name="Username" placeholder="Username" type="text" />
 										  <input name="Password" placeholder="Password" type="Password" />
 										  <input name="CPassword" placeholder="Confirm Password" type="Password" />
 										  <span onclick="SignMeUp()"><div class="btn">Sign Up</div></span>
-										  <div class="btn googlebtn">Google</div>
-										 <div class="btn fbbtn">Facebook</div>
+										  <div class="btn googlebtn"><i class="fa fa-google-plus"></i>Sign Up</div>
+											 <div class="btn fbbtn"><i class="fa fa-facebook"></i>Sign Up</div>
 										</form>
 									</div>
 								</div>
+								</div>
 							</div>
 						</div>
-						<script src='cloudflare.js'></script>
-						<script src='cloudflare1.js'></script>
 						
-						<script src="SignUp.js"></script>
-					</div>
-					
-					<div class="col-12 navBarProfileButton" id="navBarProfileButton">
-						<h2 id="navBarProfile"><span class="profileSpan">Visharad Jalan</span></h2>
-						<div class="navBarProfileOptions">
-							 <a href="#"><h2>Profile</h2></a>
-							 <a href="#"><h2>My Donations</h2></a>
-							 <a href="#" onclick="logout()" style="border:none;"><h2>LogOut</h2></a>
+						<div class="col-3 navBarLogInButton" id="navBarLogInButton">
+							<h2 id="registration"><span class="LogInSpan" onclick="openLogInOverlay()">Log In</span></h2>
 						</div>
+						<div id="LogIn" class="overlay">
+							<div class="translucentContainer"></div>
+								<!-- overlay content -->
+							<div class="outer-container1">
+								<div class="container1">
+									<div class="info-container1">
+									  <div class="info-item1 log-in1">
+										<p>Have an account?</p>
+										<div class="btn2">Log In</div>
+									  </div>
+									  <div class="info-item1 sign-up1">
+										<p>Don't have an account?</p>
+										<div class="btn2">Sign Up</div>
+									  </div>
+									</div>
+									<div class="form-container1">
+										<img src="logo/logo-final.png"/>
+										<div class="form-item1">
+											<form class="form-log-in1 animated">
+											  <input name="Username" placeholder="Username" type="text" />
+											  <input name="Password" placeholder="Password" type="Password" />
+											  <span onclick="SignMeUp()"><div class="btn">Log in</div></span>
+											  <div class="btn googlebtn"><i class="fa fa-google-plus"></i>Log In</div>
+											 <div class="btn fbbtn"><i class="fa fa-facebook"></i>Log In</div>
+											</form>
+											<form class="form-sign-up1 animated">
+											  <input name="Username" placeholder="Username" type="text" />
+											  <input name="Password" placeholder="Password" type="Password" />
+											  <input name="CPassword" placeholder="Confirm Password" type="Password" />
+											  <span onclick="SignMeUp()"><div class="btn">Sign Up</div></span>
+											  <div class="btn googlebtn"><i class="fa fa-google-plus"></i>Sign Up</div>
+											 <div class="btn fbbtn"><i class="fa fa-facebook"></i>Sign Up</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<script src='cloudflare.js'></script>
+							<script src='cloudflare1.js'></script>
+							
+							<script src="SignUp.js"></script>
+						</div>
+						
+						<div class="col-12 navBarProfileButton" id="navBarProfileButton">
+							<h2 id="navBarProfile"><span class="profileSpan">Visharad Jalan</span></h2>
+							<div class="navBarProfileOptions">
+								 <a href="#"><h2>Profile</h2></a>
+								 <a href="#"><h2>My Donations</h2></a>
+								 <a href="#" onclick="logout()" style="border:none;"><h2>LogOut</h2></a>
+							</div>
+						</div>
+						
 					</div>
-					
 				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
 	<div class="slider">
 		<div class="slide_viewer">
@@ -304,6 +304,16 @@
 				<div class="row projectContent">
 					<div class="projectThumbnail">
 						<img class="img-thumbnail" src="images/web1.jpg" >
+						<div class="row locationCause">
+							<div class="projectlocation">
+								<div class="col-1 projectlocationImage"><img src="images/locationThumbnail.png"></div>
+								<div class="col-2 projectlocationHeading"><h2>Varanasi</h2></div>
+							</div>
+							<div class="projectcause">
+								<div class="col-1 projectcauseImage"><img src="images/causeThumbnail.png"></div>
+								<div class="col-4 projectcauseHeading"><h2>Child Education</h2></div>
+							</div>
+						</div>
 					</div>
 					
 					<div class="projectDetails">
@@ -366,6 +376,16 @@
 				<div class="row projectContent">
 					<div class="projectThumbnail">
 						<img class="img-thumbnail" src="images/web2.jpg" />
+						<div class="row locationCause">
+							<div class="projectlocation">
+								<div class="col-1 projectlocationImage"><img src="images/locationThumbnail.png"></div>
+								<div class="col-2 projectlocationHeading"><h2>Varanasi</h2></div>
+							</div>
+							<div class="projectcause">
+								<div class="col-1 projectcauseImage"><img src="images/causeThumbnail.png"></div>
+								<div class="col-4 projectcauseHeading"><h2>Child Education</h2></div>
+							</div>
+						</div>
 					</div>
 					
 					
@@ -427,6 +447,16 @@
 				<div class="row projectContent">
 					<div class="projectThumbnail">
 						<img class="img-thumbnail" src="images/web3.jpg" >
+						<div class="row locationCause">
+							<div class="projectlocation">
+								<div class="col-1 projectlocationImage"><img src="images/locationThumbnail.png"></div>
+								<div class="col-2 projectlocationHeading"><h2>Varanasi</h2></div>
+							</div>
+							<div class="projectcause">
+								<div class="col-1 projectcauseImage"><img src="images/causeThumbnail.png"></div>
+								<div class="col-4 projectcauseHeading"><h2>Child Education</h2></div>
+							</div>
+						</div>
 					</div>
 					
 					<div class="projectDetails">
@@ -495,6 +525,16 @@
 				<div class="row projectContent">
 					<div class="projectThumbnail">
 						<img class="img-thumbnail" src="images/16_9_4.jpg" >
+						<div class="row locationCause">
+							<div class="projectlocation">
+								<div class="col-1 projectlocationImage"><img src="images/locationThumbnail.png"></div>
+								<div class="col-2 projectlocationHeading"><h2>Varanasi</h2></div>
+							</div>
+							<div class="projectcause">
+								<div class="col-1 projectcauseImage"><img src="images/causeThumbnail.png"></div>
+								<div class="col-4 projectcauseHeading"><h2>Child Education</h2></div>
+							</div>
+						</div>
 					</div>
 					
 					<div class="projectDetails">
@@ -557,6 +597,16 @@
 				<div class="row projectContent">
 					<div class="projectThumbnail">
 						<img class="img-thumbnail" src="images/16_9_5.jpg" >
+						<div class="row locationCause">
+							<div class="projectlocation">
+								<div class="col-1 projectlocationImage"><img src="images/locationThumbnail.png"></div>
+								<div class="col-2 projectlocationHeading"><h2>Varanasi</h2></div>
+							</div>
+							<div class="projectcause">
+								<div class="col-1 projectcauseImage"><img src="images/causeThumbnail.png"></div>
+								<div class="col-4 projectcauseHeading"><h2>Child Education</h2></div>
+							</div>
+						</div>
 					</div>
 					
 					
@@ -618,6 +668,16 @@
 				<div class="row projectContent">
 					<div class="projectThumbnail">
 						<img class="img-thumbnail" src="images/16_9_6.jpg" >
+						<div class="row locationCause">
+							<div class="projectlocation">
+								<div class="col-1 projectlocationImage"><img src="images/locationThumbnail.png"></div>
+								<div class="col-2 projectlocationHeading"><h2>Varanasi</h2></div>
+							</div>
+							<div class="projectcause">
+								<div class="col-1 projectcauseImage"><img src="images/causeThumbnail.png"></div>
+								<div class="col-4 projectcauseHeading"><h2>Child Education</h2></div>
+							</div>
+						</div>
 					</div>
 					
 					<div class="projectDetails">
