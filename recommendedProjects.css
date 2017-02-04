@@ -231,3 +231,15 @@
 	width: 40%;
 	opacity: 1;
 }
+.projectcause:hover .locationCauseLink{
+	width: 30% !important;
+}
+
+.locationCauseLink{
+	position: absolute;
+width: 78%;
+height: 100%;
+top: 0;
+right: 0;
+text-decoration: none;
+}
