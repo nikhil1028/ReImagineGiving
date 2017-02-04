@@ -23,6 +23,7 @@
 	<script src="cloudflare1.js"></script>
 	<script src="explore.js"></script>
 	<script src="googleapi.js"></script>
+	<script src="timeline.js"></script>
 	<script src="projectPageMainTabs.js"></script>
 </head>
 
@@ -287,42 +288,116 @@
 				
 			</div>
 			<div id="projectTimeline" class="row projectTimeline mainTabContent">
-				<ul class="timeline">
+				<section class="cd-horizontal-timeline">
+					<div class="timeline">
+						<div class="events-wrapper">
+							<div class="events">
+								<ol>
+									<li><a href="#0" data-date="16/01/2014" class="selected">
+										16 Jan
+									</a></li>
+									<li><a href="#0" data-date="28/02/2014">
+										28 Feb
+									</a></li>
+									<li><a href="#0" data-date="20/04/2014">
+										20 Mar
+									</a></li>
+									<li><a href="#0" data-date="20/05/2014">
+										20 May
+									</a></li>
+									<li><a href="#0" data-date="09/07/2014">
+										09 Jul
+									</a></li>
+									<li><a href="#0" data-date="30/08/2014">
+										30 Aug
+									</a></li>
+									<li><a href="#0" data-date="15/09/2014">
+										15 Sep
+									</a></li>
+									<li><a href="#0" data-date="01/11/2014">
+										01 Nov
+									</a></li>
+								</ol>
 
-					<!-- Item 1 -->
-					<li>
-						<div class="direction-r">
-							<div class="flag-wrapper">
-								<span class="flag">Freelancer</span>
-								<span class="time-wrapper"><span class="time">2013 - present</span></span>
-							</div>
-							<div class="desc">My current employment. Way better than the position before!</div>
-						</div>
-					</li>
-				  
-					<!-- Item 2 -->
-					<li>
-						<div class="direction-l">
-							<div class="flag-wrapper">
-								<span class="flag">Apple Inc.</span>
-								<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
-							</div>
-							<div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
-						</div>
-					</li>
+								<span class="filling-line" aria-hidden="true"></span>
+							</div> <!-- .events -->
+						</div> <!-- .events-wrapper -->
+							
+						<ul class="cd-timeline-navigation">
+							<li><a href="#0" class="prev inactive">Prev</a></li>
+							<li><a href="#0" class="next">Next</a></li>
+						</ul> <!-- .cd-timeline-navigation -->
+					</div> <!-- .timeline -->
 
-					<!-- Item 3 -->
-					<li>
-						<div class="direction-r">
-							<div class="flag-wrapper">
-								<span class="flag">Harvard University</span>
-								<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
-							</div>
-							<div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
-						</div>
-					</li>
-				  
-				</ul>
+					<div class="events-content">
+						<ol>
+							<li class="selected" data-date="16/01/2014">
+								<h2>Horizontal Timeline</h2>
+								<em>January 16th, 2014</em>
+								<p>	
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+								</p>
+							</li>
+
+							<li data-date="28/02/2014">
+								<h2>Event title here</h2>
+								<em>February 28th, 2014</em>
+								<p>	
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+								</p>
+							</li>
+
+							<li data-date="20/04/2014">
+								<h2>Event title here</h2>
+								<em>March 20th, 2014</em>
+								<p>	
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+								</p>
+							</li>
+
+							<li data-date="20/05/2014">
+								<h2>Event title here</h2>
+								<em>May 20th, 2014</em>
+								<p>	
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+								</p>
+							</li>
+
+							<li data-date="09/07/2014">
+								<h2>Event title here</h2>
+								<em>July 9th, 2014</em>
+								<p>	
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+								</p>
+							</li>
+
+							<li data-date="30/08/2014">
+								<h2>Event title here</h2>
+								<em>August 30th, 2014</em>
+								<p>	
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+								</p>
+							</li>
+
+							<li data-date="15/09/2014">
+								<h2>Event title here</h2>
+								<em>September 15th, 2014</em>
+								<p>	
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+								</p>
+							</li>
+
+							<li data-date="01/11/2014">
+								<h2>Event title here</h2>
+								<em>November 1st, 2014</em>
+								<p>	
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+								</p>
+							</li>
+
+						</ol>
+					</div> <!-- .events-content -->
+				</section>
 			</div>
 			<div id="projectSupporters" class="row projectSupporters mainTabContent">
 				<p><br>This is Supporters div</p>

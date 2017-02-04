@@ -257,9 +257,9 @@ ul.projectPageDonationOptions li a{
 .projectPageDonationReason:hover{
 	background-color: white;
 	border: 1px solid #cbefff;
-	padding-bottom: 17px;
-	padding-top: 17px;
-	padding-left:9px;
+	padding-bottom: 18px;
+	padding-top: 18px;
+	padding-left:10px;
 }
 .projectPageDonationAmount{
 	text-align: center;
