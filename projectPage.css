@@ -17,7 +17,7 @@
 	font-size: 16px;
 	padding-left: 5px;
 	line-height: 140%;
-	font-family: Nunito-Medium;
+	font-family: Montserrat-Light;
 	border-bottom: 2px solid #38c0ff;
 	padding-bottom: 7px;
 	margin-bottom: 3px;
@@ -84,6 +84,7 @@ ul.projectPageMainTabsList li a:focus, .active{
 .projectStory{
 	width: 100%;
 	transition: 0.3s;
+	position: relative;
 }
 
 .projectStory p, .projectTimeline p, .projectSupporters p, .projectReports p {
@@ -94,6 +95,7 @@ ul.projectPageMainTabsList li a:focus, .active{
     padding-right: 10px;
     letter-spacing: 0.5px;
 	transition: 0.3s;
+	font-family: Nunito-Light;
 }
 
 .projectPageProjectMainImage img{
@@ -115,7 +117,7 @@ ul.projectPageMainTabsList li a:focus, .active{
   color: black;
 }
 .projectPageProjectFundRequired {
-  font-family: Nunito-Bold;
+  font-family: Nunito-Regular;
   font-size: 17px;
   margin-bottom: 15px;
   padding-right: 12px;
@@ -220,6 +222,8 @@ ul.projectPageDonationOptions li a{
 	text-align: center;
 	padding: 10px;
 	font-size: 15px;
+	color: #373737;
+	font-family: Nunito-Light;
 }
 .projectPageDonationOptions h2{
 	text-align: center;
@@ -261,11 +265,14 @@ ul.projectPageDonationOptions li a{
 	text-align: center;
 	background-color: #82dafe;
 	border: 1px solid #ccfoff;
+	font-family: Nunito-ExtraLight;
 }
 .projectPageDonationReason{
 	background-color: #ccf0ff;
 	padding-left: 10px;
 	border: 1px solid #ccfoff;
+	font-family: Nunito-ExtraLight;
+	color: #373737;
 }
 
 .projects{
@@ -281,4 +288,40 @@ ul.projectPageDonationOptions li a{
 }
 .projectPageRecommendedProjectContent{
 	padding-bottom: 2%;
+}
+
+.projectPageAboutNGO {
+    /*! padding: 10px; */
+    border: 1px solid #f1f2f6;
+    margin-bottom: 30px;
+}
+
+.projectPageAboutNGOBannerHeading {
+    font-size: 30px;
+    text-align: center;
+    padding: 12px;
+    background-color: rgb(0,180,255);
+    color: white;
+}
+.projectPageAboutNGOData {
+    padding: 10px;
+    background: #f1f2f6;
+}
+.projectPageAboutNGOHeading {
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    font-size: 23px;
+    font-family: Montserrat-Light;
+}
+
+.projectPageAboutNGOContent {
+    font-size: 13px;
+    font-family: Nunito-Light;
+    padding: 0 15px;
+    letter-spacing: 0.1px;
+    line-height: 110%;
+	margin-bottom: 15px;
+	color:#373737;
 }
