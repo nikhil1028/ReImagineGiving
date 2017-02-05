@@ -302,10 +302,11 @@ ul.projectPageDonationOptions li a{
     padding: 12px;
     background-color: rgb(0,180,255);
     color: white;
+	font-family: Montserrat-Regular;
 }
 .projectPageAboutNGOData {
     padding: 10px;
-    background: #f1f2f6;
+    background: rgb(200,220,240);
 }
 .projectPageAboutNGOHeading {
     text-align: center;

@@ -57,7 +57,7 @@ h2.whatWeDoHeading:before{
 }
 .connectWithFacebook h1{
 	font-size: 50px;
-	font-family: Montserrat-Light;
+	font-family: Nunito-Light;
 	letter-spacing: 1.5px;
 }
 .connectWithFacebook span{
@@ -95,9 +95,8 @@ h2.whatWeDoHeading:before{
     font-family: Nunito-Light;
     color: white;
     margin-left: 50%;
-    padding-top: 9%;
-    font-size: 19px;
-  text-align: justify;
+    padding-top: 10%;
+    font-size: 20px;
     margin-right: 5%;
 }
 
@@ -155,6 +154,14 @@ h2.whatWeDoHeading:before{
 	left: 5.65%;
 	color: white;
   letter-spacing: 0.5px;
+}
+.content{
+  font-family: Montserrat-Regular;
+  letter-spacing: 2px;
+  line-height: 140%;
+}
+.content span {
+    font-family: Montserrat-Bold;
 }
 
 .trustNetworkHeading span{

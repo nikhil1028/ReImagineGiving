@@ -37,13 +37,13 @@
 
 .container {
   background-color: rgba(0,180,255,1.0);
-  width: 600px;
-  height: 320px;
+  width: 630px;
+  height: 350px;
   position: absolute;
   display: flex;
   top: 0;
   left: 0;
-  transform: translate(63%,60%);
+  transform: translate(50%,50%);
 }
 .container .form-container.actived {
   margin-left: 275px;
@@ -51,8 +51,8 @@
 .container .form-container{
   margin-left: 25px;
   background-color: white;
-  height: 380px;
-  width: 305px;
+  height: 410px;
+  width: 330px;
   align-self: center;
   display: flex;
   align-items: center;
@@ -88,8 +88,6 @@
   margin-right: 5px;
 }
 .fbbtn, .googlebtn {
-    width: 117px !important;
-    display: inline-block !important;
 }
 .googlebtn {
     background: #dd5044 !important;
@@ -171,13 +169,13 @@
 
 .container1 {
   background-color: rgba(0,180,255,1.0);
-  width: 600px;
-  height: 320px;
+  width: 630px;
+  height: 350px;
   position: absolute;
   display: flex;
   top: 0;
   left: 0;
-  transform: translate(75%,70%);
+  transform: translate(50%,50%);
 }
 .container1 .form-container1.actived1{
   margin-left: 275px;
@@ -185,8 +183,8 @@
 .container1 .form-container1{
   margin-left: 25px;
   background-color: white;
-  height: 380px;
-  width: 305px;
+  height: 410px;
+  width: 330px;
   align-self: center;
   display: flex;
   align-items: center;
