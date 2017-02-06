@@ -85,15 +85,18 @@
 
 .demo-gallery {
     margin: 40px 0;
+    position: relative;
 }
 .demo-gallery > ul {
-  margin-bottom: 0;
+  margin-bottom: 15px;
+  margin-top: 15px;
   padding-left: 15px;
+  margin-left: 70px;
+  z-index: 2;
 }
 
 .demo-gallery > ul > li {
-  margin-bottom: 15px;
-  width: 169px;
+  width: 10vw;
   display: inline-block;
   margin-right: 15px;
   list-style: outside none none;

@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
-		eventsMinDistance = 100;
+		eventsMinDistance = 50;
 
 	(timelines.length > 0) && initTimeline(timelines);
 
@@ -128,6 +128,7 @@ jQuery(document).ready(function($){
 	}
 
 	function setDatePosition(timelineComponents, min) {
+		min=min+20;
 		for (i = 0; i < timelineComponents['timelineDates'].length; i++) { 
 		    var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
 		    	distanceNorm = Math.round(distance/timelineComponents['eventsMinLapse']) + 2;
@@ -136,13 +137,13 @@ jQuery(document).ready(function($){
 	}
 
 	function setTimelineWidth(timelineComponents, width) {
+		width=width+15;
 		var timeSpan = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][timelineComponents['timelineDates'].length-1]),
 			timeSpanNorm = timeSpan/timelineComponents['eventsMinLapse'],
 			timeSpanNorm = Math.round(timeSpanNorm) + 4,
-			totalWidth = timeSpanNorm*width;
+			totalWidth = timeSpanNorm*width + 100;
 		timelineComponents['eventsWrapper'].css('width', totalWidth+'px');
 		updateFilling(timelineComponents['timelineEvents'].eq(0), timelineComponents['fillingLine'], totalWidth);
-	
 		return totalWidth;
 	}
 

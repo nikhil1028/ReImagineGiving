@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="fontAwesomeMin.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="floatingSocialShare.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="gallery.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="slider.css" media="screen"/>
 	
 	
 	<link rel='stylesheet prefetch' href='gallerymin.css'>
@@ -240,8 +241,8 @@
 					<br/><br/>Many oppose the theory of learning through play because they think children are not gaining new knowledge. In reality, play is the first way children learn to make sense of the world at a young age.
 					</p>
 				<div class="demo-gallery">
-					<ul id="lightgallery">
-					  <li data-responsive="http://sachinchoolur.github.io/lightGallery/static/img/1-375.jpg 375, http://sachinchoolur.github.io/lightGallery/static/img/1-480.jpg 480, http://sachinchoolur.github.io/lightGallery/static/img/1.jpg 800" data-src="http://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
+					<ul id="lightgallery" class="lightgallery">
+					  <li class="lightgalleryimages" data-responsive="http://sachinchoolur.github.io/lightGallery/static/img/1-375.jpg 375, http://sachinchoolur.github.io/lightGallery/static/img/1-480.jpg 480, http://sachinchoolur.github.io/lightGallery/static/img/1.jpg 800" data-src="http://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
 					  data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>" data-pinterest-text="Pin it" data-tweet-text="share on twitter ">
 						<a href="">
 						  <img class="img-responsive" src="http://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg">
@@ -250,7 +251,7 @@
 						  </div>
 						</a>
 					  </li>
-					  <li data-responsive="http://sachinchoolur.github.io/lightGallery/static/img/2-375.jpg 375, http://sachinchoolur.github.io/lightGallery/static/img/2-480.jpg 480, http://sachinchoolur.github.io/lightGallery/static/img/2.jpg 800" data-src="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
+					  <li class="lightgalleryimages" data-responsive="http://sachinchoolur.github.io/lightGallery/static/img/2-375.jpg 375, http://sachinchoolur.github.io/lightGallery/static/img/2-480.jpg 480, http://sachinchoolur.github.io/lightGallery/static/img/2.jpg 800" data-src="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
 					  data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>" data-pinterest-text="Pin it" data-tweet-text="share on twitter ">
 						<a href="">
 						  <img class="img-responsive" src="http://sachinchoolur.github.io/lightGallery/static/img/thumb-2.jpg">
@@ -259,7 +260,7 @@
 						  </div>
 						</a>
 					  </li>
-					  <li data-responsive="http://sachinchoolur.github.io/lightGallery/static/img/13-375.jpg 375, http://sachinchoolur.github.io/lightGallery/static/img/13-480.jpg 480, http://sachinchoolur.github.io/lightGallery/static/img/13.jpg 800" data-src="http://sachinchoolur.github.io/lightGallery/static/img/13-1600.jpg"
+					  <li class="lightgalleryimages" data-responsive="http://sachinchoolur.github.io/lightGallery/static/img/13-375.jpg 375, http://sachinchoolur.github.io/lightGallery/static/img/13-480.jpg 480, http://sachinchoolur.github.io/lightGallery/static/img/13.jpg 800" data-src="http://sachinchoolur.github.io/lightGallery/static/img/13-1600.jpg"
 					  data-sub-html="<h4>Sunset Serenity</h4><p>A gorgeous Sunset tonight captured at Coniston Water....</p>" data-pinterest-text="Pin it" data-tweet-text="share on twitter ">
 						<a href="">
 						  <img class="img-responsive" src="http://sachinchoolur.github.io/lightGallery/static/img/thumb-13.jpg">
@@ -268,7 +269,7 @@
 						  </div>
 						</a>
 					  </li>
-					  <li data-responsive="http://sachinchoolur.github.io/lightGallery/static/img/4-375.jpg 375, http://sachinchoolur.github.io/lightGallery/static/img/4-480.jpg 480, http://sachinchoolur.github.io/lightGallery/static/img/4.jpg 800" data-src="http://sachinchoolur.github.io/lightGallery/static/img/4-1600.jpg"
+					  <li class="lightgalleryimages" data-responsive="http://sachinchoolur.github.io/lightGallery/static/img/4-375.jpg 375, http://sachinchoolur.github.io/lightGallery/static/img/4-480.jpg 480, http://sachinchoolur.github.io/lightGallery/static/img/4.jpg 800" data-src="http://sachinchoolur.github.io/lightGallery/static/img/4-1600.jpg"
 					  data-sub-html="<h4>Coniston Calmness</h4><p>Beautiful morning</p>" data-pinterest-text="Pin it" data-tweet-text="share on twitter ">
 						<a href="">
 						  <img class="img-responsive" src="http://sachinchoolur.github.io/lightGallery/static/img/thumb-4.jpg">
@@ -278,7 +279,11 @@
 						</a>
 					  </li>
 					</ul>
-				  </div>
+					<div class="directional_nav" style="width:100%">
+						<div class="previous_btn" onclick="plusDivs(-1)">&#10094;</div>
+						<div class="next_btn" onclick="plusDivs(1)">&#10095;</div>
+					</div>
+				</div>
 				
 				<script src='cloudflare4.js'></script>
 				<script src='picturefill.js'></script>
@@ -400,10 +405,47 @@
 				</section>
 			</div>
 			<div id="projectSupporters" class="row projectSupporters mainTabContent">
-				<p><br>This is Supporters div</p>
+				<div class="projectSupportersContent">
+					<h2>Join the Circle of Giving</h2>
+					<h1><a>Donate Now</a></h1>
+					<h2>Let the world know you care</h2>
+				</div>
 			</div>
 			<div id="projectReports" class="row projectReports mainTabContent">
-				<p><br>This is Reports div</p>
+				<ul>
+					<li class="Report reporteight">
+						<h2>Report 8</h2>
+						<p>20-02-2017</p>
+					</li>
+					<li class="Report reportseven">
+						<h2>Report 7</h2>
+						<p>22-12-2016</p>
+					</li>
+					<li class="Report reportsix">
+						<h2>Report 6</h2>
+						<p>20-10-2016</p>
+					</li>
+					<li class="Report reportfive">
+						<h2>Report 5</h2>
+						<p>20-09-2016</p>
+					</li>
+					<li class="Report reportfour">
+						<h2>Report 4</h2>
+						<p>05-07-2016</p>
+					</li>
+					<li class="Report reportthree">
+						<h2>Report 3</h2>
+						<p>15-06-2016</p>
+					</li>
+					<li class="Report reporttwo">
+						<h2>Report 2</h2>
+						<p>01-04-2016</p>
+					</li>
+					<li class="Report reportone">
+						<h2>Report 1</h2>
+						<p>10-01-2016</p>
+					</li>
+				</ul>
 			</div>
 			
 		</div>

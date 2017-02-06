@@ -1,7 +1,6 @@
 
 .footerOptions{
 	background-color: #0d0d0d;
-	padding: 3.5%;
 	border-bottom: 2px solid #c2c2c2;
 }
 
@@ -14,9 +13,50 @@
     color: #38c0ff;
 }
 
-.footerAboutUs, .footerCauses, .footerWorks{
-	margin-left: 8.33%;
-	padding-top: 10px;
+.footerAboutUs, .footerCauses, .footerWorks, .footerContactShare{
+	padding: 4% 2.3%;
+}
+
+ .footerContactShare{
+	padding-left: 5%;
+}
+.footerContactShare{
+	border-left: 2px solid #c2c2c2;
+}
+
+.footerAboutUs ul, .footerCauses ul, .footerWorks ul, .footerContactShare ul{
+	list-style-type: none;
+	line-height: 120%;
+	letter-spacing: 1px;
+}
+
+.footerContactShare i {
+    font-size: 30px;
+    color: white;
+    line-height: 212%;
+	letter-spacing: 15px;
+}
+
+.footerContactShare i.fa-facebook:hover{
+	color: rgb(59,89,152);
+}
+.footerContactShare i.fa-google-plus:hover{
+	color: rgb(211,72,54);
+}
+.footerContactShare i.fa-instagram:hover{
+	color: rgb(76,104,215);
+}
+.footerContactShare i.fa-twitter:hover{
+	color: rgb(0,172,237);
+}
+.footerContactShare i.fa-youtube:hover{
+	color: rgb(187,0,0);
+}
+.footerContactShare i.fa-whatsapp:hover{
+	color: rgb(77,194,71);
+}
+.footerContactShare i.fa-linkedin:hover{
+	color: rgb(0,119,181);
 }
 
 .footerCauses2{
@@ -29,14 +69,15 @@
 }
 
 footer h2{
-	font-size: 18px;
+	font-size: 15px;
 	font-family: Nunito-ExtraLight;
 	color: white;
 	margin: 3px 0 3px 0;
+	line-height: 115%;
 }
 
 footer h1{
-	font-size: 24px;
+	font-size: 20px;
 	font-family: Montserrat-Regular;
 	color: white;
 	margin-bottom: 5px;
