@@ -99,6 +99,30 @@
 		height: 36.51vw;
 	}
 	.projectThumbnail{
-		height: 14.34375vw;
+		height: 14.34375vw;	
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	.projectSection1, .projectSection2, .projectSection3{
+		width: 27vw;
+	}
+	.projectSection2, .projectSection3{
+		margin-left: 3%;
+	}
+	.projectSection1{
+		margin-left: 6.5%;
+	}
+	.recommendedProjectsHeading h2{
+		padding-left: 6.5%;
+	}
+	.recommendedProjectsHeading a{
+		margin-right: 13.25%;
+	}
+	.projectContent{
+		height: 39.5vw;
+	}
+	.projectThumbnail{
+		height: 15.1875vw;	
 	}
 }
