@@ -1,0 +1,316 @@
+.userPageSetttingOptionsHeading, .userPageRightOptionsHeading {
+    padding: 10px 12px;
+    background-color: rgb(23,35,57);
+    color: white;
+    font-size: 16px;
+    font-family: Montserrat-ExtraLight;
+    line-height: 100%;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.btn.linkedinbtn {
+    background-color: rgb(0,119,181) !important;
+    border: 2px solid rgb(0,119,181) !important;
+}
+
+.userPageCampaignsOptions ul li, .userPageProfileOptions ul li, .userPageAccountOptions ul li{
+    padding: 5px 10px 10px 15px;
+}
+
+
+.userPageFacebookOptions ul li, .userPageConnectOptions ul li, .userPageProjectOptions ul li{
+    padding: 5px 10px 10px 10px;
+}
+
+a.userPageLeftColumnOptionsLinks{
+	cursor:  pointer;
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+a.userPageLeftColumnOptionsLinks:hover{
+	color: rgb(0,180,255);
+}
+
+a.userPageLeftColumnOptionsLinks.active{
+	font-weight: bold;
+	font-size: 16px;
+}
+.btn.twitterbtn {
+    background-color: rgb(0,172,237) !important;
+    border: 2px solid rgb(0,172,237) !important;
+}
+
+.userPageLeftColumn, .userPageRightColumn, .userPageMainRow{
+	background-color: rgb(32,53,80);
+}
+
+.userPageRightColumn .btn{
+	cursor: pointer;
+  display: block;
+  margin: 5px 25px;
+   text-align: center;
+  border: 2px solid rgba(0,180,255,1.0);
+  background-color: rgba(0,180,355,1.0);
+  color: white;
+  opacity: 1;
+	line-height: 68%;
+	padding: 7px 0px 7px 7px;
+}
+
+.userPageRightColumn .btn i{
+	float: left;
+	line-height: 100% !important;
+}
+.userPageCenterColumn, .userPageLeftColumn{
+	position: relative;
+}
+
+.userPageCenterContent h1{
+	color: white;
+	background-color: rgb(0,180,255);
+	font-size: 40px;
+	text-align: center;
+	padding-top: 45px;
+	left: 0;
+	height: 100%;
+	font-family: Montserrat-Regular;
+}
+
+.userPageLeftColumn .icon-cont {
+  border: 1px solid rgba(0,180,255,1.0);
+  border-radius: 50%;
+  width: 8.33vw;
+  display: block; 
+  text-align: center;
+  z-index: 5;
+  transition: all 0.3s ease;
+  margin: 4.085vw 4.085vw 0 4.085vw;
+  height: 8.33vw;
+}
+
+.userPageLeftColumn .circleIconImage{
+  height: 100%;
+}
+
+.userPageLeftUserName {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 2vw;
+    padding: 0.5vw;
+    font-family: Montserrat-ExtraLight;
+}
+
+.userPageLeftTabsContent{
+	width: 0;
+	display: none;
+  background: #ecf3f9;
+}
+
+#userPageProfileGeneral{
+	width: 100%;
+	display: block;
+}
+
+.userPageRightSupporter{
+	text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 2vw;
+    padding: 0.5vw;
+    font-family: Montserrat-ExtraLight;
+}
+
+.userPageGeneralInformation{
+	background: white;
+	margin: 5% 8%;
+}
+
+.userPageGeneralInformationHeading {
+    padding: 2% 7%;
+    background: #8997b2;
+    color: white;
+}
+
+.userPageGeneralInformationContent{
+  padding: 0 8%;
+  font-size: 10px;
+  font-family: Nunito-Light;
+  position: relative;
+}
+
+.userPageGeneralInformationContentRows h2{
+	padding: 3% 0 3% 3%;
+	border-bottom: 1px solid rgba(88,97,114,0.5);
+	color: #586172;
+}
+.userPageGeneralInformationContentRows h2 span{
+	font-family: Montserrat-ExtraLight;
+}
+
+.userPageGeneralInformationContent i{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    font-size: 35px;
+	color: #586172;
+	cursor: pointer;
+}
+
+.lastRow h2{
+	border: none !important;
+}
+
+/*wave*/
+.progress-badge {
+  position: relative;
+  display: inline-block;
+  margin: 4.085vw 4.085vw 0 4.085vw;
+}
+.badge {
+  position: relative;
+  width: 8.4vw;
+  height: 8.4vw;
+  border-radius: 50%;
+  text-align: center;
+  display: table;
+  vertical-align: middle;
+  color: transparent;
+  background: white;
+  z-index: 2;
+}
+.is-filling .badge {
+  -webkit-animation: badge-pop 300ms cubic-bezier(0.6, 1.5, 0.8, 1.15) 1;
+          animation: badge-pop 300ms cubic-bezier(0.6, 1.5, 0.8, 1.15) 1;
+}
+.is-filling-from-empty .badge {
+  -webkit-animation-delay: 1900ms;
+          animation-delay: 1900ms;
+}
+.badge:before,
+.badge:after {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  z-index: 10;
+}
+.badge:before {
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  border: 2px dotted white;
+}
+.badge:after {
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  border: 2px solid white;
+}
+.badge__content {
+  display: table-cell;
+  vertical-align: middle;
+}
+.badge__content-inner {
+  position: relative;
+}
+
+.badge__value {
+    font-size: 25px;
+    font-family: Nunito-Bold;
+    letter-spacing: 1px;
+}
+.badge__fill {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 0;
+}
+.badge__fill:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: -50px;
+  z-index: 1;
+  opacity: 0.3;
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+  -webkit-animation: badge-shine 700ms 500ms ease-in-out;
+          animation: badge-shine 700ms 500ms ease-in-out;
+}
+.badge__fill-inner {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  left: 0;
+  top: 0;
+  background: #f0bf26;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  will-change: transform;
+}
+.badge__fill-inner:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  margin-bottom: -2px;
+  width: 400px;
+  height: 12px;
+  background: transparent;
+  background: url('images/wave.png');
+}
+.badge--empty {
+  color: white;
+  border: 3px solid white;
+  background: transparent;
+}
+.badge--empty:before {
+  top: 7px;
+  right: 7px;
+  bottom: 7px;
+  left: 7px;
+  border: 1px dotted white;
+}
+.badge--empty:after {
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  border: 1px solid white;
+}
+.is-filling-from-empty .badge--empty .badge__fill-inner {
+  -webkit-animation: badge-wave-fill 2000ms linear 1 forwards;
+          animation: badge-wave-fill 2000ms linear 1 forwards;
+  will-change: transform;
+}
+.is-filling-from-empty .badge--empty .badge__fill-inner:before {
+  -webkit-animation: badge-wave-move 1000ms linear 2;
+          animation: badge-wave-move 1000ms linear 2;
+}
+@-webkit-keyframes badge-wave-fill {
+  100% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+}
+@keyframes badge-wave-fill {
+  100% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+}
+
+
+/*wave*/

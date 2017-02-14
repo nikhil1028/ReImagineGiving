@@ -91,13 +91,13 @@
 }
 .googlebtn {
     background: #dd5044 !important;
-    border: 1px solid #dd5044 !important;
+    border: 2px solid #dd5044 !important;
 }
 .fbbtn {
     background: #3b5998 !important;
-    border: 1px solid #3b5998 !important;
+    border: 2px solid #3b5998 !important;
 }
-.btn i {
+form .btn i {
     margin-right: 10px;
 }
 .container .form-container .form-item form .btn{

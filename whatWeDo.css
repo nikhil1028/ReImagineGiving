@@ -177,11 +177,11 @@
 }
 .box.selected .icon-cont {
   -webkit-transform: scale(1.5,1.5);
-          transform: scale(1.5,1.5);
-  opacity: 0.2;
+          transform: scale(1.2,1.2);
+  opacity: 0.15;
   position: absolute;
-  top: -20px;
-  left: -5px;
+  top: -45px;
+  left: -26px;
   right: 180px;
   transition: all 0.4s ease-in-out;
 }
@@ -195,7 +195,9 @@
   
   width: 70%;
   top: 16px;
-  left: 10%;
+  left: 14%;
+  text-align: left;
+  font-size: 18px;
 }
 .box.selected .hidden {
   opacity: 1;
