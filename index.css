@@ -30,7 +30,7 @@ h2.whatWeDoHeading{
 	display: inline-block;
 	margin-bottom: 3%;
 	letter-spacing: 1px;
-	font-family: Montserrat-SemiBold;
+	font-family: Poppins-SemiBold;
 }
 
 h2.whatWeDoHeading:before{
@@ -51,18 +51,18 @@ h2.whatWeDoHeading:before{
 }
 .connectWithFacebookLine {
   position: absolute;
-  padding-top: 1.3%;
+  padding-top: 2.3%;
   border-right: 1px solid black;
-  padding-bottom: 1%;
+  padding-bottom: 2%;
 }
 .connectWithFacebook h1{
 	font-size: 50px;
-	font-family: Rubik-Light;
+	font-family: Poppins-Regular;
 	letter-spacing: 1.5px;
 }
 .connectWithFacebook span{
-	color: #39c0ff;
-	font-family: Montserrat-SemiBold;
+	color: rgb(0,180,255);
+	font-family: Poppins-SemiBold;
 }
 .connectWithFacebookImage{
 	position: absolute;
@@ -86,7 +86,7 @@ h2.whatWeDoHeading:before{
 	background-image: url(images/reimagineTrustNetworkBackground.png);
 	background-size: cover;
 	position: relative;
-	font-family: Montserrat-Regular;
+	font-family: Poppins-Regular;
 }
 
 /*trustNetworkButton*/
@@ -158,12 +158,13 @@ h2.whatWeDoHeading:before{
   letter-spacing: 0.5px;
 }
 .content{
-  font-family: Montserrat-Regular;
+  font-family: SourceSansPro-Light;
   letter-spacing: 2px;
   line-height: 140%;
+  font-size: 23px;
 }
 .content span {
-    font-family: Montserrat-Bold;
+    font-family: SourceSansPro-SemiBold;
 }
 
 .trustNetworkHeading span{

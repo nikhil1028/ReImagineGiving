@@ -88,9 +88,9 @@
   100% {box-shadow: 0 0 0 0px rgba(0,0,0,0.5), 0 0 0 0px rgba(3, 108, 129, 0.5);}
 }
 
-.box h3 {
+.box p.WhatWeDoContentHeading {
   color: black;
-  font-family: Montserrat-Light;
+  font-family: Poppins-Light;
   font-size: 26px;
   text-align: center;
   letter-spacing: 2px;
@@ -103,15 +103,15 @@
   z-index: 4;
 }
 .box .hidden {
-  font-family: Nunito-ExtraLight;
+  font-family: SourceSansPro-Light;
   color: #373737;
-  font-size: 8.5px;
+  font-size: 14px;
   line-height: 120% !important;
   margin: 25px 30px 25px 30px;
   padding: 5%;
   letter-spacing: 1px;
   transition: opacity 0.3s ease;
-  text-align: left;
+  text-align: justify;
 }
 .box .hidden {
   opacity: 0;
@@ -177,11 +177,11 @@
 }
 .box.selected .icon-cont {
   -webkit-transform: scale(1.5,1.5);
-          transform: scale(1.2,1.2);
-  opacity: 0.15;
+          transform: scale(0.5,0.5);
+  opacity: 0;
   position: absolute;
-  top: -45px;
-  left: -26px;
+  top: -80px;
+  left: -75px;
   right: 180px;
   transition: all 0.4s ease-in-out;
 }
@@ -189,17 +189,16 @@
   -webkit-animation: none;
           animation: none;
 }
-.box.selected h3 {
-  padding: 32px 15px 15px 15px;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
-  
+.box.selected p.WhatWeDoContentHeading {
+  padding: 32px 15px 10px 15px;
   width: 70%;
   top: 16px;
   left: 14%;
   text-align: left;
   font-size: 18px;
+  border-bottom: 1px solid rgba(0,180,255,0.5);
 }
 .box.selected .hidden {
   opacity: 1;
-  margin-top: 65px;
+  margin-top: 60px;
 }

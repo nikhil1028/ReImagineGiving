@@ -2,14 +2,15 @@ header{
 	text-align: center;
 	color: #373737;
 	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.5);
-	height: 45px;
+	height: 50px;
 	overflow: hidden;
 	line-height: 100%;
+	margin-top: 2.5px;
 }
 
-header h2{
+header p{
 	font-size: 15px;
-	font-family: Nunito-ExtraLight;
+	font-family: Poppins-Light;
 	margin-top: -6px;
 	transition: 0.1s;
 }
@@ -42,7 +43,7 @@ header h2{
 .navBarSignUpButton{
 	text-align: right !Important;
 	padding-right: 10px;
-	border-right: 2px solid black;
+	border-right: 1px solid black;
 	padding-top: 5px;
 	padding-bottom: 2px;
 	cursor:pointer;

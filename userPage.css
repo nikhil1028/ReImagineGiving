@@ -3,7 +3,7 @@
     background-color: rgb(23,35,57);
     color: white;
     font-size: 16px;
-    font-family: Montserrat-ExtraLight;
+    font-family: Poppins-Light;
     line-height: 100%;
 }
 
@@ -57,13 +57,15 @@ a.userPageLeftColumnOptionsLinks.active{
   background-color: rgba(0,180,355,1.0);
   color: white;
   opacity: 1;
-	line-height: 68%;
-	padding: 7px 0px 7px 7px;
+	line-height: 100%;
+	padding: 5px 0px 5px 5px;
 }
 
 .userPageRightColumn .btn i{
 	float: left;
 	line-height: 100% !important;
+	padding: 0px;
+	font-size: 17px;
 }
 .userPageCenterColumn, .userPageLeftColumn{
 	position: relative;
@@ -77,7 +79,7 @@ a.userPageLeftColumnOptionsLinks.active{
 	padding-top: 45px;
 	left: 0;
 	height: 100%;
-	font-family: Montserrat-Regular;
+	font-family: SourceSansPro-Regular;
 }
 
 .userPageLeftColumn .icon-cont {
@@ -102,13 +104,17 @@ a.userPageLeftColumnOptionsLinks.active{
     color: white;
     margin-bottom: 2vw;
     padding: 0.5vw;
-    font-family: Montserrat-ExtraLight;
+    font-family: Poppins-Light;
 }
 
 .userPageLeftTabsContent{
 	width: 0;
 	display: none;
   background: #ecf3f9;
+}
+
+#userPageProfilePayment {
+    background: white;
 }
 
 #userPageProfileGeneral{
@@ -122,7 +128,7 @@ a.userPageLeftColumnOptionsLinks.active{
     color: white;
     margin-bottom: 2vw;
     padding: 0.5vw;
-    font-family: Montserrat-ExtraLight;
+    font-family: Poppins-Light;
 }
 
 .userPageGeneralInformation{
@@ -139,7 +145,7 @@ a.userPageLeftColumnOptionsLinks.active{
 .userPageGeneralInformationContent{
   padding: 0 8%;
   font-size: 10px;
-  font-family: Nunito-Light;
+  font-family: SourceSansPro-Regular;
   position: relative;
 }
 
@@ -149,7 +155,7 @@ a.userPageLeftColumnOptionsLinks.active{
 	color: #586172;
 }
 .userPageGeneralInformationContentRows h2 span{
-	font-family: Montserrat-ExtraLight;
+	font-family: SourceSansPro-Light;
 }
 
 .userPageGeneralInformationContent i{
@@ -161,10 +167,98 @@ a.userPageLeftColumnOptionsLinks.active{
 	cursor: pointer;
 }
 
+.userPageGeneralInformationContent i:hover {
+  color: black;
+}
+
 .lastRow h2{
 	border: none !important;
 }
 
+
+.userPagePaymentMethodOptions{
+	background: rgba(0,180,255,0.15);
+	height: 400px;
+	overflow: hidden;
+	margin: 2%;
+	border-radius: 2%;
+}
+
+.userPagePaymentMethodOptions h3{
+	padding: 2% 0 2% 0;
+	margin: 2% 5% 0% 5%;
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+.userPagePaymentMethodOptions ul li{
+	padding: 4% 0 7% 0;
+	margin: 2% 5% 2% 20%;
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	text-decoration: none;
+}
+.userPagePaymentMethodOptions ul li a {
+    text-decoration: none;
+    color: rgb(0,180,255);
+}
+.userPagePaymentMethodOptions ul li a:hover {
+    color: rgb(60,60,60);
+}
+.userPagePaymentSavedCards h2 {
+    margin: 2% 3% 2% 3%;
+    padding: 1%;
+    border-bottom: 1px solid #f1f2f6;
+}
+.active1{
+  font-family: SourceSansPro-SemiBold;
+}
+
+.userPagePaymentOptionsLinksContent{
+	width: 0;
+	display: none;
+  margin: 2% 0 2% 0;
+  padding: 0 25% 0 3%;
+  border-left: 1px solid rgba(0,0,0,0.15);
+  height: 71%;
+}
+
+#userPagePaymentOptionsAddCard{
+	width: 75%;
+	display: block;
+}
+.userPagePaymentSavedCards ul{
+  margin:3%;
+}
+.userPagePaymentSavedCards ul li {
+    width: 240px;
+    height: 120px;
+    border: 1px solid #f1f2f6;
+  display: inline-block;
+    border-radius: 8px;
+    background: linear-gradient(to top, rgba(0,0,0,0.05), rgba(0,0,0,0));
+    position: relative;
+  margin-left: 1%;
+}
+.userPagePaymentSavedCards ul li p{
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 13px;
+}
+li.addNewCard {
+    background: white !important;
+    border: 1px dotted #373737 !important;
+}
+li.addNewCard h2{
+  top: 25% !important;
+  left: 25% !important;
+  text-align: center;
+  cursor: pointer;
+}
+.userPagePaymentSavedCards ul li h2{
+  position: absolute;
+  top: 38px;
+  left: 15px;
+  font-size: 18px;
+}
 /*wave*/
 .progress-badge {
   position: relative;
@@ -222,7 +316,7 @@ a.userPageLeftColumnOptionsLinks.active{
 
 .badge__value {
     font-size: 25px;
-    font-family: Nunito-Bold;
+    font-family: SourceSansPro-Bold;
     letter-spacing: 1px;
 }
 .badge__fill {
@@ -314,3 +408,132 @@ a.userPageLeftColumnOptionsLinks.active{
 
 
 /*wave*/
+
+/*SOCIAL BUTTONS*/
+
+#buttons {
+    border-radius: 5px;
+    padding: 14px 7px;
+    background: white;
+    width: 660px;
+    overflow: hidden;
+    margin: 150px auto 0;
+    box-shadow:0 2px 3px rgba(71, 71, 71, 0.31);
+}
+
+
+.button {
+    position: relative;
+    display: block;
+    height: 36px;
+    margin: 1vw 3.16vw;
+    overflow: hidden;
+    width: 10.33vw;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	cursor: pointer;
+}
+
+.icon {
+    display: block;
+    float: left;
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    vertical-align: top;
+    width: 38px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 3px;
+    border-radius: 3px 0px 0px 3px;
+    text-align: center;
+}
+
+.icon i {
+    color: #fff;
+    line-height: 36px;
+}
+
+.slide {
+    z-index: 2;
+    display: block;
+    margin: 0;
+    height: 100%;
+    left: 38px;
+    position: absolute;
+    width: 112px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 0px;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.slide p {
+    font-weight: 400;
+    border-left: 1px solid #fff;
+    border-left: 1px solid rgba(255,255,255,0.35);
+    color: #fff;
+    font-size: 16px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 100%;
+}
+
+.facebook iframe {
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    z-index: 1;
+}
+
+.twitter iframe {
+    width: 90px !important;
+    right: 5px;
+    top: 10px;
+    z-index: 1;
+    display: block;
+    position: absolute;
+}
+
+.google #___plusone_0 {
+    width: 70px !important;
+    top: 10px;
+    right: 15px;
+    position: absolute;
+    display: block;
+    z-index: 1;
+}
+
+.linkedin .IN-widget {
+    top: 10px;
+    right: 22px;
+    position: absolute;
+    display: block;
+    z-index: 1;
+}
+
+.facebook .icon, .facebook .slide {
+    background: #305c99;
+}
+
+.twitter .icon, .twitter .slide {
+    background: #00cdff;
+}
+
+.google .icon, .google .slide {
+    background: #d24228;
+}
+
+.linkedin .icon, .linkedin .slide {
+    background: #007bb6;
+}
+/*SOCIAL BUTTONS*/

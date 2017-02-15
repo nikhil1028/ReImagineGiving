@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="exploreButton.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="fontAwesomeMin.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="userPage.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="userPagePayment.css" media="screen"/>
 	
 	<link rel='stylesheet prefetch' href='gallerymin.css'>
 	<script src="cloudflare.js"></script>
@@ -24,14 +25,14 @@
 </head>
 
 <body>
-	<header>
+		<header>
 		<div class="row header">
 			<div class="col-3 mainNavBarButton" id="exploreDiv">
 				<div class="col-2">
 					 <a class="ninja-btn" id="ninja-btn" title="menu" onclick="openNav()"><span></span></a>
 				</div>
 				<div class="col-10 navBarExploreButton">
-					<h2 class="exploreButton" id="exploreButton"><span onclick="openNav()">Explore</span></h2>
+					<p class="exploreButton" id="exploreButton"><span onclick="openNav()">Explore</span></p>
 				</div>
 			</div>
 			<div id="myNav" class="explore">
@@ -106,7 +107,7 @@
 				
 				<div class="col-4 mainNavBarButton">
 					<div class="col-9 navBarSignUpButton" id="navBarSignUpButton">
-						<h2 id="registration"><span class="SignUpSpan" onclick="openSignUpOverlay()">Sign Up</span></h2>
+						<p id="registration"><span class="SignUpSpan" onclick="openSignUpOverlay()">Sign Up</span></p>
 					</div>
 					<div id="SignUp" class="overlay">
 						<div class="translucentContainer"></div>
@@ -148,7 +149,7 @@
 					</div>
 					
 					<div class="col-3 navBarLogInButton" id="navBarLogInButton">
-						<h2 id="registration"><span class="LogInSpan" onclick="openLogInOverlay()">Log In</span></h2>
+						<p id="registration"><span class="LogInSpan" onclick="openLogInOverlay()">Log In</span></p>
 					</div>
 					<div id="LogIn" class="overlay">
 						<div class="translucentContainer"></div>
@@ -220,7 +221,7 @@
 					<li><a href="javascript:void(0)" class="userPageLeftColumnOptionsLinks active" onclick="openUserPageLeftSideTabs(event,'userPageProfileGeneral')">General</a></li>
 					<li><a href="javascript:void(0)" class="userPageLeftColumnOptionsLinks" onclick="openUserPageLeftSideTabs(event,'userPageProfilePayment')">Payment Methods</a></li>
 					<li><a href="javascript:void(0)" class="userPageLeftColumnOptionsLinks" onclick="openUserPageLeftSideTabs(event,'userPageProfileContact')">Contact</a></li>
-					<li><a href="javascript:void(0)" class="userPageLeftColumnOptionsLinks" onclick="openUserPageLeftSideTabs(event,'userPageProfileCauses')">Causes | Care About</a></li>
+					<li><a href="javascript:void(0)" class="userPageLeftColumnOptionsLinks" onclick="openUserPageLeftSideTabs(event,'userPageProfileCauses')">Causes i Care About</a></li>
 				</ul>
 			</div>
 			
@@ -302,7 +303,93 @@
 			</div>
 			
 			<div id="userPageProfilePayment" class="row userPageLeftTabsContent" style="height: 1300px;">
-				<h1>Payment Div</h1>
+				<div class="row" style="height: 150px;">
+					<h1>Payment Methods</h1>
+				</div>
+				<div class="row userPagePaymentMethods">
+					<div class="userPagePaymentMethodOptions">
+						<h3>Add a Payment Option</h3>
+						<div class="col-3">
+							<ul>
+								<li><a href="javascript:void(0)" class="userPagePaymentOptionsLinks active1" onclick="openUserPagePaymentOptionsTabs(event,'userPagePaymentOptionsAddCard')">Credit/Debit Card</a></li>
+								<li><a href="javascript:void(0)" class="userPagePaymentOptionsLinks" onclick="openUserPagePaymentOptionsTabs(event,'userPagePaymentOptionsAddAccount')">Paypal Account</a></li>
+							</ul>
+						</div>
+						
+						<div class="col-9 userPagePaymentOptionsLinksContent" id="userPagePaymentOptionsAddCard">
+							<form class="form" autocomplete="off" novalidate>
+								<fieldset>
+								  <label for="card-number">Card Number</label>
+								  <input type="num" id="card-number" class="input-cart-number" maxlength="4" />
+								  <input type="num" id="card-number-1" class="input-cart-number" maxlength="4" />
+								  <input type="num" id="card-number-2" class="input-cart-number" maxlength="4" />
+								  <input type="num" id="card-number-3" class="input-cart-number" maxlength="4" />
+								</fieldset>
+								<fieldset>
+								  <label for="card-holder">Card holder</label>
+								  <input type="text" id="card-holder" />
+								</fieldset>
+								<fieldset class="fieldset-expiration">
+								  <label for="card-expiration-month">Expiration date</label>
+								  <div class="select">
+									<select id="card-expiration-month">
+									  <option></option>
+									  <option>01</option>
+									  <option>02</option>
+									  <option>03</option>
+									  <option>04</option>
+									  <option>05</option>
+									  <option>06</option>
+									  <option>07</option>
+									  <option>08</option>
+									  <option>09</option>
+									  <option>10</option>
+									  <option>11</option>
+									  <option>12</option>
+									</select>
+								  </div>
+								  <div class="select">
+									<select id="card-expiration-year">
+									  <option></option>
+									  <option>2017</option>
+									  <option>2018</option>
+									  <option>2019</option>
+									  <option>2020</option>
+									  <option>2021</option>
+									  <option>2022</option>
+									  <option>2023</option>
+									  <option>2024</option>
+									  <option>2025</option>
+									  <option>2026</option>
+									</select>
+								  </div>
+								</fieldset>
+								<fieldset class="fieldset-ccv">
+								  <label for="card-ccv">CCV</label>
+								  <input type="password" id="card-ccv" maxlength="3" />
+								</fieldset>
+								<button class="btn"><i class="fa fa-lock"></i> Add Card</button>
+							  </form>
+						</div>
+						
+						<div class="col-9 userPagePaymentOptionsLinksContent" id="userPagePaymentOptionsAddAccount">
+							<h4>addhgdf</h4>
+						</div>
+						
+					</div>
+					<div class="userPagePaymentSavedCards">
+						<h2>Saved Cards</h2>
+						<ul>
+							<li>
+								<h2>XXXX-XXXX-XXXX-1234</h2>
+								<p>Exp: 11/2022</p>
+							</li>
+							<li class="addNewCard">
+								<h2>+<br/>Link a Card</h2>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			
 			<div id="userPageProfileContact" class="row userPageLeftTabsContent"style="height: 1300px;">
@@ -354,18 +441,61 @@
 			
 			<div class="userPageFacebookOptions">
 				<h2 class="userPageRightOptionsHeading">Spread the word</h2>
-				<ul>
-					<li><a class="btn fbbtn"><i class="fa fa-facebook"></i>Facebook</a></li>
-				</ul>
+				<div class="row userPageRightOptionsContent">
+					<div class="facebook button">
+						<i class="icon">
+						  <i class="fa fa-facebook"></i>
+						</i>
+						<div class="slide">
+							<p>
+							Facebook
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 			
 			<div class="userPageConnectOptions">
 				<h2 class="userPageRightOptionsHeading">Connect</h2>
-				<ul>
-					<li><a class="btn googlebtn"><i class="fa fa-google-plus"></i>Google +</a></li>
-					<li><a class="btn twitterbtn"><i class="fa fa-twitter"></i>Twitter</a></li>
-					<li><a class="btn linkedinbtn"><i class="fa fa-linkedin"></i>Linekdin</a></li>
-				</ul>
+				<div class="row userPageRightOptionsContent">
+					<div class="google button">
+						<i class="icon">
+						  <i class="fa fa-google-plus">
+						</i>
+					  </i>
+					  <div class="slide">
+						<p>
+						  Google+
+						</p>
+					  </div>
+					</div>
+				</div>
+				<div class="row userPageRightOptionsContent">
+					<div class="twitter button">
+						<i class="icon">
+						  <i class="fa fa-twitter">
+						</i>
+					  </i>
+					  <div class="slide">
+						<p>
+						  Twitter
+						</p>
+					  </div>
+					 </div>
+				</div>
+				<div class="row userPageRightOptionsContent">
+					<div class="linkedin button">
+						<i class="icon">
+						  <i class="fa fa-linkedin">
+						</i>
+					  </i>
+					  <div class="slide">
+						<p>
+						  Linkedin
+						</p>
+					  </div>
+					 </div>
+				</div>
 			</div>
 			
 			<div class="userPageProjectOptions">
@@ -517,4 +647,5 @@
 		</div>
 		</div>
 	</footer>
+
 </body>
