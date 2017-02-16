@@ -178,6 +178,7 @@ a.userPageLeftColumnOptionsLinks.active{
 
 .userPagePaymentMethodOptions{
 	background: rgba(0,180,255,0.15);
+  /*! box-shadow: 0px 0px 5px 0px black; */ 
 	height: 400px;
 	overflow: hidden;
 	margin: 2%;
@@ -197,10 +198,10 @@ a.userPageLeftColumnOptionsLinks.active{
 }
 .userPagePaymentMethodOptions ul li a {
     text-decoration: none;
-    color: rgb(0,180,255);
+    color: rgb(60,60,60);
 }
 .userPagePaymentMethodOptions ul li a:hover {
-    color: rgb(60,60,60);
+    color: rgb(0,180,255);
 }
 .userPagePaymentSavedCards h2 {
     margin: 2% 3% 2% 3%;
@@ -229,13 +230,16 @@ a.userPageLeftColumnOptionsLinks.active{
 }
 .userPagePaymentSavedCards ul li {
     width: 240px;
-    height: 120px;
-    border: 1px solid #f1f2f6;
+    height: 130px;
+    /*! border: 1px solid #f1f2f6; */
   display: inline-block;
     border-radius: 8px;
     background: linear-gradient(to top, rgba(0,0,0,0.05), rgba(0,0,0,0));
     position: relative;
   margin-left: 1%;
+    background: url('images/card1.png');
+    background-size: cover;
+    text-decoration: none;
 }
 .userPagePaymentSavedCards ul li p{
   position: absolute;
@@ -255,9 +259,11 @@ li.addNewCard h2{
 }
 .userPagePaymentSavedCards ul li h2{
   position: absolute;
-  top: 38px;
-  left: 15px;
+  top: 50px;
+  left: 20px;
   font-size: 18px;
+  text-decoration: none;
+  border: none;
 }
 /*wave*/
 .progress-badge {
