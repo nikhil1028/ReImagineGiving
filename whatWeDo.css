@@ -6,6 +6,7 @@
   padding-right: 0;
   background-color: rgba(244,244,249,1.0);
   padding-bottom: 3%;
+  display: none;
 }
 
 .second .circleIconImage {

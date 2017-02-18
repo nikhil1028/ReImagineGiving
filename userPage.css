@@ -22,7 +22,7 @@ ul{
 
 
 .userPageFacebookOptions ul li, .userPageConnectOptions ul li, .userPageProjectOptions ul li{
-    padding: 5px 10px 10px 10px;
+    padding: 3px 5px 0px 5px;
 }
 
 a.userPageLeftColumnOptionsLinks{
@@ -71,7 +71,7 @@ a.userPageLeftColumnOptionsLinks.active{
 	position: relative;
 }
 
-.userPageCenterContent h1{
+.userPageCenterContentHeadings h1{
 	color: white;
 	background-color: rgb(0,180,255);
 	font-size: 40px;
@@ -113,7 +113,7 @@ a.userPageLeftColumnOptionsLinks.active{
   background: #ecf3f9;
 }
 
-#userPageProfilePayment {
+#userPageProfilePayment, #userPageFinishedCampaigns, #userPageOngoingCampaigns {
     background: white;
 }
 
@@ -228,7 +228,7 @@ a.userPageLeftColumnOptionsLinks.active{
 .userPagePaymentSavedCards ul{
   margin:3%;
 }
-.userPagePaymentSavedCards ul li {
+.userPagePaymentSavedCards ul li{
     width: 240px;
     height: 130px;
     /*! border: 1px solid #f1f2f6; */
@@ -265,6 +265,175 @@ li.addNewCard h2{
   text-decoration: none;
   border: none;
 }
+
+.userPageFinishedCampaigns ul {
+    padding: 20px 20px;
+  background: white; 
+}
+ .userPageFinishedCampaigns ul li{
+    width: 274px;
+    height: 240px;
+   overflow: hidden;
+  display: inline-block;
+    border: 1px solid rgba(0,0,0,0.075);
+    position: relative;
+  margin: 5px;
+    background-size: cover;
+    text-decoration: none;
+   box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.05);
+}
+.userPageFinishedCampaigns ul li h2 {
+    font-size: 13px;
+}
+.userPageFinishedCampaignsImage{
+  position: relative;
+  height: 140px;
+  overflow: hidden;
+}
+.row.userPageFinishedCampaignsImage h2 {
+    position: absolute;
+  bottom: 0;
+    padding: 5px;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+}
+.userPageFinishedCampaigns ul li p {
+    font-size: 12px;
+}
+.userPageFinishedCampaigns .topLeft{
+  position: absolute;
+  top: 16px;
+  left: -30px;
+  z-index: 2;
+  background: rgb(71,204,53);
+  padding: 6px 25px 6px 25px;
+  transform: rotate(-45deg);
+  color: white;
+  letter-spacing: 2px;
+}
+.userPageFinishedCampaigns ul li img{
+  width: 274px;
+}
+.userPageFinishedCampaigns .topRight i{
+  font-size: 15px;
+}
+.topRight h2{
+  font-size: 10px !important;
+  letter-spacing: 1px;
+}
+.userPageFinishedCampaignsNGO {
+    padding: 8px;
+    font-family: SourceSansPro-Regular;
+}
+.userPageFinishedCampaignsBottom span {
+    font-family: SourceSansPro-SemiBold;
+}
+.userPageFinishedCampaignsNGO span{
+  font-family: SourceSansPro-SemiBold;
+}
+.userPageFinishedCampaigns .topRight{
+  position: absolute;
+top: 0px;
+right: 0px;
+  line-height: 100%;
+padding: 5px 10px;
+background: rgb(0,180,255);
+  letter-spacing: 0.1px;
+color: white;
+}
+.userPageFinishedCampaignsBottom {
+    position: absolute;
+  bottom: 0;
+    width: 100%;
+}
+.userPageFinishedCampaignsBottom h2 {
+    font-size: 16px !important;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    font-family: SourceSansPro-Regular;
+}
+.userPageFinishedCampaignsBottom a:hover{
+  color: rgb(0,0,0); 
+}
+.userPageFinishedCampaignsBottomLinks{
+  padding: 7px;
+}
+.userPageFinishedCampaignsBottom a {
+    font-size: 14px !important;
+    padding: 5px;
+  color: rgb(0,180,255);
+    font-family: SourceSansPro-SemiBold;
+  letter-spacing:0.2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.projectSection1 {
+    margin-left: 5% !important;
+  width: 28%;
+}
+.recommendedProjectsHeading h2{
+  padding-left:5% !important;
+}
+.projectSection2, .projectSection3 {
+    margin-left: 3% !important;
+  width: 28%;
+}
+.projectThumbnail {
+  height: 10.125vw !important;
+}
+.projectContent{
+  height: 27vw !important;;
+}
+.locationCause img {
+  height: 28px;
+}
+.locationCause {
+  bottom: 0 !important;
+}
+.projectlocationHeading h2, .projectcauseHeading h2{
+  padding-bottom: 2.5% !important;
+}
+
+.userPageRightColumn .projectSection1 {
+    margin-left: 0% !important;
+  width: 100%;
+    /*color:  white !important;*/
+    border-radius: 2px;
+    border: none;
+    background: white;
+    /*! padding: 0px; */
+    /*! margin-left: 6px; */
+}
+.userPageRightColumn .projectThumbnail {
+  height: 8.5vw !important;
+}
+.userPageRightColumn .projectDetails p{
+  /*color: white;*/
+  font-size: 10px;
+}
+.userPageRightColumn .statsText p{
+  /*color: white !important;*/
+}
+.userPageRightColumn .stats3{
+  padding:0 !important;
+}
+.userPageRightColumn .projectStats{
+  bottom:5px !important;
+}
+.userPageRightColumn .projectContent{
+  height: 17vw !important;
+}
+.userPageRightColumn .locationCause img {
+  height: 25px;
+}
+.userPageRightColumn .locationCause {
+  bottom: 0 !important;
+}
+.userPageRightColumn .projectlocationHeading h2, .projectcauseHeading h2{
+  padding-bottom: 2.5% !important;
+}
+
 /*wave*/
 .progress-badge {
   position: relative;
@@ -427,14 +596,16 @@ li.addNewCard h2{
     box-shadow:0 2px 3px rgba(71, 71, 71, 0.31);
 }
 
-
+.twitter.button {
+    margin-top: 0px !important;
+}
 .button {
     position: relative;
     display: block;
     height: 36px;
-    margin: 1vw 3.16vw;
+    margin: 1vw 2vw;
     overflow: hidden;
-    width: 10.33vw;
+    width: 12.33vw;
     border-radius: 3px;
     -o-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -471,15 +642,47 @@ li.addNewCard h2{
     height: 100%;
     left: 38px;
     position: absolute;
-    width: 112px;
+    width: 130px;
     -moz-border-radius-topleft: 0px;
     -moz-border-radius-topright: 3px;
     -moz-border-radius-bottomright: 3px;
     -moz-border-radius-bottomleft: 0px;
     border-radius: 0px 3px 3px 0px;
+  animation: animateRight 0.4s;
+  transition: 0.4s;
 }
-
-.slide p {
+.slide1 {
+    z-index: 1;
+    display: block;
+    margin: 0;
+    height: 100%;
+    left: -65px;
+    position: absolute;
+    width: 0;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 0px;
+    border-radius: 0px 3px 3px 0px;
+  animation: animateRight1 0.4s;
+  transition: 0.4s;
+}
+.button:hover .slide{
+  left: 180px;
+  width:0;
+  animation: animateRight 0.4s;
+  
+}
+.button:hover .slide1{
+  left: 38px;
+  width:130px;
+  animation: animateRight1 0.4s;
+  letter-spacing: 1px;
+  
+}
+@keyframes animateRight1{from{left:-65px;width:0px;} to{left:38px;width:130px;}}
+@keyframes animateRight{from{left:38px;width:130px;} to{left:180px;width:0px;}}
+.slide p , .slide1 p{
     font-weight: 400;
     border-left: 1px solid #fff;
     border-left: 1px solid rgba(255,255,255,0.35);
@@ -492,7 +695,12 @@ li.addNewCard h2{
     top: 10px;
     width: 100%;
 }
-
+.slide1 p {
+    color: #305c99;
+}
+.twitter .slide1 p {
+    color: #00cdff;
+}
 .facebook iframe {
     display: block;
     position: absolute;
@@ -529,6 +737,9 @@ li.addNewCard h2{
 
 .facebook .icon, .facebook .slide {
     background: #305c99;
+}
+.slide1{
+  background: white !important;
 }
 
 .twitter .icon, .twitter .slide {

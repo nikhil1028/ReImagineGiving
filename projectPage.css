@@ -5,11 +5,14 @@
 .projectPageRight{
 	padding-left: 10px;
 }
+.fa.fa-star.glow {
+    color: rgba(0,180,255,1.0);
+}
 .projectPageProjectBasicInfo{
 	position: relative;
 	padding-top: 5px;
 	font-family: SourceSansPro-Regular;
-	height: 23.33vw;
+	height: 25vw;
 	color: black;
 }
 
@@ -24,6 +27,7 @@
 	margin-top: 5px;
 }
 .projectPageProjectInfo {
+	margin-top: 2px;
     margin-bottom: 10px;
     border-bottom: 1px solid #e8eae9;
     color:  #b4b4b4;
@@ -36,11 +40,11 @@
 .projectPageProjectInfo p{
 	padding-left: 5px;
 	font-family: SourceSansPro-Regular;
-	font-size:14px;
+	font-size:17px;
 }
 
 .projectPageProjectMainImage{
-	height: 23.33vw;
+	height: 25vw;
 	overflow: hidden;
 }
 
@@ -329,13 +333,13 @@ ul.projectPageDonationOptions li a{
 }
 .projectPageAboutNGOData {
     padding: 10px;
-    background: rgb(200,220,240);
+    background: rgb(255,255,255);
 }
 .projectPageAboutNGOHeading {
     text-align: center;
     margin: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
     font-size: 23px;
     font-family: Poppins-Light;
 }
@@ -349,7 +353,9 @@ ul.projectPageDonationOptions li a{
 	margin-bottom: 15px;
 	color:#373737;
 }
-
+.Report:hover {
+    border: 1px solid rgba(200,200,200,1.0);
+}
 .Report{
 	width: 26vw;
 	height: 13vw;

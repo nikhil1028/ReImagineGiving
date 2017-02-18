@@ -25,7 +25,7 @@
 </head>
 
 <body>
-		<header>
+	<header>
 		<div class="row header">
 			<div class="col-3 mainNavBarButton" id="exploreDiv">
 				<div class="col-2">
@@ -197,7 +197,7 @@
 					<div class="col-12 navBarProfileButton" id="navBarProfileButton">
 						<h2 id="navBarProfile"><span class="profileSpan">Visharad Jalan</span></h2>
 						<div class="navBarProfileOptions">
-							 <a href="#"><h2>Profile</h2></a>
+							 <a href="userPage.html"><h2>Profile</h2></a>
 							 <a href="#"><h2>My Donations</h2></a>
 							 <a href="#" onclick="logout()" style="border:none;"><h2>LogOut</h2></a>
 						</div>
@@ -246,7 +246,7 @@
 		<div class="col-8 userPageCenterContent">
 		
 			<div id="userPageProfileGeneral" class="row userPageLeftTabsContent" style="height: 1300px;">
-				<div class="row" style="height: 150px;">
+				<div class="row userPageCenterContentHeadings" style="height: 150px;">
 					<h1>GENERAL INFORMATION</h1>
 				</div>
 				
@@ -303,7 +303,7 @@
 			</div>
 			
 			<div id="userPageProfilePayment" class="row userPageLeftTabsContent" style="height: 1300px;">
-				<div class="row" style="height: 150px;">
+				<div class="row userPageCenterContentHeadings" style="height: 150px;">
 					<h1>Payment Methods</h1>
 				</div>
 				<div class="row userPagePaymentMethods">
@@ -412,107 +412,135 @@
 			</div>
 			
 			<div id="userPageOngoingCampaigns" class="row userPageLeftTabsContent"style="height: 1300px;">
-				<h1>Ongoing Div</h1>
-			</div>
-			
-			<div id="userPageFinishedCampaigns" class="row userPageLeftTabsContent"style="height: 1300px;">
-				<h1>Finished Div</h1>
-			</div>
-			
-			<div id="userPageAccountLogIn" class="row userPageLeftTabsContent"style="height: 1300px;">
-				<h1>LogIn Div</h1>
-			</div>
-			
-			<div id="userPageAccountPrivacy" class="row userPageLeftTabsContent" style="height: 1300px;">
-				<h1>Privacy Div</h1>
-			</div>
-			
-			<div id="userPageAccountNotifications" class="row userPageLeftTabsContent" style="height: 1300px;">
-				<h1>Notifications Div</h1>
-			</div>
-			
-		</div>
-		
-		<div class="col-2 userPageRightColumn">
-		
-			<div class="progress-badge js-progress-badge">
-				<div class="badge badge--empty">
-					<div class="badge__fill">
-						<div class="badge__fill-inner"></div>
-					</div>
-					<div class="badge__content">
-					<div class="badge__content-inner">
-						<div class="badge__value">Gold</div>
-					</div>
-					</div>
+				
+				<div class="row userPageCenterContentHeadings" style="height: 150px;">
+					<h1>Ongoing Campaigns</h1>
 				</div>
-			</div>
-			<h2 class="userPageRightSupporter">Supporter</h2>
-			<script src="userPage.js"></script>
-			
-			<div class="userPageFacebookOptions">
-				<h2 class="userPageRightOptionsHeading">Spread the word</h2>
-				<div class="row userPageRightOptionsContent">
-					<div class="facebook button">
-						<i class="icon">
-						  <i class="fa fa-facebook"></i>
-						</i>
-						<div class="slide">
-							<p>
-							Facebook
-							</p>
-						</div>
+				<div class="userPageFinishedCampaigns">
+					<ul>
+						<li>
+							<div class="row userPageFinishedCampaignsImage">
+								<img src="images/16_9_4.jpg">
+								<h2>TEXT BOOKS FOR 220 STUDENTS</h2>
+							</div>
+							<div class="topLeft">
+								<h2>FINISHED</h2>
+							</div>
+							<div class="topRight">
+								<h2><i class="fa fa-map-marker"></i> VARANASI,INDIA</h2>
+							</div>
+							<div class="userPageFinishedCampaignsNGO">
+								<h2>By<span> NIRMAAN SOCIETY</span></h2>
+							</div>
+							<div class="userPageFinishedCampaignsBottom">
+								<h2><span>Amount:</span> Rs 20,000</h2>
+								<div class="userPageFinishedCampaignsBottomLinks"><a href="projectPage.html">SHARE</a><a href="projectPage.html">VIEW REPORTS</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="row userPageFinishedCampaignsImage">
+								<img src="images/16_9_4.jpg">
+								<h2>TEXT BOOKS FOR 220 STUDENTS</h2>
+							</div>
+							<div class="topLeft">
+								<h2>FINISHED</h2>
+							</div>
+							<div class="topRight">
+								<h2><i class="fa fa-map-marker"></i> VARANASI,INDIA</h2>
+							</div>
+							<div class="userPageFinishedCampaignsNGO">
+								<h2>By<span> NIRMAAN SOCIETY</span></h2>
+							</div>
+							<div class="userPageFinishedCampaignsBottom">
+								<h2><span>Amount:</span> Rs 20,000</h2>
+								<div class="userPageFinishedCampaignsBottomLinks"><a href="projectPage.html">SHARE</a><a href="projectPage.html">VIEW REPORTS</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="row userPageFinishedCampaignsImage">
+								<img src="images/16_9_4.jpg">
+								<h2>TEXT BOOKS FOR 220 STUDENTS</h2>
+							</div>
+							<div class="topLeft">
+								<h2>FINISHED</h2>
+							</div>
+							<div class="topRight">
+								<h2><i class="fa fa-map-marker"></i> VARANASI,INDIA</h2>
+							</div>
+							<div class="userPageFinishedCampaignsNGO">
+								<h2>By<span> NIRMAAN SOCIETY</span></h2>
+							</div>
+							<div class="userPageFinishedCampaignsBottom">
+								<h2><span>Amount:</span> Rs 20,000</h2>
+								<div class="userPageFinishedCampaignsBottomLinks"><a href="projectPage.html">SHARE</a><a href="projectPage.html">VIEW REPORTS</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="row userPageFinishedCampaignsImage">
+								<img src="images/16_9_4.jpg">
+								<h2>TEXT BOOKS FOR 220 STUDENTS</h2>
+							</div>
+							<div class="topLeft">
+								<h2>FINISHED</h2>
+							</div>
+							<div class="topRight">
+								<h2><i class="fa fa-map-marker"></i> VARANASI,INDIA</h2>
+							</div>
+							<div class="userPageFinishedCampaignsNGO">
+								<h2>By<span> NIRMAAN SOCIETY</span></h2>
+							</div>
+							<div class="userPageFinishedCampaignsBottom">
+								<h2><span>Amount:</span> Rs 20,000</h2>
+								<div class="userPageFinishedCampaignsBottomLinks"><a href="projectPage.html">SHARE</a><a href="projectPage.html">VIEW REPORTS</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="row userPageFinishedCampaignsImage">
+								<img src="images/16_9_4.jpg">
+								<h2>TEXT BOOKS FOR 220 STUDENTS</h2>
+							</div>
+							<div class="topLeft">
+								<h2>FINISHED</h2>
+							</div>
+							<div class="topRight">
+								<h2><i class="fa fa-map-marker"></i> VARANASI,INDIA</h2>
+							</div>
+							<div class="userPageFinishedCampaignsNGO">
+								<h2>By<span> NIRMAAN SOCIETY</span></h2>
+							</div>
+							<div class="userPageFinishedCampaignsBottom">
+								<h2><span>Amount:</span> Rs 20,000</h2>
+								<div class="userPageFinishedCampaignsBottomLinks"><a href="projectPage.html">SHARE</a><a href="projectPage.html">VIEW REPORTS</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="row userPageFinishedCampaignsImage">
+								<img src="images/16_9_4.jpg">
+								<h2>TEXT BOOKS FOR 220 STUDENTS</h2>
+							</div>
+							<div class="topLeft">
+								<h2>FINISHED</h2>
+							</div>
+							<div class="topRight">
+								<h2><i class="fa fa-map-marker"></i> VARANASI,INDIA</h2>
+							</div>
+							<div class="userPageFinishedCampaignsNGO">
+								<h2>By<span> NIRMAAN SOCIETY</span></h2>
+							</div>
+							<div class="userPageFinishedCampaignsBottom">
+								<h2><span>Amount:</span> Rs 20,000</h2>
+								<div class="userPageFinishedCampaignsBottomLinks"><a href="projectPage.html">SHARE</a><a href="projectPage.html">VIEW REPORTS</a></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="row projects">
+					<div class="row recommendedProjectsHeading">
+						<h2 class="col-6">Recommended Projects</h2>
 					</div>
-				</div>
-			</div>
-			
-			<div class="userPageConnectOptions">
-				<h2 class="userPageRightOptionsHeading">Connect</h2>
-				<div class="row userPageRightOptionsContent">
-					<div class="google button">
-						<i class="icon">
-						  <i class="fa fa-google-plus">
-						</i>
-					  </i>
-					  <div class="slide">
-						<p>
-						  Google+
-						</p>
-					  </div>
-					</div>
-				</div>
-				<div class="row userPageRightOptionsContent">
-					<div class="twitter button">
-						<i class="icon">
-						  <i class="fa fa-twitter">
-						</i>
-					  </i>
-					  <div class="slide">
-						<p>
-						  Twitter
-						</p>
-					  </div>
-					 </div>
-				</div>
-				<div class="row userPageRightOptionsContent">
-					<div class="linkedin button">
-						<i class="icon">
-						  <i class="fa fa-linkedin">
-						</i>
-					  </i>
-					  <div class="slide">
-						<p>
-						  Linkedin
-						</p>
-					  </div>
-					 </div>
-				</div>
-			</div>
-			
-			<div class="userPageProjectOptions">
-				<h2 class="userPageRightOptionsHeading">Recommended Project</h2>
-				<ul>
-					<li><div class="projectSection1">
+					<div class="row projectsContent">
+						<div class="projectSection1">
 							<div class="row projectContent">
 								<div class="projectThumbnail">
 									<img class="img-thumbnail" src="images/web1.jpg" >
@@ -533,7 +561,6 @@
 									<h1>Child Education Project</h1>
 									<h2>Nirmaan Society</h2>
 									<p>This is sample text to give us an idea of what the major project element will look like after we put in text 	into the entire thing. The font is Myraid Pro, but should we consider some other font instead?
-										<br>This project will help kids get education, master the ways of the force and become Jedi.
 									</p>
 								</div>
 								
@@ -577,7 +604,639 @@
 										</div>
 										
 										<div class="row projectSectionDonateButton">
-											<h2>Donate</h2>
+											<a href="checkOut.html"><h2>Donate</h2></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="divLink" href="projectPage.html"></a>
+						</div>
+						
+						<div class="projectSection2">
+							<div class="row projectContent">
+								<div class="projectThumbnail">
+									<img class="img-thumbnail" src="images/web2.jpg" />
+									<div class="row locationCause">
+										<div class="projectlocation">
+											<div class="col-1 projectlocationImage"><img src="images/locationThumbnail.png"></div>
+											<div class="col-2 projectlocationHeading"><h2>Varanasi</h2></div>
+										</div>
+										<div class="projectcause">
+											<div class="col-1 projectcauseImage"><img src="images/causeThumbnail.png"></div>
+											<div class="col-4 projectcauseHeading"><h2>Child Education</h2></div>
+										</div>
+										<a class="locationCauseLink" href="projectPage.html"></a>
+									</div>
+								</div>
+								
+								
+									<div class="projectDetails">
+										<h1>Child Education Project</h1>
+										<h2>Nirmaan Society</h2>
+										<p>This is sample text to give us an idea of what the major project element will look like after we put in text 	into the entire thing. The font is Myraid Pro, but should we consider some other font instead?
+											</p>
+									</div>
+									
+									<div class="row projectBottom">
+									<div class="row projectStats">
+										<div class="row" style="margin-bottom: 12px;">
+											<h2 class="floatRight">50%</h2>
+										</div>
+										
+										<div class="row progress">
+											<div class="progress-bar"></div>
+										</div>
+										
+										<div class="row">
+											<div class="stats1 col-5">
+												<div class="statsNumber">
+													<p><span style="font-family:Nunito-Bold; font-weight:600;">&#x20b9;</span> 250000</p>
+												</div>
+												<div class="statsText">
+													<p>Raised</p>
+												</div>
+											</div>
+											<div class="stats2 col-4">
+												<div class="statsNumber">
+													<p>105</p>
+												</div>
+												<div class="statsText">
+													<p>Donors</p>
+												</div>
+											</div>
+											<div class="stats3 col-3">
+												<div class="statsNumber">
+													<p>14</p>
+												</div>
+												<div class="statsText">
+													<p>Days left</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="row projectSectionDonateButton">
+										<a href="checkOut.html"><h2>Donate</h2></a>
+									</div>
+								</div>
+							</div>
+							<a class="divLink" href="projectPage.html"></a>
+						</div>
+						
+						<div class="projectSection3">
+							<div class="row projectContent">
+								<div class="projectThumbnail">
+									<img class="img-thumbnail" src="images/web3.jpg" >
+									<div class="row locationCause">
+										<div class="projectlocation">
+											<div class="col-1 projectlocationImage"><img src="images/locationThumbnail.png"></div>
+											<div class="col-2 projectlocationHeading"><h2>Varanasi</h2></div>
+										</div>
+										<div class="projectcause">
+											<div class="col-1 projectcauseImage"><img src="images/causeThumbnail.png"></div>
+											<div class="col-4 projectcauseHeading"><h2>Child Education</h2></div>
+										</div>
+										<a class="locationCauseLink" href="projectPage.html"></a>
+									</div>
+								</div>
+								
+								<div class="projectDetails">
+									<h1>Child Education Project</h1>
+									<h2>Nirmaan Society</h2>
+									<p>This is sample text to give us an idea of what the major project element will look like after we put in text 	into the entire thing. The font is Myraid Pro, but should we consider some other font instead?
+										</p>
+								</div>
+								
+								<div class="row projectBottom">
+									<div class="row projectStats">
+										<div class="row" style="margin-bottom: 12px;">
+											<h2 class="floatRight">50%</h2>
+										</div>
+										
+										<div class="row progress">
+											<div class="progress-bar"></div>
+										</div>
+										
+										<div class="row">
+											<div class="stats1 col-5">
+												<div class="statsNumber">
+													<p><span style="font-family:Nunito-Bold; font-weight:600;">&#x20b9;</span> 250000</p>
+												</div>
+												<div class="statsText">
+													<p>Raised</p>
+												</div>
+											</div>
+											<div class="stats2 col-4">
+												<div class="statsNumber">
+													<p>105</p>
+												</div>
+												<div class="statsText">
+													<p>Donors</p>
+												</div>
+											</div>
+											<div class="stats3 col-3">
+												<div class="statsNumber">
+													<p>14</p>
+												</div>
+												<div class="statsText">
+													<p>Days left</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="row projectSectionDonateButton">
+										<a href="checkOut.html"><h2>Donate</h2></a>
+									</div>
+								</div>
+							</div>
+							<a class="divLink" href="projectPage.html"></a>
+						</div>
+					</div>
+				</div>
+			
+				
+			</div>
+			
+			<div id="userPageFinishedCampaigns" class="row userPageLeftTabsContent"style="height: 1300px;">
+				
+				<div class="row userPageCenterContentHeadings" style="height: 150px;">
+					<h1>Finished Campaigns</h1>
+				</div>
+				<div class="userPageFinishedCampaigns">
+					<ul>
+						<li>
+							<div class="row userPageFinishedCampaignsImage">
+								<img src="images/16_9_4.jpg">
+								<h2>TEXT BOOKS FOR 220 STUDENTS</h2>
+							</div>
+							<div class="topLeft">
+								<h2>FINISHED</h2>
+							</div>
+							<div class="topRight">
+								<h2><i class="fa fa-map-marker"></i> VARANASI,INDIA</h2>
+							</div>
+							<div class="userPageFinishedCampaignsNGO">
+								<h2>By<span> NIRMAAN SOCIETY</span></h2>
+							</div>
+							<div class="userPageFinishedCampaignsBottom">
+								<h2><span>Amount:</span> Rs 20,000</h2>
+								<div class="userPageFinishedCampaignsBottomLinks"><a href="projectPage.html">SHARE</a><a href="projectPage.html">VIEW REPORTS</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="row userPageFinishedCampaignsImage">
+								<img src="images/16_9_4.jpg">
+								<h2>TEXT BOOKS FOR 220 STUDENTS</h2>
+							</div>
+							<div class="topLeft">
+								<h2>FINISHED</h2>
+							</div>
+							<div class="topRight">
+								<h2><i class="fa fa-map-marker"></i> VARANASI,INDIA</h2>
+							</div>
+							<div class="userPageFinishedCampaignsNGO">
+								<h2>By<span> NIRMAAN SOCIETY</span></h2>
+							</div>
+							<div class="userPageFinishedCampaignsBottom">
+								<h2><span>Amount:</span> Rs 20,000</h2>
+								<div class="userPageFinishedCampaignsBottomLinks"><a href="projectPage.html">SHARE</a><a href="projectPage.html">VIEW REPORTS</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="row userPageFinishedCampaignsImage">
+								<img src="images/16_9_4.jpg">
+								<h2>TEXT BOOKS FOR 220 STUDENTS</h2>
+							</div>
+							<div class="topLeft">
+								<h2>FINISHED</h2>
+							</div>
+							<div class="topRight">
+								<h2><i class="fa fa-map-marker"></i> VARANASI,INDIA</h2>
+							</div>
+							<div class="userPageFinishedCampaignsNGO">
+								<h2>By<span> NIRMAAN SOCIETY</span></h2>
+							</div>
+							<div class="userPageFinishedCampaignsBottom">
+								<h2><span>Amount:</span> Rs 20,000</h2>
+								<div class="userPageFinishedCampaignsBottomLinks"><a href="projectPage.html">SHARE</a><a href="projectPage.html">VIEW REPORTS</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="row userPageFinishedCampaignsImage">
+								<img src="images/16_9_4.jpg">
+								<h2>TEXT BOOKS FOR 220 STUDENTS</h2>
+							</div>
+							<div class="topLeft">
+								<h2>FINISHED</h2>
+							</div>
+							<div class="topRight">
+								<h2><i class="fa fa-map-marker"></i> VARANASI,INDIA</h2>
+							</div>
+							<div class="userPageFinishedCampaignsNGO">
+								<h2>By<span> NIRMAAN SOCIETY</span></h2>
+							</div>
+							<div class="userPageFinishedCampaignsBottom">
+								<h2><span>Amount:</span> Rs 20,000</h2>
+								<div class="userPageFinishedCampaignsBottomLinks"><a href="projectPage.html">SHARE</a><a href="projectPage.html">VIEW REPORTS</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="row userPageFinishedCampaignsImage">
+								<img src="images/16_9_4.jpg">
+								<h2>TEXT BOOKS FOR 220 STUDENTS</h2>
+							</div>
+							<div class="topLeft">
+								<h2>FINISHED</h2>
+							</div>
+							<div class="topRight">
+								<h2><i class="fa fa-map-marker"></i> VARANASI,INDIA</h2>
+							</div>
+							<div class="userPageFinishedCampaignsNGO">
+								<h2>By<span> NIRMAAN SOCIETY</span></h2>
+							</div>
+							<div class="userPageFinishedCampaignsBottom">
+								<h2><span>Amount:</span> Rs 20,000</h2>
+								<div class="userPageFinishedCampaignsBottomLinks"><a href="projectPage.html">SHARE</a><a href="projectPage.html">VIEW REPORTS</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="row userPageFinishedCampaignsImage">
+								<img src="images/16_9_4.jpg">
+								<h2>TEXT BOOKS FOR 220 STUDENTS</h2>
+							</div>
+							<div class="topLeft">
+								<h2>FINISHED</h2>
+							</div>
+							<div class="topRight">
+								<h2><i class="fa fa-map-marker"></i> VARANASI,INDIA</h2>
+							</div>
+							<div class="userPageFinishedCampaignsNGO">
+								<h2>By<span> NIRMAAN SOCIETY</span></h2>
+							</div>
+							<div class="userPageFinishedCampaignsBottom">
+								<h2><span>Amount:</span> Rs 20,000</h2>
+								<div class="userPageFinishedCampaignsBottomLinks"><a href="projectPage.html">SHARE</a><a href="projectPage.html">VIEW REPORTS</a></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="row projects">
+					<div class="row recommendedProjectsHeading">
+						<h2 class="col-6">Recommended Projects</h2>
+					</div>
+					<div class="row projectsContent">
+						<div class="projectSection1">
+							<div class="row projectContent">
+								<div class="projectThumbnail">
+									<img class="img-thumbnail" src="images/web1.jpg" >
+									<div class="row locationCause">
+										<div class="projectlocation">
+											<div class="col-1 projectlocationImage"><img src="images/locationThumbnail.png"></div>
+											<div class="col-2 projectlocationHeading"><h2>Varanasi</h2></div>
+										</div>
+										<div class="projectcause">
+											<div class="col-1 projectcauseImage"><img src="images/causeThumbnail.png"></div>
+											<div class="col-4 projectcauseHeading"><h2>Child Education</h2></div>
+										</div>
+										<a class="locationCauseLink" href="projectPage.html"></a>
+									</div>
+								</div>
+								
+								<div class="projectDetails">
+									<h1>Child Education Project</h1>
+									<h2>Nirmaan Society</h2>
+									<p>This is sample text to give us an idea of what the major project element will look like after we put in text 	into the entire thing. The font is Myraid Pro, but should we consider some other font instead?
+									</p>
+								</div>
+								
+								<div class="row projectBottom">
+									<div class="row" style="position:relative;">
+										<div class="row projectStats">
+											<div class="row" style="margin-bottom: 12px;">
+												<h2 class="floatRight">50%</h2>
+											</div>
+											
+											<div class="row progress">
+												<div class="progress-bar"></div>
+											</div>
+											
+											<div class="row">
+												<div class="stats1 col-5">
+													<div class="statsNumber">
+														<p><span style="font-family:Nunito-Bold; font-weight:600;">&#x20b9;</span> 250000</p>
+													</div>
+													<div class="statsText">
+														<p>Raised</p>
+													</div>
+												</div>
+												<div class="stats2 col-4">
+													<div class="statsNumber">
+														<p>105</p>
+													</div>
+													<div class="statsText">
+														<p>Donors</p>
+													</div>
+												</div>
+												<div class="stats3 col-3">
+													<div class="statsNumber">
+														<p>14</p>
+													</div>
+													<div class="statsText">
+														<p>Days left</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row projectSectionDonateButton">
+											<a href="checkOut.html"><h2>Donate</h2></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="divLink" href="projectPage.html"></a>
+						</div>
+						
+						<div class="projectSection2">
+							<div class="row projectContent">
+								<div class="projectThumbnail">
+									<img class="img-thumbnail" src="images/web2.jpg" />
+									<div class="row locationCause">
+										<div class="projectlocation">
+											<div class="col-1 projectlocationImage"><img src="images/locationThumbnail.png"></div>
+											<div class="col-2 projectlocationHeading"><h2>Varanasi</h2></div>
+										</div>
+										<div class="projectcause">
+											<div class="col-1 projectcauseImage"><img src="images/causeThumbnail.png"></div>
+											<div class="col-4 projectcauseHeading"><h2>Child Education</h2></div>
+										</div>
+										<a class="locationCauseLink" href="projectPage.html"></a>
+									</div>
+								</div>
+								
+								
+									<div class="projectDetails">
+										<h1>Child Education Project</h1>
+										<h2>Nirmaan Society</h2>
+										<p>This is sample text to give us an idea of what the major project element will look like after we put in text 	into the entire thing. The font is Myraid Pro, but should we consider some other font instead?
+											</p>
+									</div>
+									
+									<div class="row projectBottom">
+									<div class="row projectStats">
+										<div class="row" style="margin-bottom: 12px;">
+											<h2 class="floatRight">50%</h2>
+										</div>
+										
+										<div class="row progress">
+											<div class="progress-bar"></div>
+										</div>
+										
+										<div class="row">
+											<div class="stats1 col-5">
+												<div class="statsNumber">
+													<p><span style="font-family:Nunito-Bold; font-weight:600;">&#x20b9;</span> 250000</p>
+												</div>
+												<div class="statsText">
+													<p>Raised</p>
+												</div>
+											</div>
+											<div class="stats2 col-4">
+												<div class="statsNumber">
+													<p>105</p>
+												</div>
+												<div class="statsText">
+													<p>Donors</p>
+												</div>
+											</div>
+											<div class="stats3 col-3">
+												<div class="statsNumber">
+													<p>14</p>
+												</div>
+												<div class="statsText">
+													<p>Days left</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="row projectSectionDonateButton">
+										<a href="checkOut.html"><h2>Donate</h2></a>
+									</div>
+								</div>
+							</div>
+							<a class="divLink" href="projectPage.html"></a>
+						</div>
+						
+						<div class="projectSection3">
+							<div class="row projectContent">
+								<div class="projectThumbnail">
+									<img class="img-thumbnail" src="images/web3.jpg" >
+									<div class="row locationCause">
+										<div class="projectlocation">
+											<div class="col-1 projectlocationImage"><img src="images/locationThumbnail.png"></div>
+											<div class="col-2 projectlocationHeading"><h2>Varanasi</h2></div>
+										</div>
+										<div class="projectcause">
+											<div class="col-1 projectcauseImage"><img src="images/causeThumbnail.png"></div>
+											<div class="col-4 projectcauseHeading"><h2>Child Education</h2></div>
+										</div>
+										<a class="locationCauseLink" href="projectPage.html"></a>
+									</div>
+								</div>
+								
+								<div class="projectDetails">
+									<h1>Child Education Project</h1>
+									<h2>Nirmaan Society</h2>
+									<p>This is sample text to give us an idea of what the major project element will look like after we put in text 	into the entire thing. The font is Myraid Pro, but should we consider some other font instead?
+										</p>
+								</div>
+								
+								<div class="row projectBottom">
+									<div class="row projectStats">
+										<div class="row" style="margin-bottom: 12px;">
+											<h2 class="floatRight">50%</h2>
+										</div>
+										
+										<div class="row progress">
+											<div class="progress-bar"></div>
+										</div>
+										
+										<div class="row">
+											<div class="stats1 col-5">
+												<div class="statsNumber">
+													<p><span style="font-family:Nunito-Bold; font-weight:600;">&#x20b9;</span> 250000</p>
+												</div>
+												<div class="statsText">
+													<p>Raised</p>
+												</div>
+											</div>
+											<div class="stats2 col-4">
+												<div class="statsNumber">
+													<p>105</p>
+												</div>
+												<div class="statsText">
+													<p>Donors</p>
+												</div>
+											</div>
+											<div class="stats3 col-3">
+												<div class="statsNumber">
+													<p>14</p>
+												</div>
+												<div class="statsText">
+													<p>Days left</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="row projectSectionDonateButton">
+										<a href="checkOut.html"><h2>Donate</h2></a>
+									</div>
+								</div>
+							</div>
+							<a class="divLink" href="projectPage.html"></a>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			
+			<div id="userPageAccountLogIn" class="row userPageLeftTabsContent"style="height: 1300px;">
+				<h1>LogIn Div</h1>
+			</div>
+			
+			<div id="userPageAccountPrivacy" class="row userPageLeftTabsContent" style="height: 1300px;">
+				<h1>Privacy Div</h1>
+			</div>
+			
+			<div id="userPageAccountNotifications" class="row userPageLeftTabsContent" style="height: 1300px;">
+				<h1>Notifications Div</h1>
+			</div>
+			
+		</div>
+		
+		<div class="col-2 userPageRightColumn">
+		
+			<div class="progress-badge js-progress-badge">
+				<div class="badge badge--empty">
+					<div class="badge__fill">
+						<div class="badge__fill-inner"></div>
+					</div>
+					<div class="badge__content">
+					<div class="badge__content-inner">
+						<div class="badge__value">Gold</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<h2 class="userPageRightSupporter">Supporter</h2>
+			<script src="userPage.js"></script>
+			
+			<div class="userPageConnectOptions">
+				<h2 class="userPageRightOptionsHeading">Spred The Word</h2>
+				<div class="row userPageRightOptionsContent">
+					<a href="index.html" class="facebook button">
+						<i class="icon">
+						  <i class="fa fa-facebook"></i>
+						</i>
+						<div class="slide">
+							<p>
+							Facebook
+							</p>
+						</div>
+						<div class="slide1">
+							<p>
+							Share
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="row userPageRightOptionsContent">
+					<a href="index.html" class="twitter button">
+						<i class="icon">
+						  <i class="fa fa-twitter">
+						</i>
+					  </i>
+					  <div class="slide">
+						<p>
+						  Twitter
+						</p>
+					  </div>
+					  <div class="slide1">
+							<p>
+							Tweet
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<div class="userPageProjectOptions">
+				<h2 class="userPageRightOptionsHeading">Almost Funded</h2>
+				<ul>
+					<li><div class="projectSection1">
+							<div class="row projectContent">
+								<div class="projectThumbnail">
+									<img class="img-thumbnail" src="images/web1.jpg" >
+									<div class="row locationCause">
+										<div class="projectlocation">
+											<div class="col-1 projectlocationImage"><img src="images/locationThumbnail.png"></div>
+											<div class="col-2 projectlocationHeading"><h2>Varanasi</h2></div>
+										</div>
+										<div class="projectcause">
+											<div class="col-1 projectcauseImage"><img src="images/causeThumbnail.png"></div>
+											<div class="col-4 projectcauseHeading"><h2>Child Education</h2></div>
+										</div>
+										<a class="locationCauseLink" href="projectPage.html"></a>
+									</div>
+								</div>
+								
+								<div class="projectDetails">
+									<h1>Child Education Project</h1>
+									<h2>Nirmaan Society</h2>
+									
+								</div>
+								
+								<div class="row projectBottom">
+									<div class="row" style="position:relative;">
+										<div class="row projectStats">
+											<div class="row" style="margin-bottom: 12px;">
+												<h2 class="floatRight">50%</h2>
+											</div>
+											
+											<div class="row progress">
+												<div class="progress-bar"></div>
+											</div>
+											
+											<div class="row">
+												<div class="stats1 col-5">
+													<div class="statsNumber">
+														<p><span style="font-family:Nunito-Bold; font-weight:600;">&#x20b9;</span> 250000</p>
+													</div>
+													<div class="statsText">
+														<p>Raised</p>
+													</div>
+												</div>
+												<div class="stats2 col-4">
+													<div class="statsNumber">
+														<p>105</p>
+													</div>
+													<div class="statsText">
+														<p>Donors</p>
+													</div>
+												</div>
+												<div class="stats3 col-3">
+													<div class="statsNumber">
+														<p>14</p>
+													</div>
+													<div class="statsText">
+														<p>Days left</p>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>

@@ -1,9 +1,20 @@
 .row.teamPageUL {
-    margin: 5% 0;
+    /*! margin: 5% 0; */
     list-style: none;
 	background: black;
 }
-
+.teamPageHeading{
+    text-align: center;
+padding: 58px;
+height: 150px;
+font-size: 35px;
+background-color: rgb(0,180,255);
+color: white;
+font-family: Poppins-SemiBold;
+}
+.teamPageHeading span {
+    border-bottom: 2px solid white;
+}
 .teamMemberBasicInfo {
     position: absolute;
     top: 50%;
