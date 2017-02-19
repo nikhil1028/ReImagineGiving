@@ -20,10 +20,20 @@ function openProjectDonationOptionsTabs(evt, tabName) {
     for (i = 0; i < donationOptionsTabContent.length; i++) {
         donationOptionsTabContent[i].style.display = "none";
     }
-    donationOptionsTabLinks = document.getElementsByClassName("donationOptionsTabLinks");
-    for (i = 0; i < donationOptionsTabLinks.length; i++) {
-        donationOptionsTabLinks[i].className = donationOptionsTabLinks[i].className.replace(" donationOptionActive", "");
+    var activeTab = document.getElementById('donationOptionActive');
+    if(evt == 'projectPageDonationOptionsMonthly')
+    {
+        if(activeTab.className == "slideLeft"){
+            document.getElementById('donationOptionActive').classList.toggle('slideLeft');
+            document.getElementById('donationOptionActive').classList.toggle('slideRight');
+        }
+    }
+    else
+    {
+        if(activeTab.className == "slideRight"){
+            document.getElementById('donationOptionActive').classList.toggle('slideLeft');
+            document.getElementById('donationOptionActive').classList.toggle('slideRight');
+        }
     }
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " donationOptionActive";
 }

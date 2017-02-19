@@ -7,9 +7,7 @@
     top: 0;
     left: 0;
     background-color: transparent;
-	transition: width .4s ease-in-out;
 }
-
 .exploreDiv{
 	position: absolute;
     background-color: white;
@@ -19,7 +17,6 @@
 	font-size: 17px;
 	margin-top: -8px;
 }
-
 .exploreContent{
 	position: relative;
 	height: 100%;
@@ -40,8 +37,7 @@
 }
 
 .exploreHeading{
-	margin-bottom: 15px;
-	margin-top: 22px;
+	margin-bottom: 5px;
 	background-color: rgba(56,131,174,1.0);
     padding: 5% 5% 5% 5%;
 }
@@ -50,7 +46,7 @@
     background-color: rgba(56,131,174,1.0);
     padding: 5% 5% 5% 5%;
 	margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 /* The navigation links inside the explore */
@@ -93,6 +89,10 @@
 .causeList, .fundingLevels{
 	display: block;
 	transition: 0.3s ease-in-out;
+  padding: 10px 0;
+}
+.location ul {
+    padding: 5px 0 10px 0;
 }
 
 .downArrow{
@@ -101,14 +101,16 @@
     padding-right: 5px !Important;
 	color: white !Important;
 }
-
+.topArrow{
+  transform: rotate(180deg);
+}
 
 #wrap {
   display: inline-block;
   height: 40px;
   position: relative;
   top: 10px;
-  right: 9%;
+  right: 13%;
   margin-bottom: 5px;
 }
 

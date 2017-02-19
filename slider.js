@@ -10,20 +10,20 @@ $('.slider').each(function() {
     var animateLeft, slideLeft;
     
     advance();
+
+    textOverlaySlides();
     
     if ($group.is(':animated') || currentIndex === newIndex) {
       return;
     }
     
-    bulletArray[currentIndex].removeClass('active');
-    bulletArray[newIndex].addClass('active');
     
     if (newIndex > currentIndex) {
       slideLeft = '100%';
       animateLeft = '-100%';
     } else {
-      slideLeft = '100%';
-      animateLeft = '-100%';
+      slideLeft = '-100%';
+      animateLeft = '100%';
     }
     
     $slides.eq(newIndex).css({
@@ -44,6 +44,7 @@ $('.slider').each(function() {
       });
       currentIndex = newIndex;
     });
+
   }
   
   function advance() {
@@ -73,17 +74,23 @@ $('.slider').each(function() {
     }
   });
   
-  $.each($slides, function(index) {
-    var $button = $('<a class="slide_btn">&bull;</a>');
-    
-    if (index === currentIndex) {
-      $button.addClass('active');
-    }
-    $button.on('click', function() {
-      move(index);
-    }).appendTo('.slide_buttons');
-    bulletArray.push($button);
-  });
-  
   advance();
+  textOverlaySlidesStart();
+  function textOverlaySlidesStart(){
+  	$('#textOverlaySlide').html( 'RE<span>!</span>MAGINE ' + '<span class="textOverlaySlideChanging">Development</span>');
+  }
+
+  function textOverlaySlides(){
+	if(currentIndex==4)
+		$('#textOverlaySlide').html( 'RE<span>!</span>MAGINE ' + '<span class="textOverlaySlideChanging">Development</span>');
+	else if(currentIndex==0)
+		$('#textOverlaySlide').html( 'RE<span>!</span>MAGINE ' + '<span class="textOverlaySlideChanging">Growth</span>');
+	else if(currentIndex==1)
+		$('#textOverlaySlide').html( 'RE<span>!</span>MAGINE ' + '<span class="textOverlaySlideChanging">Trust</span>');
+	else if(currentIndex==2)
+		$('#textOverlaySlide').html( 'RE<span>!</span>MAGINE ' + '<span class="textOverlaySlideChanging">Hope</span>');
+	else 
+		$('#textOverlaySlide').html( 'RE<span>!</span>MAGINE ' + '<span class="textOverlaySlideChanging">Giving</span>');
+	}
+
 });

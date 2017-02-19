@@ -41,9 +41,9 @@
   height: 350px;
   position: absolute;
   display: flex;
-  top: 0;
-  left: 0;
-  transform: translate(50%,50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .container .form-container.actived {
   margin-left: 275px;
@@ -68,14 +68,14 @@
     height: 50px;
     position: absolute;
     top: 30px;
-    right: 72px;
+    right: 85.5px;
 }
 .container .form-container .form-item form{
   z-index: 2;
   position: relative;
 }
 .container .form-container .form-item form.form-log-in{
-  margin-top: 30px;
+  margin-top: 35px;
   display: none;
 }
 .container .form-container .form-item form input{
@@ -91,10 +91,14 @@
 }
 .googlebtn {
     background: #dd5044 !important;
+    display: inline-block !important;
+    width:118px !important;
     border: 2px solid #dd5044 !important;
 }
 .fbbtn {
     background: #3b5998 !important;
+    display: inline-block !important;
+    width:118px !important;
     border: 2px solid #3b5998 !important;
 }
 form .btn i {

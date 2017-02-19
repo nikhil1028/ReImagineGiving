@@ -188,16 +188,14 @@ ul.projectPageMainTabsList li a:focus, .active{
 	cursor: pointer;
 }
 .projectPageDonate:hover {
-    padding: 8.5px;
-    font-size: 14px;
     font-weight: bold;
 	  background-color: #00a2e5;
+	  font-size:12.4px;
 }
 .projectPageShare:hover {
-    padding: 8.5px;
-    font-size: 14px;
     font-weight: bold;
 	background-color: #344d86;
+	font-size:12.4px;
 }
 .projectPageShare{
 	background-color: #3b589a;
@@ -220,11 +218,14 @@ ul.projectPageMainTabsList li a:focus, .active{
 }
 ul.projectPageDonationOptions{
 	list-style-type: none;
-	background-color: #d8d8d8;
+	background: rgba(74, 82, 85, 0.8);
+	height: 35px;
 	overflow: hidden;
 }
 ul.projectPageDonationOptions li{
 	float: left;
+	position:absolute;
+	cursor:pointer;
 }
 ul.projectPageDonationOptions li a{ 
 	display: inline-block;
@@ -233,23 +234,36 @@ ul.projectPageDonationOptions li a{
 	  width: 100%;
     text-decoration: none;
       transition: 0.3s;
+      cursor: pointer;
 }
-.donationOptionActive {
+#donationOptionActive {
     background-color: white !important;
+    height:35px;
+    position:absolute;
+    z-index=-1;
+    width:50%;
+    top:0;
+    cursor: pointer;
 }
-.projectPageDonationOptions h3:hover{
-	font-weight: bold;
-	font-size: 16px;
-	padding-bottom: 9px;
-	background-color: #a7a7a7;
-	color: white;
+.slideLeft{
+	left:0;
+	animation: slideLeft 0.4s;
+	cursor: pointer;
 }
+.slideRight{
+	left:50%;
+	cursor:pointer;
+	animation: slideRight 0.4s;
+}
+@keyframes slideLeft{from{left:50%;} to{left:0;}}
+@keyframes slideRight{from{left:0;} to{left:50%;}}
 .projectPageDonationOptions h3{
 	text-align: center;
 	padding: 10px;
 	font-size: 15px;
 	color: #373737;
 	font-family: Poppins-Light;
+	cursor: pointer;
 }
 .projectPageDonationOptions h2{
 	text-align: center;
@@ -265,6 +279,8 @@ ul.projectPageDonationOptions li a{
 .projectPageDonationOptionsMonthly{
 	cursor:pointer;
 	text-align: center;
+	cursor: pointer;
+	right:0;
 }
 .projectPageDonationOptionsOnce{
 	cursor:pointer;
@@ -403,3 +419,11 @@ ul.projectPageDonationOptions li a{
     padding: 8px;
     text-align: left;
 }
+
+
+
+
+
+
+
+

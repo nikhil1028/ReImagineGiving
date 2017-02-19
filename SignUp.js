@@ -56,7 +56,6 @@ window.onclick = function(event) {
 		if(div.style.width == "25%"){
 			document.getElementById('ninja-btn').classList.toggle('activated');
 			document.getElementById("exploreContent").style.width = "";
-			document.getElementById("exploreContent").style.opacity = "0";
 			document.getElementById('exploreDiv').classList.toggle('exploreDiv');
 			document.getElementById('exploreButton').classList.toggle('exploreButtonActive');
 		}
