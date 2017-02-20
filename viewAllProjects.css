@@ -22,6 +22,7 @@
 
 .viewAllProjectsContentFilters ul {
     list-style-type: none;
+    padding-left: 7px !important;
 }
 .viewAllProjectsContentFilters .exploreHeading1, .viewAllProjectsContentFilters .exploreHeading{
     padding: 0;
@@ -34,7 +35,10 @@
 	left: -16%;
 	
 }
-
+.viewAllProjectsContentFilters label {
+    margin-left: 10px;
+    font-size: 14.5px;
+ }
 .viewAllProjectsContentFilters #wrap input[type="text"]{
 	width: 14vw;
 }
