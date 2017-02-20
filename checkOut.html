@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="exploreButton.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="fontAwesomeMin.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="socialShareBar.css" media="screen"/>
-	<link rel="stylesheet" type="text/css" href="contactUsPage.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="checkOut.css" media="screen"/>
 	
 	<script src="cloudflare.js"></script>
 	<script src="cloudflare1.js"></script>
@@ -206,68 +206,55 @@
 		</div>
 	</header>
 
-	<div class="row contactUsPageMainRow">
-		<div id="contactUsPageContent" class="row contactUsPageContent" style="height: 1300px;">
-			<div class="row" style="height: 150px;">
+	<div class="row checkOutPageMainRow">
+		<div id="checkOutPageContent" class="row checkOutPageContent" style="height: 1300px;">
+			
+			<div class="row checkOutPageContentHeading" style="height: 150px;">
 				<h1>CHECKOUT</h1>
 			</div>
 			<div class="row">
-				<div class="col-6 contactUsPageMessageForm">
-					<div class="contactUsPageMessageFormContent" id="contactUsPageMessageFormContent">
-						<div class="row contactUsPageMessageFormContentHeading">
-							<img src="images/messageIcon.png">
-							<h2>Send a Message</h2>
+				<div class="col-4 checkOutPageLeft">
+					<div class="checkOutPageLeftContent" id="checkOutPageLeftContent">
+						<div class="checkOutPageDonationAmountContent">
+							<h2>Donation Amount</h2>
+							<h1>Rs <span>20,000</span> Per Month</h1>
+							<h3>Your Impact</h3>
+							<p>The money you are giving will have following impact. and will make a lot of people happy</p>
 						</div>
-						<form class="form" autocomplete="off" novalidate>
-							<fieldset class="userName">
-							  <label for="userName">Name</label>
-							  <input type="text" id="userName" />
-							</fieldset>
-							<fieldset class="userPhone">
-							  <label for="userPhone">Phone</label>
-							  <input type="text" id="userPhone" />
-							</fieldset>
-							<fieldset>
-							  <label for="userEmail">Email</label>
-							  <input type="text" id="userEmail" />
-							</fieldset>
-							<fieldset>
-							  <label for="userSubject">Subject</label>
-							  <input type="text" id="userSubject">
-							</fieldset>
-							<fieldset>
-							  <label for="userMessage">Message</label>
-							  <textarea type="text" id="userMessage" ></textarea>
-							</fieldset>
-							<button class="btn"><i class="fa fa-lock"></i> Send</button>
-						 </form>
-					</div>
-				</div>
-				<div class="col-5 contactUsPageRight">
-					<div class="row contactUsPageEmailPhone">
-						<div class="row">
-							<div class="col-6 contactUsPagePhone">
-								<div class="row"><img src="images/callIcon.png"></div>
-								<h2>Call Us</h2>
-								<p>7891133332</p>
-							</div>
-							<div class="col-6 contactUsPageEmail">
-								<div class="row"><img src="images/emailIcon.png"></div>
-								<h2>Email</h2>
-								<p>anuruddh.mishra@gmail.com</p>
-							</div>
-						</div>
-						<div class="row contactUsPageAddress">
-							<div class="row"><img src="images/locationIcon.png"></div>
-							<h2><span>Visit Us</span></h2>
-							<p>IIT(BHU) Varanasi<br/>UP,India-221005</p>
-							<img class="contactUsPageMap" src="images/map.jpg">
-						</div>
-						<div class="row contactUsPageMap">
+						<div class="checkOutPageLeftSecondBox">
+							<p><span>You have chosen to make a monthly payment.</span> Your credit card will be charged now and every month until you cancel the donation. You can edit your recurring donations at any time in your <span>profile</span>.</p>
 						</div>
 					</div>
 				</div>
+				<div class="col-8 checkOutPageRight">
+					<h1>Give to <span>Feed the Poor!</span></h1>
+					<p>and get independent reports made by <span>Re!magine team</span> about the <span>impact you</span> are helping make. <a>Learn More</a></p>
+					<div class="row checkOutPagePaymentOptions">
+						<ul class="row checkOutPagePaymentOptionsLinks">
+							<li class="col-4 paymentOptionsLinks activePaymentOption" onclick="openPaymentOptionTabs(event,'paymentBySavedCards')">
+								Saved Cards
+							</li>
+							<li class="col-4 paymentOptionsLinks" onclick="openPaymentOptionTabs(event,'paymentByDebitCard')">
+								Credit/Debit Card
+							</li>
+							<li class="col-4 paymentOptionsLinks" onclick="openPaymentOptionTabs(event,'paymentByPaypal')">
+								Paypal
+							</li>
+						</ul>
+					</div>
+					<div id="paymentBySavedCards" class="paymentOptinoTabsContent">
+						Saved Cards
+					</div>
+					<div id="paymentByDebitCard" class="paymentOptinoTabsContent">
+						Debit Card
+					</div>
+					<div id="paymentByPaypal" class="paymentOptinoTabsContent">
+						Paypal
+					</div>
+				</div>
+				<script src="checkOut.js"></script>
 			</div>
+
 			<div class="row section">
 				<ul class="social-btns">
 

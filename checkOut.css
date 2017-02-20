@@ -1,0 +1,112 @@
+
+.row.checkOutPageMainRow .section {
+    background: rgba(0,180,255,1.0) !important;
+  position: absolute;
+bottom: 0;
+}
+.row.checkOutPageMainRow {
+    position: relative;
+}
+.checkOutPageLeft {
+    padding: 20px 0 0 40px;
+}
+.checkOutPageDonationAmountContent {
+    height: 300px;
+    border: 1px solid rgba(0,0,0,0.15);
+}
+.checkOutPageDonationAmountContent h2 {
+    font-size: 22px;
+    font-family: SourceSansPro-Regular;
+    padding: 15px 15px 10px 15px;
+    letter-spacing: 1px;
+}
+.checkOutPageDonationAmountContent h1 {
+    padding: 0px 10px 10px 15px;
+    margin-bottom: 10px;
+    font-family: SourceSansPro-SemiBold;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    color: rgb(0,180,255);
+    letter-spacing: 1px;
+    font-size:40px;
+}
+.checkOutPageDonationAmountContent h3 {
+    padding: 0 10px 10px 15px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family: SourceSansPro-Regular;
+}
+.checkOutPageDonationAmountContent p {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    line-height: 105%;
+    font-family: SourceSansPro-Light;
+    font-size: 21px;
+}
+.checkOutPageDonationAmountContent h1 span {
+    border-bottom: 2px dotted black;
+}
+.checkOutPageLeftSecondBox {
+    margin-top: 20px;
+    border: 1px solid rgba(0,0,0,0.15);
+    padding: 15px;
+    font-size: 21px;
+    font-family: SourceSansPro-Regular;
+    color: rgb(0,180,255);
+}
+
+.checkOutPageRight {
+    padding: 30px;
+    position: relative;
+}
+.checkOutPageRight h1 {
+    font-size: 80px;
+    font-family: Poppins-Light;
+}
+.checkOutPageRight h2 {
+    font-family: Poppins-Regular;
+    font-size: 23px;
+    padding: 3%;
+}
+.checkOutPageRight p {
+    font-family: SourceSansPro-Light;
+    font-size: 38px;
+}
+.checkOutPagePaymentOptions{
+  margin-top: 50px;
+}
+ul.row.checkOutPagePaymentOptionsLinks {
+    list-style-type: none;
+    text-align:center;
+}
+ul.row.checkOutPagePaymentOptionsLinks li{
+    text-decoration: none;
+    color: #373737;
+    font-size: 25px;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0,180,255,1.0);
+    letter-spacing: 2px;
+}
+li.paymentOptionsLinks.activePaymentOption{
+  background-color: rgb(0,180,255) !important;
+  color: white !important;
+  cursor: pointer;
+}
+.paymentOptinoTabsContent {
+    height: 300px;
+    border: 1px solid rgba(0,0,0,0.15);
+    padding: 15px;
+    display: none;
+    width:0;
+}
+#paymentBySavedCards{
+  display: block;
+  width: 100%;
+}
+div.checkOutPageContentHeading h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding: 55px;
+    background: rgb(0,180,255);
+}
